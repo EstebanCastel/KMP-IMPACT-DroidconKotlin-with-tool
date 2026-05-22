@@ -1,0 +1,64 @@
+# .gitignore Cleanup
+
+# Built application files
+*.apk
+*.aab
+*.ap_
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+build/
+captures/
+.cxx
+.externalNativeBuild
+
+# Gradle files
+.gradle/
+/local.properties
+local.properties
+
+# IDE files
+## Android Studio
+*.iws
+*.ipr
+*.iml
+.idea/
+.navigation/
+
+## Eclipse
+proguard/
+.classpath
+.project
+
+## iOS/Mac
+.DS_Store
+timeline.xctimeline
+playground.xcworkspace
+*.xcworkspace
+Pods/
+
+# Keystore files
+*.jks
+
+# Log Files
+*.log
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Project-specific files
+buildboth.sh
+google-services.json
+GoogleService-Info.plist
+.kotlin
