@@ -50,7 +50,7 @@ android-desugaring = "2.1.5"
 koin = "4.1.1"
 uuid = "0.8.4"
 ktlint = "14.0.1"
-coil = "3.3.0"
+coil = "3.4.0"
 zoomimage = "1.4.0"
 skie = "0.10.8"
 
