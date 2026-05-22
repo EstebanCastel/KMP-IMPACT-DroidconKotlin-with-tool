@@ -5,7 +5,7 @@ targetSdk = "36"
 compileSdk = "36"
 
 # Dependencies
-kotlin = "2.2.21"
+kotlin = "2.3.21"
 
 ## Gradle Plugin version must be compatible with Multiplatform
 ## https://kotlinlang.org/docs/multiplatform-compatibility-guide.html#version-compatibility
