@@ -1,0 +1,118 @@
+[
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-night-hdpi_about_kotlin.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-night-hdpi/about_kotlin.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-night-ldpi_about_kotlin.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-night-ldpi/about_kotlin.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable_twitter.xml.flat",
+        "source": "com.droidcon.app.android-main-69:/drawable/twitter.xml"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-night-xhdpi_about_kotlin.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-night-xhdpi/about_kotlin.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-night-ldpi_about_droidcon.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-night-ldpi/about_droidcon.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-night-anydpi-v24_about_droidcon.xml.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-night-anydpi-v24/about_droidcon.xml"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-night-hdpi_about_droidcon.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-night-hdpi/about_droidcon.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable_about_droidcon.xml.flat",
+        "source": "com.droidcon.app.android-main-69:/drawable/about_droidcon.xml"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-night-anydpi-v24_about_kotlin.xml.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-night-anydpi-v24/about_kotlin.xml"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-night-xhdpi_about_droidcon.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-night-xhdpi/about_droidcon.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-night-mdpi_about_kotlin.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-night-mdpi/about_kotlin.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-mdpi_about_kotlin.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-mdpi/about_kotlin.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-night-mdpi_about_droidcon.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-night-mdpi/about_droidcon.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable_linkedin.xml.flat",
+        "source": "com.droidcon.app.android-main-69:/drawable/linkedin.xml"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-night-xxhdpi_about_droidcon.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-night-xxhdpi/about_droidcon.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-night-xxxhdpi_about_kotlin.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-night-xxxhdpi/about_kotlin.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-anydpi-v24_about_kotlin.xml.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-anydpi-v24/about_kotlin.xml"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-night-xxxhdpi_about_droidcon.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-night-xxxhdpi/about_droidcon.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-xxxhdpi_about_kotlin.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-xxxhdpi/about_kotlin.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-ldpi_about_kotlin.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-ldpi/about_kotlin.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable_ic_baseline_insert_invitation_24.xml.flat",
+        "source": "com.droidcon.app.android-main-69:/drawable/ic_baseline_insert_invitation_24.xml"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-xxhdpi_about_kotlin.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-xxhdpi/about_kotlin.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-nodpi_about_touchlab.png.flat",
+        "source": "com.droidcon.app.android-main-69:/drawable-nodpi/about_touchlab.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-hdpi_about_kotlin.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-hdpi/about_kotlin.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable_ic_splash_screen.xml.flat",
+        "source": "com.droidcon.app.android-main-69:/drawable/ic_splash_screen.xml"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.droidcon.app.android-main-69:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-night-xxhdpi_about_kotlin.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-night-xxhdpi/about_kotlin.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable-xhdpi_about_kotlin.png.flat",
+        "source": "com.droidcon.app.android-pngs-62:/drawable-xhdpi/about_kotlin.png"
+    },
+    {
+        "merged": "com.droidcon.app.android-debug-67:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.droidcon.app.android-main-69:/drawable/ic_launcher_foreground.xml"
+    }
+]

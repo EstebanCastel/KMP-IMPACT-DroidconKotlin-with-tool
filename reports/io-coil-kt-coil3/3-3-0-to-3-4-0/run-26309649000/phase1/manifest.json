@@ -1,0 +1,60 @@
+{
+  "before_dir": "/tmp/output/phase1/before",
+  "after_dir": "/tmp/output/phase1/after",
+  "version_change": {
+    "dependency_group": "io.coil-kt.coil3",
+    "version_key": "coil",
+    "before": "3.3.0",
+    "after": "3.4.0"
+  },
+  "init_script_injected": false,
+  "detekt_reports": {
+    "android": "/tmp/output/phase1/before/android/build/reports/detekt/detekt.xml"
+  },
+  "kover_reports": {
+    "ios": "/tmp/output/phase1/before/ios/build/reports/kover/report.xml"
+  },
+  "compilation_after": {
+    "status": "failure",
+    "errors": [
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt:96:55 Argument type mismatch: actual type is 'Long', but 'Duration' was expected.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt:96:117 Too many arguments for 'fun plus(duration: Duration): Instant'.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt:106:41 Argument type mismatch: actual type is 'Long', but 'Duration' was expected.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt:107:41 Too many arguments for 'fun plus(duration: Duration): Instant'.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt:115:53 Argument type mismatch: actual type is 'Long', but 'Duration' was expected.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt:115:112 Too many arguments for 'fun plus(duration: Duration): Instant'.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt:116:55 Argument type mismatch: actual type is 'Int', but 'Duration' was expected.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt:116:59 Too many arguments for 'fun plus(duration: Duration): Instant'.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultDateTimeService.kt:17:94 None of the following candidates is applicable:",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultDateTimeService.kt:19:96 Return type mismatch: expected 'kotlin.time.Instant', actual 'kotlinx.datetime.Instant'.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultSyncService.kt:73:81 None of the following candidates is applicable:",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultSyncService.kt:78:69 None of the following candidates is applicable:",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultSyncService.kt:338:62 Argument type mismatch: actual type is 'Int', but 'Duration' was expected.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultSyncService.kt:338:74 Too many arguments for 'fun plus(duration: Duration): Instant'.",
+      "e: file:///tmp/output/phase1/after/shared/src/iosMain/kotlin/co/touchlab/droidcon/service/IOSNotificationService.kt:79:62 Unresolved reference. None of the following candidates is applicable because of a receiver type mismatch:",
+      "e: file:///tmp/output/phase1/after/shared/src/iosMain/kotlin/co/touchlab/droidcon/service/IOSNotificationService.kt:80:37 Unresolved reference. None of the following candidates is applicable because of a receiver type mismatch:",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt:96:55 Argument type mismatch: actual type is 'Long', but 'Duration' was expected.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt:96:117 Too many arguments for 'fun plus(duration: Duration): Instant'.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt:106:41 Argument type mismatch: actual type is 'Long', but 'Duration' was expected.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt:107:41 Too many arguments for 'fun plus(duration: Duration): Instant'.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt:115:53 Argument type mismatch: actual type is 'Long', but 'Duration' was expected.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt:115:112 Too many arguments for 'fun plus(duration: Duration): Instant'.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt:116:55 Argument type mismatch: actual type is 'Int', but 'Duration' was expected.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt:116:59 Too many arguments for 'fun plus(duration: Duration): Instant'.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultDateTimeService.kt:17:94 None of the following candidates is applicable:",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultDateTimeService.kt:19:96 Return type mismatch: expected 'kotlin.time.Instant', actual 'kotlinx.datetime.Instant'.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultSyncService.kt:73:81 None of the following candidates is applicable:",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultSyncService.kt:78:69 None of the following candidates is applicable:",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultSyncService.kt:338:62 Argument type mismatch: actual type is 'Int', but 'Duration' was expected.",
+      "e: file:///tmp/output/phase1/after/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultSyncService.kt:338:74 Too many arguments for 'fun plus(duration: Duration): Instant'.",
+      "e: file:///tmp/output/phase1/after/shared/src/iosMain/kotlin/co/touchlab/droidcon/service/IOSNotificationService.kt:79:62 Unresolved reference. None of the following candidates is applicable because of a receiver type mismatch:",
+      "e: file:///tmp/output/phase1/after/shared/src/iosMain/kotlin/co/touchlab/droidcon/service/IOSNotificationService.kt:80:37 Unresolved reference. None of the following candidates is applicable because of a receiver type mismatch:"
+    ],
+    "tasks": [
+      "shared:compileKotlinMetadata",
+      "ios:compileKotlinIosX64",
+      "shared-ui:compileKotlinIosSimulatorArm64"
+    ]
+  },
+  "compile_targets": {}
+}

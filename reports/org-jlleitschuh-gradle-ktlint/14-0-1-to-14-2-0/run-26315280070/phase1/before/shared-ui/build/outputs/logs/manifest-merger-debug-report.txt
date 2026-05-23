@@ -1,0 +1,14 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /tmp/output/phase1/before/shared-ui/src/androidMain/AndroidManifest.xml:2:1-13
+INJECTED from /tmp/output/phase1/before/shared-ui/src/androidMain/AndroidManifest.xml:2:1-13
+	package
+		INJECTED from /tmp/output/phase1/before/shared-ui/src/androidMain/AndroidManifest.xml
+uses-sdk
+INJECTED from /tmp/output/phase1/before/shared-ui/src/androidMain/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /tmp/output/phase1/before/shared-ui/src/androidMain/AndroidManifest.xml
+INJECTED from /tmp/output/phase1/before/shared-ui/src/androidMain/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /tmp/output/phase1/before/shared-ui/src/androidMain/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /tmp/output/phase1/before/shared-ui/src/androidMain/AndroidManifest.xml

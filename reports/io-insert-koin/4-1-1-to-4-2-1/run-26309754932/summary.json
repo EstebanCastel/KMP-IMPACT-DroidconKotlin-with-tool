@@ -1,0 +1,187 @@
+{
+  "dependency_group": "io.insert-koin",
+  "version_before": "4.1.1",
+  "version_after": "4.2.1",
+  "risk_level": "high",
+  "recommendation": "Hold merge until impacted files are reviewed and targeted regression checks pass.",
+  "report_url": "",
+  "total_impacted_files": 46,
+  "total_impacted_screens": 14,
+  "direct_impacts": 9,
+  "transitive_impacts": 37,
+  "expect_actual_impacts": 2,
+  "expect_actual_pairs_total": 7,
+  "total_project_files": 169,
+  "dynamic_status": "skipped",
+  "dynamic_summary": "skipped",
+  "dynamic_diffs": 0,
+  "before_screens": 0,
+  "after_screens": 0,
+  "dynamic_nodes_before": 0,
+  "dynamic_nodes_after": 0,
+  "dynamic_structures_before": 0,
+  "dynamic_structures_after": 0,
+  "screen_mappings": 14,
+  "trace_entries": 46,
+  "seed_files": [
+    "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/MainActivity.kt",
+    "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/MainApp.kt",
+    "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/service/impl/DefaultFirebaseMessagingService.kt",
+    "/tmp/output/phase1/before/ios/src/iosMain/kotlin/co/touchlab/droidcon/ios/DependencyInjection.kt",
+    "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/Koin.android.kt",
+    "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/service/NotificationRescheduler.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/Koin.kt",
+    "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/Koin.ios.kt",
+    "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/UiModule.kt"
+  ],
+  "impacted_screens": [
+    "About",
+    "Application",
+    "BottomNavigation",
+    "Main",
+    "MainCompose",
+    "MainView",
+    "SessionBlock",
+    "SessionDay",
+    "SessionDetail",
+    "SessionList",
+    "Settings",
+    "SpeakerDetail",
+    "SponsorDetail",
+    "Sponsors"
+  ],
+  "top_impacted_files": [
+    {
+      "file_path": "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/MainActivity.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "main",
+      "rloc": 131,
+      "mcc": 12,
+      "declarations": [
+        "co.touchlab.droidcon.android.MainActivity"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/Koin.ios.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "ios",
+      "rloc": 77,
+      "mcc": 11,
+      "declarations": [
+        "co.touchlab.droidcon.get",
+        "co.touchlab.droidcon.get",
+        "co.touchlab.droidcon.get",
+        "co.touchlab.droidcon.get",
+        "co.touchlab.droidcon.get",
+        "co.touchlab.droidcon.getAny"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/Koin.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 265,
+      "mcc": 5,
+      "declarations": [
+        "co.touchlab.droidcon.initKoin",
+        "co.touchlab.droidcon.getWith"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/Koin.android.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "androidMain",
+      "rloc": 48,
+      "mcc": 3,
+      "declarations": []
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/service/impl/DefaultFirebaseMessagingService.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "main",
+      "rloc": 39,
+      "mcc": 2,
+      "declarations": [
+        "co.touchlab.droidcon.android.service.impl.DefaultFirebaseMessagingService"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/ios/src/iosMain/kotlin/co/touchlab/droidcon/ios/DependencyInjection.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "ios",
+      "rloc": 39,
+      "mcc": 2,
+      "declarations": [
+        "co.touchlab.droidcon.ios.initKoinIos",
+        "co.touchlab.droidcon.ios.BundleProvider"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/UiModule.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 102,
+      "mcc": 1,
+      "declarations": []
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/MainApp.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "main",
+      "rloc": 56,
+      "mcc": 1,
+      "declarations": [
+        "co.touchlab.droidcon.android.MainApp"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/service/NotificationRescheduler.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "androidMain",
+      "rloc": 24,
+      "mcc": 1,
+      "declarations": [
+        "co.touchlab.droidcon.service.NotificationRescheduler"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/service/AndroidNotificationService.kt",
+      "relation": "transitive",
+      "distance": 2,
+      "source_set": "androidMain",
+      "rloc": 229,
+      "mcc": 20,
+      "declarations": [
+        "co.touchlab.droidcon.service.AndroidNotificationService"
+      ]
+    }
+  ],
+  "compat_warnings": [],
+  "stack_detected": {
+    "kotlin": "2.2.21",
+    "agp": "8.12.0",
+    "compose-compiler": "1.5.15"
+  },
+  "version_key": "koin",
+  "compilation_after": "failure",
+  "compile_errors": 2,
+  "has_detekt": false,
+  "has_kover": true,
+  "tools_used": {
+    "tree_sitter": true,
+    "ksp": false,
+    "detekt": false,
+    "kover": true,
+    "droidbot": false,
+    "codecharta": true
+  }
+}

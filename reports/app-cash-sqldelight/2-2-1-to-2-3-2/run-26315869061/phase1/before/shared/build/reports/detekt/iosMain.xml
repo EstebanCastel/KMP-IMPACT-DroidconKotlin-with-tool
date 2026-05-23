@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="4.3">
+<file name="/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightDriverFactory.ios.kt">
+	<error line="7" column="14" severity="warning" message="The file name &apos;SqlDelightDriverFactory.ios&apos; does not match the name of the single top-level declaration &apos;SqlDelightDriverFactory&apos;." source="detekt.MatchingDeclarationName" />
+</file>
+<file name="/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/util/BundleResourceReader.kt">
+	<error line="45" column="1" severity="warning" message="Line detected, which is longer than the defined maximum line length in the code style." source="detekt.MaxLineLength" />
+	<error line="22" column="9" severity="warning" message="Forbidden TODO todo marker in comment, please do the changes." source="detekt.ForbiddenComment" />
+	<error line="44" column="17" severity="warning" message="Forbidden TODO todo marker in comment, please do the changes." source="detekt.ForbiddenComment" />
+	<error line="50" column="5" severity="warning" message="Private class BundleMarker is unused." source="detekt.UnusedPrivateClass" />
+</file>
+<file name="/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/Koin.ios.kt">
+	<error line="53" column="1" severity="warning" message="Line detected, which is longer than the defined maximum line length in the code style." source="detekt.MaxLineLength" />
+	<error line="59" column="1" severity="warning" message="Line detected, which is longer than the defined maximum line length in the code style." source="detekt.MaxLineLength" />
+	<error line="65" column="1" severity="warning" message="Line detected, which is longer than the defined maximum line length in the code style." source="detekt.MaxLineLength" />
+	<error line="71" column="1" severity="warning" message="Line detected, which is longer than the defined maximum line length in the code style." source="detekt.MaxLineLength" />
+	<error line="77" column="1" severity="warning" message="Line detected, which is longer than the defined maximum line length in the code style." source="detekt.MaxLineLength" />
+</file>
+<file name="/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/service/IOSNotificationService.kt">
+	<error line="44" column="26" severity="warning" message="Function initialize has 5 return statements which exceeds the limit of 2." source="detekt.ReturnCount" />
+	<error line="47" column="1" severity="warning" message="Line detected, which is longer than the defined maximum line length in the code style." source="detekt.MaxLineLength" />
+	<error line="78" column="1" severity="warning" message="Line detected, which is longer than the defined maximum line length in the code style." source="detekt.MaxLineLength" />
+	<error line="151" column="1" severity="warning" message="Line detected, which is longer than the defined maximum line length in the code style." source="detekt.MaxLineLength" />
+</file>
+<file name="/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/MainScope.kt">
+	<error line="21" column="5" severity="warning" message="Forbidden TODO todo marker in comment, please do the changes." source="detekt.ForbiddenComment" />
+</file>
+</checkstyle>

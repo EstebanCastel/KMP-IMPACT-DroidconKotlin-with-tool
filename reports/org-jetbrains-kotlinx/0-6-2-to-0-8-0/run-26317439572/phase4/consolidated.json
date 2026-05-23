@@ -1,0 +1,5077 @@
+{
+  "dependency_group": "org.jetbrains.kotlinx",
+  "version_before": "0.6.2",
+  "version_after": "0.8.0",
+  "static_impact": {
+    "dependency_group": "org.jetbrains.kotlinx",
+    "version_before": "0.6.2",
+    "version_after": "0.8.0",
+    "seed_files": [
+      "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/MainActivity.kt",
+      "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/MainApp.kt",
+      "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/service/impl/DefaultFirebaseMessagingService.kt",
+      "/tmp/output/phase1/before/ios/src/iosMain/kotlin/co/touchlab/droidcon/ios/util/NotificationLocalizedStringFactory.kt",
+      "/tmp/output/phase1/before/ios/src/iosMain/kotlin/co/touchlab/droidcon/ios/util/formatter/IOSDateFormatter.kt",
+      "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/service/AndroidNotificationService.kt",
+      "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/service/NotificationRescheduler.kt",
+      "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/util/formatter/AndroidDateFormatter.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/Koin.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/gateway/SettingsGateway.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/gateway/impl/DefaultSettingsGateway.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/repository/SettingsRepository.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/repository/impl/DefaultSettingsRepository.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/entity/Conference.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/gateway/SessionGateway.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/gateway/SponsorGateway.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/gateway/impl/DefaultSessionGateway.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/gateway/impl/DefaultSponsorGateway.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/ConferenceRepository.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/Repository.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/SessionRepository.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/BaseRepository.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightConferenceRepository.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightProfileRepository.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightRoomRepository.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSessionRepository.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSponsorGroupRepository.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSponsorRepository.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/ConferenceConfigProvider.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/DateTimeService.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultApiDataSource.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultConferenceConfigProvider.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultDateTimeService.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultFeedbackService.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultServerApi.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultSyncService.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/AboutDto.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/ConferencesDto.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/ScheduleDto.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/SpeakersDto.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/SponsorSessionsDto.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/SponsorsDto.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/json/AboutJsonResourceDataSource.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/json/JsonResourceReader.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/util/formatter/DateFormatter.kt",
+      "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/Koin.ios.kt",
+      "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/MainScope.kt",
+      "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/service/IOSNotificationService.kt",
+      "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/util/BundleResourceReader.kt",
+      "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/util/WrapMultiThreadCallback.kt",
+      "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionListView.kt",
+      "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/LocalDateTime+startOfMinute.kt",
+      "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt",
+      "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/WaitForLoadedContextModel.kt",
+      "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionBlockViewModel.kt",
+      "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDayViewModel.kt",
+      "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailScrollStateStorage.kt",
+      "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailViewModel.kt",
+      "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionListItemViewModel.kt",
+      "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorListViewModel.kt",
+      "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/util/ToSkiaImage.kt"
+    ],
+    "impacted_files": [
+      {
+        "file_path": "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/MainActivity.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "android.Manifest",
+          "android.content.Intent",
+          "android.content.pm.PackageManager",
+          "android.os.Build",
+          "android.os.Bundle",
+          "androidx.activity.ComponentActivity",
+          "androidx.activity.compose.setContent",
+          "androidx.activity.enableEdgeToEdge",
+          "androidx.activity.result.contract.ActivityResultContracts",
+          "androidx.compose.animation.Crossfade",
+          "androidx.compose.foundation.Image",
+          "androidx.compose.foundation.background",
+          "androidx.compose.foundation.layout.Box",
+          "androidx.compose.foundation.layout.fillMaxSize",
+          "androidx.compose.foundation.layout.padding",
+          "androidx.compose.runtime.LaunchedEffect",
+          "androidx.compose.runtime.getValue",
+          "androidx.compose.runtime.mutableStateOf",
+          "androidx.compose.runtime.remember",
+          "androidx.compose.runtime.setValue",
+          "androidx.compose.ui.Alignment",
+          "androidx.compose.ui.Modifier",
+          "androidx.compose.ui.res.painterResource",
+          "androidx.compose.ui.unit.dp",
+          "androidx.core.content.ContextCompat",
+          "androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen",
+          "androidx.lifecycle.lifecycleScope",
+          "co.touchlab.droidcon.application.service.NotificationSchedulingService",
+          "co.touchlab.droidcon.domain.service.AnalyticsService",
+          "co.touchlab.droidcon.service.AndroidNotificationService",
+          "co.touchlab.droidcon.ui.theme.Colors",
+          "co.touchlab.droidcon.ui.util.MainView",
+          "co.touchlab.droidcon.util.NavigationController",
+          "co.touchlab.droidcon.viewmodel.WaitForLoadedContextModel",
+          "com.droidcon.app.R",
+          "kotlinx.coroutines.awaitCancellation",
+          "kotlinx.coroutines.delay",
+          "kotlinx.coroutines.launch",
+          "org.brightify.hyperdrive.multiplatformx.LifecycleGraph",
+          "org.koin.core.component.KoinComponent",
+          "org.koin.core.component.inject"
+        ],
+        "metrics": {
+          "rloc": 131,
+          "functions": 4,
+          "mcc": 12,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.android.MainActivity"
+        ],
+        "source_set": "main"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/MainApp.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "android.app.Activity",
+          "android.app.Application",
+          "android.content.Context",
+          "android.content.SharedPreferences",
+          "co.touchlab.droidcon.android.service.impl.AndroidAnalyticsService",
+          "co.touchlab.droidcon.android.service.impl.DefaultParseUrlViewService",
+          "co.touchlab.droidcon.android.util.NotificationLocalizedStringFactory",
+          "co.touchlab.droidcon.application.service.NotificationSchedulingService",
+          "co.touchlab.droidcon.domain.service.AnalyticsService",
+          "co.touchlab.droidcon.domain.service.impl.ResourceReader",
+          "co.touchlab.droidcon.initKoin",
+          "co.touchlab.droidcon.service.ParseUrlViewService",
+          "co.touchlab.droidcon.ui.uiModule",
+          "co.touchlab.droidcon.util.ClasspathResourceReader",
+          "com.google.firebase.Firebase",
+          "com.google.firebase.analytics.analytics",
+          "com.russhwolf.settings.ExperimentalSettingsApi",
+          "com.russhwolf.settings.ObservableSettings",
+          "com.russhwolf.settings.SharedPreferencesSettings",
+          "kotlinx.coroutines.CoroutineScope",
+          "kotlinx.coroutines.Dispatchers",
+          "kotlinx.coroutines.SupervisorJob",
+          "org.koin.core.component.KoinComponent",
+          "org.koin.dsl.module"
+        ],
+        "metrics": {
+          "rloc": 56,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.android.MainApp"
+        ],
+        "source_set": "main"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/service/impl/DefaultFirebaseMessagingService.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "android.app.NotificationManager",
+          "androidx.core.app.NotificationCompat",
+          "androidx.core.content.getSystemService",
+          "co.touchlab.droidcon.application.service.Notification",
+          "co.touchlab.droidcon.service.AndroidNotificationService",
+          "com.google.firebase.messaging.FirebaseMessagingService",
+          "com.google.firebase.messaging.RemoteMessage",
+          "kotlinx.coroutines.MainScope",
+          "kotlinx.coroutines.launch",
+          "org.koin.android.ext.android.inject"
+        ],
+        "metrics": {
+          "rloc": 39,
+          "functions": 2,
+          "mcc": 2,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.android.service.impl.DefaultFirebaseMessagingService"
+        ],
+        "source_set": "main"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/ios/src/iosMain/kotlin/co/touchlab/droidcon/ios/util/NotificationLocalizedStringFactory.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.application.service.NotificationSchedulingService",
+          "kotlinx.cinterop.cstr",
+          "platform.Foundation.NSBundle",
+          "platform.Foundation.NSString",
+          "platform.Foundation.stringWithFormat"
+        ],
+        "metrics": {
+          "rloc": 34,
+          "functions": 4,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ios.util.NotificationLocalizedStringFactory"
+        ],
+        "source_set": "ios"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/ios/src/iosMain/kotlin/co/touchlab/droidcon/ios/util/formatter/IOSDateFormatter.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.util.formatter.DateFormatter",
+          "kotlinx.datetime.LocalDate",
+          "kotlinx.datetime.LocalDateTime",
+          "kotlinx.datetime.toNSDateComponents",
+          "platform.Foundation.NSCalendar",
+          "platform.Foundation.NSDateFormatter",
+          "platform.Foundation.NSDateFormatterNoStyle",
+          "platform.Foundation.NSDateFormatterShortStyle",
+          "platform.Foundation.NSLocale",
+          "platform.Foundation.currentLocale"
+        ],
+        "metrics": {
+          "rloc": 40,
+          "functions": 3,
+          "mcc": 2,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ios.util.formatter.IOSDateFormatter"
+        ],
+        "source_set": "ios"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/service/AndroidNotificationService.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "android.app.Activity",
+          "android.app.AlarmManager",
+          "android.app.NotificationChannel",
+          "android.app.NotificationManager",
+          "android.app.PendingIntent",
+          "android.content.Context",
+          "android.content.Intent",
+          "android.os.Build",
+          "android.os.RemoteException",
+          "androidx.core.app.NotificationCompat",
+          "co.touchlab.droidcon.application.service.Notification",
+          "co.touchlab.droidcon.application.service.NotificationService",
+          "co.touchlab.droidcon.domain.entity.Session",
+          "co.touchlab.droidcon.domain.repository.ConferenceRepository",
+          "co.touchlab.droidcon.domain.service.SyncService",
+          "co.touchlab.droidcon.shared.R",
+          "co.touchlab.droidcon.util.IdentifiableIntent",
+          "co.touchlab.kermit.Logger",
+          "com.russhwolf.settings.ObservableSettings",
+          "com.russhwolf.settings.get",
+          "com.russhwolf.settings.set",
+          "kotlin.time.Instant",
+          "kotlinx.serialization.encodeToString",
+          "kotlinx.serialization.json.Json"
+        ],
+        "metrics": {
+          "rloc": 229,
+          "functions": 1,
+          "mcc": 20,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.service.AndroidNotificationService"
+        ],
+        "source_set": "androidMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/service/NotificationRescheduler.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "android.content.BroadcastReceiver",
+          "android.content.Context",
+          "android.content.Intent",
+          "co.touchlab.droidcon.application.service.NotificationSchedulingService",
+          "kotlinx.coroutines.MainScope",
+          "kotlinx.coroutines.launch",
+          "org.koin.core.component.KoinComponent",
+          "org.koin.core.component.inject"
+        ],
+        "metrics": {
+          "rloc": 24,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.service.NotificationRescheduler"
+        ],
+        "source_set": "androidMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/util/formatter/AndroidDateFormatter.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.service.ConferenceConfigProvider",
+          "co.touchlab.droidcon.domain.service.DateTimeService",
+          "java.text.DateFormat",
+          "java.text.SimpleDateFormat",
+          "java.util.Date",
+          "java.util.Locale",
+          "kotlinx.datetime.LocalDate",
+          "kotlinx.datetime.LocalDateTime",
+          "kotlinx.datetime.atTime"
+        ],
+        "metrics": {
+          "rloc": 29,
+          "functions": 3,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.util.formatter.AndroidDateFormatter"
+        ],
+        "source_set": "androidMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/Koin.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "app.cash.sqldelight.ColumnAdapter",
+          "co.touchlab.droidcon.application.gateway.SettingsGateway",
+          "co.touchlab.droidcon.application.gateway.impl.DefaultSettingsGateway",
+          "co.touchlab.droidcon.application.repository.AboutRepository",
+          "co.touchlab.droidcon.application.repository.SettingsRepository",
+          "co.touchlab.droidcon.application.repository.impl.DefaultAboutRepository",
+          "co.touchlab.droidcon.application.repository.impl.DefaultSettingsRepository",
+          "co.touchlab.droidcon.application.service.NotificationSchedulingService",
+          "co.touchlab.droidcon.application.service.impl.DefaultNotificationSchedulingService",
+          "co.touchlab.droidcon.db.ConferenceTable",
+          "co.touchlab.droidcon.db.DroidconDatabase",
+          "co.touchlab.droidcon.db.SessionTable",
+          "co.touchlab.droidcon.db.SponsorGroupTable",
+          "co.touchlab.droidcon.domain.gateway.SessionGateway",
+          "co.touchlab.droidcon.domain.gateway.SponsorGateway",
+          "co.touchlab.droidcon.domain.gateway.impl.DefaultSessionGateway",
+          "co.touchlab.droidcon.domain.gateway.impl.DefaultSponsorGateway",
+          "co.touchlab.droidcon.domain.repository.ConferenceRepository",
+          "co.touchlab.droidcon.domain.repository.ProfileRepository",
+          "co.touchlab.droidcon.domain.repository.RoomRepository",
+          "co.touchlab.droidcon.domain.repository.SessionRepository",
+          "co.touchlab.droidcon.domain.repository.SponsorGroupRepository",
+          "co.touchlab.droidcon.domain.repository.SponsorRepository",
+          "co.touchlab.droidcon.domain.repository.impl.SqlDelightConferenceRepository",
+          "co.touchlab.droidcon.domain.repository.impl.SqlDelightProfileRepository",
+          "co.touchlab.droidcon.domain.repository.impl.SqlDelightRoomRepository",
+          "co.touchlab.droidcon.domain.repository.impl.SqlDelightSessionRepository",
+          "co.touchlab.droidcon.domain.repository.impl.SqlDelightSponsorGroupRepository",
+          "co.touchlab.droidcon.domain.repository.impl.SqlDelightSponsorRepository",
+          "co.touchlab.droidcon.domain.repository.impl.adapter.InstantSqlDelightAdapter",
+          "co.touchlab.droidcon.domain.service.ConferenceConfigProvider",
+          "co.touchlab.droidcon.domain.service.DateTimeService",
+          "co.touchlab.droidcon.domain.service.FeedbackService",
+          "co.touchlab.droidcon.domain.service.ScheduleService",
+          "co.touchlab.droidcon.domain.service.ServerApi",
+          "co.touchlab.droidcon.domain.service.SyncService",
+          "co.touchlab.droidcon.domain.service.UserIdProvider",
+          "co.touchlab.droidcon.domain.service.impl.DefaultApiDataSource",
+          "co.touchlab.droidcon.domain.service.impl.DefaultConferenceConfigProvider",
+          "co.touchlab.droidcon.domain.service.impl.DefaultDateTimeService",
+          "co.touchlab.droidcon.domain.service.impl.DefaultFeedbackService",
+          "co.touchlab.droidcon.domain.service.impl.DefaultScheduleService",
+          "co.touchlab.droidcon.domain.service.impl.DefaultServerApi",
+          "co.touchlab.droidcon.domain.service.impl.DefaultSyncService",
+          "co.touchlab.droidcon.domain.service.impl.DefaultUserIdProvider",
+          "co.touchlab.droidcon.domain.service.impl.json.AboutJsonResourceDataSource",
+          "co.touchlab.droidcon.domain.service.impl.json.JsonResourceReader",
+          "io.ktor.client.HttpClient",
+          "io.ktor.client.plugins.HttpTimeout",
+          "kotlin.time.Clock",
+          "kotlinx.coroutines.runBlocking",
+          "kotlinx.datetime.TimeZone",
+          "kotlinx.serialization.json.Json",
+          "org.koin.core.KoinApplication",
+          "org.koin.core.context.startKoin",
+          "org.koin.core.module.Module",
+          "org.koin.core.parameter.parametersOf",
+          "org.koin.core.qualifier.qualifier",
+          "org.koin.core.scope.Scope",
+          "org.koin.dsl.module"
+        ],
+        "metrics": {
+          "rloc": 265,
+          "functions": 7,
+          "mcc": 5,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.initKoin",
+          "co.touchlab.droidcon.getWith"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/gateway/SettingsGateway.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.application.composite.Settings",
+          "kotlinx.coroutines.flow.StateFlow"
+        ],
+        "metrics": {
+          "rloc": 9,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.application.gateway.SettingsGateway"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/gateway/impl/DefaultSettingsGateway.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.application.composite.Settings",
+          "co.touchlab.droidcon.application.gateway.SettingsGateway",
+          "co.touchlab.droidcon.application.repository.SettingsRepository",
+          "kotlinx.coroutines.flow.StateFlow"
+        ],
+        "metrics": {
+          "rloc": 17,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.application.gateway.impl.DefaultSettingsGateway"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/repository/SettingsRepository.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.application.composite.Settings",
+          "kotlinx.coroutines.flow.StateFlow"
+        ],
+        "metrics": {
+          "rloc": 10,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.application.repository.SettingsRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/repository/impl/DefaultSettingsRepository.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.application.composite.Settings",
+          "co.touchlab.droidcon.application.repository.SettingsRepository",
+          "com.russhwolf.settings.ExperimentalSettingsApi",
+          "com.russhwolf.settings.ObservableSettings",
+          "com.russhwolf.settings.get",
+          "com.russhwolf.settings.set",
+          "kotlinx.coroutines.flow.MutableStateFlow"
+        ],
+        "metrics": {
+          "rloc": 62,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.application.repository.impl.DefaultSettingsRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.application.composite.Settings",
+          "co.touchlab.droidcon.application.repository.SettingsRepository",
+          "co.touchlab.droidcon.application.service.Notification",
+          "co.touchlab.droidcon.application.service.NotificationSchedulingService",
+          "co.touchlab.droidcon.application.service.NotificationService",
+          "co.touchlab.droidcon.domain.entity.Session",
+          "co.touchlab.droidcon.domain.repository.RoomRepository",
+          "co.touchlab.droidcon.domain.repository.SessionRepository",
+          "co.touchlab.droidcon.domain.service.ConferenceConfigProvider",
+          "co.touchlab.droidcon.domain.service.DateTimeService",
+          "com.russhwolf.settings.ObservableSettings",
+          "com.russhwolf.settings.set",
+          "kotlinx.coroutines.coroutineScope",
+          "kotlinx.coroutines.flow.Flow",
+          "kotlinx.coroutines.flow.combine",
+          "kotlinx.coroutines.flow.distinctUntilChanged",
+          "kotlinx.coroutines.flow.take",
+          "kotlinx.coroutines.launch",
+          "kotlinx.datetime.DateTimeUnit",
+          "kotlinx.datetime.plus",
+          "kotlinx.serialization.encodeToString",
+          "kotlinx.serialization.json.Json"
+        ],
+        "metrics": {
+          "rloc": 124,
+          "functions": 0,
+          "mcc": 8,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.application.service.impl.DefaultNotificationSchedulingService"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/entity/Conference.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "kotlinx.datetime.TimeZone"
+        ],
+        "metrics": {
+          "rloc": 18,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.entity.Conference"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/gateway/SessionGateway.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.composite.ScheduleItem",
+          "co.touchlab.droidcon.domain.entity.Session",
+          "kotlinx.coroutines.flow.Flow"
+        ],
+        "metrics": {
+          "rloc": 12,
+          "functions": 3,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.gateway.SessionGateway"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/gateway/SponsorGateway.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.composite.SponsorGroupWithSponsors",
+          "co.touchlab.droidcon.domain.entity.Profile",
+          "co.touchlab.droidcon.domain.entity.Sponsor",
+          "kotlinx.coroutines.flow.Flow"
+        ],
+        "metrics": {
+          "rloc": 10,
+          "functions": 2,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.gateway.SponsorGateway"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/gateway/impl/DefaultSessionGateway.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.composite.ScheduleItem",
+          "co.touchlab.droidcon.domain.entity.Session",
+          "co.touchlab.droidcon.domain.gateway.SessionGateway",
+          "co.touchlab.droidcon.domain.repository.ProfileRepository",
+          "co.touchlab.droidcon.domain.repository.RoomRepository",
+          "co.touchlab.droidcon.domain.repository.SessionRepository",
+          "co.touchlab.droidcon.domain.service.ConferenceConfigProvider",
+          "co.touchlab.droidcon.domain.service.ScheduleService",
+          "kotlinx.coroutines.flow.Flow",
+          "kotlinx.coroutines.flow.flatMapLatest",
+          "kotlinx.coroutines.flow.map"
+        ],
+        "metrics": {
+          "rloc": 52,
+          "functions": 3,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.gateway.impl.DefaultSessionGateway"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/gateway/impl/DefaultSponsorGateway.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.composite.SponsorGroupWithSponsors",
+          "co.touchlab.droidcon.domain.entity.Profile",
+          "co.touchlab.droidcon.domain.entity.Sponsor",
+          "co.touchlab.droidcon.domain.gateway.SponsorGateway",
+          "co.touchlab.droidcon.domain.repository.ProfileRepository",
+          "co.touchlab.droidcon.domain.repository.SponsorGroupRepository",
+          "co.touchlab.droidcon.domain.repository.SponsorRepository",
+          "co.touchlab.droidcon.domain.service.ConferenceConfigProvider",
+          "kotlinx.coroutines.flow.Flow",
+          "kotlinx.coroutines.flow.map"
+        ],
+        "metrics": {
+          "rloc": 31,
+          "functions": 2,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.gateway.impl.DefaultSponsorGateway"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/ConferenceRepository.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.entity.Conference",
+          "kotlinx.coroutines.flow.Flow"
+        ],
+        "metrics": {
+          "rloc": 12,
+          "functions": 2,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.repository.ConferenceRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/Repository.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.entity.DomainEntity",
+          "kotlinx.coroutines.flow.Flow"
+        ],
+        "metrics": {
+          "rloc": 18,
+          "functions": 10,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.repository.Repository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/SessionRepository.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.entity.Session",
+          "kotlinx.coroutines.flow.Flow"
+        ],
+        "metrics": {
+          "rloc": 13,
+          "functions": 3,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.repository.SessionRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/BaseRepository.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.entity.DomainEntity",
+          "co.touchlab.droidcon.domain.repository.Repository",
+          "kotlinx.coroutines.flow.Flow",
+          "kotlinx.coroutines.flow.first"
+        ],
+        "metrics": {
+          "rloc": 42,
+          "functions": 6,
+          "mcc": 8,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.repository.impl.BaseRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightConferenceRepository.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "app.cash.sqldelight.coroutines.asFlow",
+          "app.cash.sqldelight.coroutines.mapToList",
+          "app.cash.sqldelight.coroutines.mapToOne",
+          "co.touchlab.droidcon.db.ConferenceQueries",
+          "co.touchlab.droidcon.domain.entity.Conference",
+          "co.touchlab.droidcon.domain.repository.ConferenceRepository",
+          "co.touchlab.kermit.Logger",
+          "kotlinx.coroutines.Dispatchers",
+          "kotlinx.coroutines.flow.Flow"
+        ],
+        "metrics": {
+          "rloc": 90,
+          "functions": 2,
+          "mcc": 3,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.repository.impl.SqlDelightConferenceRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightProfileRepository.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "app.cash.sqldelight.coroutines.asFlow",
+          "app.cash.sqldelight.coroutines.mapToList",
+          "app.cash.sqldelight.coroutines.mapToOne",
+          "app.cash.sqldelight.coroutines.mapToOneOrNull",
+          "co.touchlab.droidcon.composite.Url",
+          "co.touchlab.droidcon.db.ProfileQueries",
+          "co.touchlab.droidcon.db.SessionSpeakerQueries",
+          "co.touchlab.droidcon.db.SponsorRepresentativeQueries",
+          "co.touchlab.droidcon.domain.entity.Profile",
+          "co.touchlab.droidcon.domain.entity.Session",
+          "co.touchlab.droidcon.domain.entity.Sponsor",
+          "co.touchlab.droidcon.domain.repository.ProfileRepository",
+          "kotlinx.coroutines.Dispatchers",
+          "kotlinx.coroutines.flow.Flow"
+        ],
+        "metrics": {
+          "rloc": 104,
+          "functions": 9,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.repository.impl.SqlDelightProfileRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightRoomRepository.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "app.cash.sqldelight.coroutines.asFlow",
+          "app.cash.sqldelight.coroutines.mapToList",
+          "app.cash.sqldelight.coroutines.mapToOne",
+          "app.cash.sqldelight.coroutines.mapToOneOrNull",
+          "co.touchlab.droidcon.db.RoomQueries",
+          "co.touchlab.droidcon.domain.entity.Room",
+          "co.touchlab.droidcon.domain.repository.RoomRepository",
+          "kotlinx.coroutines.Dispatchers",
+          "kotlinx.coroutines.flow.Flow"
+        ],
+        "metrics": {
+          "rloc": 33,
+          "functions": 7,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.repository.impl.SqlDelightRoomRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSessionRepository.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "app.cash.sqldelight.coroutines.asFlow",
+          "app.cash.sqldelight.coroutines.mapToList",
+          "app.cash.sqldelight.coroutines.mapToOne",
+          "app.cash.sqldelight.coroutines.mapToOneOrNull",
+          "co.touchlab.droidcon.db.SessionQueries",
+          "co.touchlab.droidcon.domain.entity.Room",
+          "co.touchlab.droidcon.domain.entity.Session",
+          "co.touchlab.droidcon.domain.repository.SessionRepository",
+          "co.touchlab.droidcon.domain.service.DateTimeService",
+          "kotlin.time.Instant",
+          "kotlinx.coroutines.Dispatchers",
+          "kotlinx.coroutines.flow.Flow",
+          "kotlinx.coroutines.flow.first"
+        ],
+        "metrics": {
+          "rloc": 96,
+          "functions": 10,
+          "mcc": 5,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.repository.impl.SqlDelightSessionRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSponsorGroupRepository.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "app.cash.sqldelight.coroutines.asFlow",
+          "app.cash.sqldelight.coroutines.mapToList",
+          "app.cash.sqldelight.coroutines.mapToOne",
+          "app.cash.sqldelight.coroutines.mapToOneOrNull",
+          "co.touchlab.droidcon.db.SponsorGroupQueries",
+          "co.touchlab.droidcon.domain.entity.SponsorGroup",
+          "co.touchlab.droidcon.domain.repository.SponsorGroupRepository",
+          "kotlinx.coroutines.Dispatchers",
+          "kotlinx.coroutines.flow.Flow"
+        ],
+        "metrics": {
+          "rloc": 43,
+          "functions": 7,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.repository.impl.SqlDelightSponsorGroupRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSponsorRepository.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "app.cash.sqldelight.coroutines.asFlow",
+          "app.cash.sqldelight.coroutines.mapToList",
+          "app.cash.sqldelight.coroutines.mapToOne",
+          "app.cash.sqldelight.coroutines.mapToOneOrNull",
+          "co.touchlab.droidcon.composite.Url",
+          "co.touchlab.droidcon.db.SponsorQueries",
+          "co.touchlab.droidcon.domain.entity.Sponsor",
+          "co.touchlab.droidcon.domain.repository.SponsorRepository",
+          "kotlinx.coroutines.Dispatchers",
+          "kotlinx.coroutines.flow.Flow"
+        ],
+        "metrics": {
+          "rloc": 57,
+          "functions": 7,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.repository.impl.SqlDelightSponsorRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/ConferenceConfigProvider.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.entity.Conference",
+          "kotlinx.coroutines.flow.Flow",
+          "kotlinx.datetime.TimeZone"
+        ],
+        "metrics": {
+          "rloc": 16,
+          "functions": 8,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.ConferenceConfigProvider"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/DateTimeService.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "kotlin.time.Instant",
+          "kotlinx.datetime.LocalDateTime",
+          "kotlinx.datetime.TimeZone"
+        ],
+        "metrics": {
+          "rloc": 16,
+          "functions": 6,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.DateTimeService",
+          "co.touchlab.droidcon.domain.service.toConferenceDateTime",
+          "co.touchlab.droidcon.domain.service.fromConferenceDateTime"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultApiDataSource.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.service.ConferenceConfigProvider",
+          "co.touchlab.droidcon.domain.service.impl.dto.ConferencesDto",
+          "co.touchlab.droidcon.domain.service.impl.dto.ScheduleDto",
+          "co.touchlab.droidcon.domain.service.impl.dto.SpeakersDto",
+          "co.touchlab.droidcon.domain.service.impl.dto.SponsorSessionsDto",
+          "co.touchlab.droidcon.domain.service.impl.dto.SponsorsDto",
+          "io.ktor.client.HttpClient",
+          "io.ktor.client.request.HttpRequestBuilder",
+          "io.ktor.client.request.get",
+          "io.ktor.client.statement.bodyAsText",
+          "io.ktor.http.encodedPath",
+          "io.ktor.http.takeFrom",
+          "kotlinx.serialization.builtins.ListSerializer",
+          "kotlinx.serialization.json.Json"
+        ],
+        "metrics": {
+          "rloc": 71,
+          "functions": 0,
+          "mcc": 3,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.impl.DefaultApiDataSource"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultConferenceConfigProvider.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.entity.Conference",
+          "co.touchlab.droidcon.domain.repository.ConferenceRepository",
+          "co.touchlab.droidcon.domain.service.ConferenceConfigProvider",
+          "co.touchlab.kermit.Logger",
+          "kotlinx.coroutines.flow.Flow",
+          "kotlinx.coroutines.flow.MutableStateFlow",
+          "kotlinx.coroutines.flow.StateFlow",
+          "kotlinx.datetime.TimeZone"
+        ],
+        "metrics": {
+          "rloc": 31,
+          "functions": 8,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.impl.DefaultConferenceConfigProvider"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultDateTimeService.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.service.DateTimeService",
+          "kotlin.time.Clock",
+          "kotlin.time.Instant",
+          "kotlinx.datetime.LocalDateTime",
+          "kotlinx.datetime.TimeZone",
+          "kotlinx.datetime.toInstant",
+          "kotlinx.datetime.toLocalDateTime"
+        ],
+        "metrics": {
+          "rloc": 14,
+          "functions": 4,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.impl.DefaultDateTimeService"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultFeedbackService.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.entity.Session",
+          "co.touchlab.droidcon.domain.gateway.SessionGateway",
+          "co.touchlab.droidcon.domain.service.FeedbackService",
+          "com.russhwolf.settings.ExperimentalSettingsApi",
+          "com.russhwolf.settings.ObservableSettings",
+          "com.russhwolf.settings.set",
+          "kotlin.time.Clock",
+          "kotlinx.coroutines.flow.first",
+          "kotlinx.serialization.json.Json"
+        ],
+        "metrics": {
+          "rloc": 39,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.impl.DefaultFeedbackService"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultServerApi.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.entity.Session",
+          "co.touchlab.droidcon.domain.service.ServerApi",
+          "co.touchlab.droidcon.domain.service.UserIdProvider",
+          "io.ktor.client.HttpClient",
+          "io.ktor.client.request.HttpRequestBuilder",
+          "io.ktor.client.request.forms.submitForm",
+          "io.ktor.http.HttpMethod",
+          "io.ktor.http.Parameters",
+          "io.ktor.http.encodedPath",
+          "io.ktor.http.isSuccess",
+          "io.ktor.http.takeFrom",
+          "kotlinx.serialization.json.Json"
+        ],
+        "metrics": {
+          "rloc": 40,
+          "functions": 0,
+          "mcc": 3,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.impl.DefaultServerApi"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultSyncService.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.composite.Url",
+          "co.touchlab.droidcon.db.DroidconDatabase",
+          "co.touchlab.droidcon.domain.entity.Conference",
+          "co.touchlab.droidcon.domain.entity.Profile",
+          "co.touchlab.droidcon.domain.entity.Room",
+          "co.touchlab.droidcon.domain.entity.Session",
+          "co.touchlab.droidcon.domain.entity.Sponsor",
+          "co.touchlab.droidcon.domain.entity.SponsorGroup",
+          "co.touchlab.droidcon.domain.repository.ConferenceRepository",
+          "co.touchlab.droidcon.domain.repository.ProfileRepository",
+          "co.touchlab.droidcon.domain.repository.RoomRepository",
+          "co.touchlab.droidcon.domain.repository.SessionRepository",
+          "co.touchlab.droidcon.domain.repository.SponsorGroupRepository",
+          "co.touchlab.droidcon.domain.repository.SponsorRepository",
+          "co.touchlab.droidcon.domain.service.DateTimeService",
+          "co.touchlab.droidcon.domain.service.ServerApi",
+          "co.touchlab.droidcon.domain.service.SyncService",
+          "co.touchlab.droidcon.domain.service.fromConferenceDateTime",
+          "co.touchlab.droidcon.domain.service.impl.dto.ScheduleDto",
+          "co.touchlab.droidcon.domain.service.impl.dto.SpeakersDto",
+          "co.touchlab.droidcon.domain.service.impl.dto.SpeakersDto.LinkType",
+          "co.touchlab.droidcon.domain.service.impl.dto.SponsorSessionsDto",
+          "co.touchlab.droidcon.domain.service.impl.dto.SponsorsDto",
+          "co.touchlab.kermit.Logger",
+          "kotlin.time.Instant",
+          "kotlinx.coroutines.coroutineScope",
+          "kotlinx.coroutines.delay",
+          "kotlinx.coroutines.flow.first",
+          "kotlinx.coroutines.isActive",
+          "kotlinx.coroutines.launch",
+          "kotlinx.datetime.DateTimeUnit",
+          "kotlinx.datetime.LocalDateTime",
+          "kotlinx.datetime.TimeZone",
+          "kotlinx.datetime.minus",
+          "kotlinx.datetime.plus"
+        ],
+        "metrics": {
+          "rloc": 440,
+          "functions": 1,
+          "mcc": 39,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.impl.DefaultSyncService"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/AboutDto.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "kotlinx.serialization.Serializable"
+        ],
+        "metrics": {
+          "rloc": 6,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.impl.dto.AboutDto"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/ConferencesDto.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "kotlinx.serialization.SerialName",
+          "kotlinx.serialization.Serializable"
+        ],
+        "metrics": {
+          "rloc": 24,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.impl.dto.ConferencesDto"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/ScheduleDto.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "kotlinx.serialization.SerialName",
+          "kotlinx.serialization.Serializable",
+          "kotlinx.serialization.json.JsonArray"
+        ],
+        "metrics": {
+          "rloc": 32,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.impl.dto.ScheduleDto"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/SpeakersDto.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "kotlinx.serialization.KSerializer",
+          "kotlinx.serialization.Serializable",
+          "kotlinx.serialization.descriptors.PrimitiveKind",
+          "kotlinx.serialization.descriptors.PrimitiveSerialDescriptor",
+          "kotlinx.serialization.descriptors.SerialDescriptor",
+          "kotlinx.serialization.encoding.Decoder",
+          "kotlinx.serialization.encoding.Encoder",
+          "kotlinx.serialization.json.JsonArray"
+        ],
+        "metrics": {
+          "rloc": 57,
+          "functions": 2,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.impl.dto.SpeakersDto"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/SponsorSessionsDto.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "kotlinx.serialization.Serializable"
+        ],
+        "metrics": {
+          "rloc": 10,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.impl.dto.SponsorSessionsDto"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/SponsorsDto.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "kotlinx.serialization.SerialName",
+          "kotlinx.serialization.Serializable"
+        ],
+        "metrics": {
+          "rloc": 30,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.impl.dto.SponsorsDto"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/json/AboutJsonResourceDataSource.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.service.impl.dto.AboutDto",
+          "kotlinx.serialization.builtins.ListSerializer"
+        ],
+        "metrics": {
+          "rloc": 7,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.impl.json.AboutJsonResourceDataSource"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/json/JsonResourceReader.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.service.impl.ResourceReader",
+          "kotlinx.serialization.DeserializationStrategy",
+          "kotlinx.serialization.json.Json"
+        ],
+        "metrics": {
+          "rloc": 10,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.impl.json.JsonResourceReader"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/util/formatter/DateFormatter.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "kotlinx.datetime.LocalDate",
+          "kotlinx.datetime.LocalDateTime"
+        ],
+        "metrics": {
+          "rloc": 8,
+          "functions": 3,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.util.formatter.DateFormatter"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/Koin.ios.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "app.cash.sqldelight.db.SqlDriver",
+          "co.touchlab.droidcon.application.service.NotificationService",
+          "co.touchlab.droidcon.domain.repository.impl.SqlDelightDriverFactory",
+          "co.touchlab.droidcon.service.IOSNotificationService",
+          "co.touchlab.kermit.Logger",
+          "co.touchlab.kermit.NSLogWriter",
+          "co.touchlab.kermit.StaticConfig",
+          "io.ktor.client.engine.HttpClientEngine",
+          "io.ktor.client.engine.darwin.Darwin",
+          "kotlinx.cinterop.BetaInteropApi",
+          "kotlinx.cinterop.ObjCClass",
+          "kotlinx.cinterop.ObjCObject",
+          "kotlinx.cinterop.ObjCProtocol",
+          "kotlinx.cinterop.getOriginalKotlinClass",
+          "org.koin.core.Koin",
+          "org.koin.core.parameter.ParametersDefinition",
+          "org.koin.core.parameter.parametersOf",
+          "org.koin.core.qualifier.Qualifier",
+          "org.koin.dsl.module"
+        ],
+        "metrics": {
+          "rloc": 77,
+          "functions": 6,
+          "mcc": 11,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.get",
+          "co.touchlab.droidcon.get",
+          "co.touchlab.droidcon.get",
+          "co.touchlab.droidcon.get",
+          "co.touchlab.droidcon.get",
+          "co.touchlab.droidcon.getAny"
+        ],
+        "source_set": "ios"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/MainScope.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.util.printThrowable",
+          "co.touchlab.kermit.Logger",
+          "kotlin.coroutines.CoroutineContext",
+          "kotlinx.coroutines.CoroutineExceptionHandler",
+          "kotlinx.coroutines.CoroutineScope",
+          "kotlinx.coroutines.SupervisorJob"
+        ],
+        "metrics": {
+          "rloc": 22,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.MainScope"
+        ],
+        "source_set": "ios"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/service/IOSNotificationService.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.application.service.Notification",
+          "co.touchlab.droidcon.application.service.NotificationService",
+          "co.touchlab.droidcon.domain.entity.Session",
+          "co.touchlab.droidcon.domain.service.ConferenceConfigProvider",
+          "co.touchlab.droidcon.domain.service.SyncService",
+          "co.touchlab.droidcon.util.wrapMultiThreadCallback",
+          "co.touchlab.kermit.Logger",
+          "kotlin.time.Instant",
+          "kotlinx.datetime.toNSDate",
+          "platform.Foundation.NSCalendar",
+          "platform.Foundation.NSCalendarUnitDay",
+          "platform.Foundation.NSCalendarUnitHour",
+          "platform.Foundation.NSCalendarUnitMinute",
+          "platform.Foundation.NSCalendarUnitMonth",
+          "platform.Foundation.NSCalendarUnitSecond",
+          "platform.Foundation.NSCalendarUnitTimeZone",
+          "platform.Foundation.NSCalendarUnitYear",
+          "platform.Foundation.NSError",
+          "platform.UserNotifications.UNAuthorizationOptionAlert",
+          "platform.UserNotifications.UNAuthorizationOptionSound",
+          "platform.UserNotifications.UNAuthorizationStatusAuthorized",
+          "platform.UserNotifications.UNAuthorizationStatusDenied",
+          "platform.UserNotifications.UNAuthorizationStatusNotDetermined",
+          "platform.UserNotifications.UNCalendarNotificationTrigger",
+          "platform.UserNotifications.UNMutableNotificationContent",
+          "platform.UserNotifications.UNNotificationRequest",
+          "platform.UserNotifications.UNNotificationSound",
+          "platform.UserNotifications.UNUserNotificationCenter"
+        ],
+        "metrics": {
+          "rloc": 162,
+          "functions": 1,
+          "mcc": 15,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.service.IOSNotificationService"
+        ],
+        "source_set": "ios"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/util/BundleResourceReader.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.service.impl.ResourceReader",
+          "kotlinx.cinterop.BetaInteropApi",
+          "kotlinx.cinterop.ObjCObjectVar",
+          "kotlinx.cinterop.alloc",
+          "kotlinx.cinterop.memScoped",
+          "kotlinx.cinterop.ptr",
+          "kotlinx.cinterop.value",
+          "platform.Foundation.NSBundle",
+          "platform.Foundation.NSError",
+          "platform.Foundation.NSString",
+          "platform.Foundation.NSUTF8StringEncoding",
+          "platform.Foundation.stringWithContentsOfFile",
+          "platform.darwin.NSObject",
+          "platform.darwin.NSObjectMeta"
+        ],
+        "metrics": {
+          "rloc": 44,
+          "functions": 1,
+          "mcc": 3,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.util.BundleResourceReader"
+        ],
+        "source_set": "ios"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/util/WrapMultiThreadCallback.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "kotlinx.coroutines.CompletableDeferred"
+        ],
+        "metrics": {
+          "rloc": 14,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.util.wrapMultiThreadCallback",
+          "co.touchlab.droidcon.util.wrapMultiThreadCallback"
+        ],
+        "source_set": "ios"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionListView.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "androidx.compose.foundation.ExperimentalFoundationApi",
+          "androidx.compose.foundation.background",
+          "androidx.compose.foundation.layout.Arrangement",
+          "androidx.compose.foundation.layout.Box",
+          "androidx.compose.foundation.layout.Column",
+          "androidx.compose.foundation.layout.PaddingValues",
+          "androidx.compose.foundation.layout.fillMaxSize",
+          "androidx.compose.foundation.layout.fillMaxWidth",
+          "androidx.compose.foundation.layout.height",
+          "androidx.compose.foundation.layout.padding",
+          "androidx.compose.foundation.layout.size",
+          "androidx.compose.foundation.layout.width",
+          "androidx.compose.foundation.lazy.LazyColumn",
+          "androidx.compose.foundation.lazy.items",
+          "androidx.compose.foundation.lazy.rememberLazyListState",
+          "androidx.compose.foundation.pager.HorizontalPager",
+          "androidx.compose.foundation.pager.rememberPagerState",
+          "androidx.compose.foundation.shape.RoundedCornerShape",
+          "androidx.compose.material.icons.Icons",
+          "androidx.compose.material.icons.filled.DateRange",
+          "androidx.compose.material3.CenterAlignedTopAppBar",
+          "androidx.compose.material3.ExperimentalMaterial3Api",
+          "androidx.compose.material3.Icon",
+          "androidx.compose.material3.MaterialTheme",
+          "androidx.compose.material3.Scaffold",
+          "androidx.compose.material3.Tab",
+          "androidx.compose.material3.TabRow",
+          "androidx.compose.material3.TabRowDefaults",
+          "androidx.compose.material3.TabRowDefaults.tabIndicatorOffset",
+          "androidx.compose.material3.Text",
+          "androidx.compose.material3.TopAppBarDefaults",
+          "androidx.compose.material3.rememberTopAppBarState",
+          "androidx.compose.runtime.Composable",
+          "androidx.compose.runtime.LaunchedEffect",
+          "androidx.compose.runtime.getValue",
+          "androidx.compose.runtime.mutableStateOf",
+          "androidx.compose.runtime.remember",
+          "androidx.compose.runtime.rememberCoroutineScope",
+          "androidx.compose.runtime.setValue",
+          "androidx.compose.runtime.snapshotFlow",
+          "androidx.compose.ui.Alignment",
+          "androidx.compose.ui.Modifier",
+          "androidx.compose.ui.draw.clip",
+          "androidx.compose.ui.input.nestedscroll.nestedScroll",
+          "androidx.compose.ui.layout.onSizeChanged",
+          "androidx.compose.ui.platform.LocalDensity",
+          "androidx.compose.ui.text.font.FontWeight",
+          "androidx.compose.ui.text.style.TextAlign",
+          "androidx.compose.ui.unit.IntSize",
+          "androidx.compose.ui.unit.dp",
+          "co.touchlab.droidcon.ui.theme.Dimensions",
+          "co.touchlab.droidcon.ui.util.observeAsState",
+          "co.touchlab.droidcon.util.NavigationStack",
+          "co.touchlab.droidcon.viewmodel.session.BaseSessionListViewModel",
+          "co.touchlab.droidcon.viewmodel.session.SessionDayViewModel",
+          "co.touchlab.kermit.Logger",
+          "kotlinx.coroutines.launch"
+        ],
+        "metrics": {
+          "rloc": 211,
+          "functions": 0,
+          "mcc": 7,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.session.SessionListView",
+          "co.touchlab.droidcon.ui.session.TabIndicator",
+          "co.touchlab.droidcon.ui.session.EmptyView"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/LocalDateTime+startOfMinute.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "kotlinx.datetime.LocalDateTime"
+        ],
+        "metrics": {
+          "rloc": 5,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.application.gateway.SettingsGateway",
+          "co.touchlab.droidcon.application.service.Notification",
+          "co.touchlab.droidcon.application.service.NotificationSchedulingService",
+          "co.touchlab.droidcon.application.service.NotificationService",
+          "co.touchlab.droidcon.domain.entity.Conference",
+          "co.touchlab.droidcon.domain.repository.ConferenceRepository",
+          "co.touchlab.droidcon.domain.service.FeedbackService",
+          "co.touchlab.droidcon.domain.service.SyncService",
+          "co.touchlab.droidcon.service.DeepLinkNotificationHandler",
+          "co.touchlab.droidcon.viewmodel.session.AgendaViewModel",
+          "co.touchlab.droidcon.viewmodel.session.ScheduleViewModel",
+          "co.touchlab.droidcon.viewmodel.settings.SettingsViewModel",
+          "co.touchlab.droidcon.viewmodel.sponsor.SponsorListViewModel",
+          "co.touchlab.kermit.Logger",
+          "kotlinx.coroutines.flow.MutableStateFlow",
+          "org.brightify.hyperdrive.multiplatformx.BaseViewModel",
+          "org.brightify.hyperdrive.multiplatformx.property.MutableObservableProperty",
+          "org.brightify.hyperdrive.multiplatformx.property.ObservableProperty"
+        ],
+        "metrics": {
+          "rloc": 198,
+          "functions": 4,
+          "mcc": 15,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.ApplicationViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/WaitForLoadedContextModel.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.application.gateway.SettingsGateway",
+          "co.touchlab.droidcon.domain.entity.Conference",
+          "co.touchlab.droidcon.domain.service.ConferenceConfigProvider",
+          "co.touchlab.droidcon.domain.service.SyncService",
+          "co.touchlab.kermit.Logger",
+          "kotlinx.coroutines.Dispatchers",
+          "kotlinx.coroutines.IO",
+          "kotlinx.coroutines.flow.MutableStateFlow",
+          "kotlinx.coroutines.flow.StateFlow",
+          "kotlinx.coroutines.launch",
+          "kotlinx.coroutines.withContext",
+          "org.brightify.hyperdrive.multiplatformx.BaseViewModel"
+        ],
+        "metrics": {
+          "rloc": 47,
+          "functions": 0,
+          "mcc": 2,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.WaitForLoadedContextModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionBlockViewModel.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.composite.ScheduleItem",
+          "co.touchlab.droidcon.util.formatter.DateFormatter",
+          "kotlinx.datetime.LocalDateTime",
+          "org.brightify.hyperdrive.multiplatformx.BaseViewModel"
+        ],
+        "metrics": {
+          "rloc": 29,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.session.SessionBlockViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDayViewModel.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.composite.ScheduleItem",
+          "co.touchlab.droidcon.domain.service.ConferenceConfigProvider",
+          "co.touchlab.droidcon.domain.service.DateTimeService",
+          "co.touchlab.droidcon.domain.service.toConferenceDateTime",
+          "co.touchlab.droidcon.util.formatter.DateFormatter",
+          "co.touchlab.droidcon.util.startOfMinute",
+          "kotlinx.datetime.LocalDate",
+          "org.brightify.hyperdrive.multiplatformx.BaseViewModel"
+        ],
+        "metrics": {
+          "rloc": 61,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.session.SessionDayViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailScrollStateStorage.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "kotlinx.datetime.LocalDate"
+        ],
+        "metrics": {
+          "rloc": 19,
+          "functions": 2,
+          "mcc": 5,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.session.SessionDetailScrollStateStorage"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailViewModel.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.application.gateway.SettingsGateway",
+          "co.touchlab.droidcon.application.service.NotificationService",
+          "co.touchlab.droidcon.domain.composite.ScheduleItem",
+          "co.touchlab.droidcon.domain.gateway.SessionGateway",
+          "co.touchlab.droidcon.domain.service.ConferenceConfigProvider",
+          "co.touchlab.droidcon.domain.service.DateTimeService",
+          "co.touchlab.droidcon.domain.service.FeedbackService",
+          "co.touchlab.droidcon.dto.WebLink",
+          "co.touchlab.droidcon.service.ParseUrlViewService",
+          "co.touchlab.droidcon.util.formatter.DateFormatter",
+          "co.touchlab.droidcon.viewmodel.FeedbackDialogViewModel",
+          "kotlin.time.Instant",
+          "kotlinx.coroutines.delay",
+          "kotlinx.coroutines.flow.combine",
+          "kotlinx.coroutines.flow.flow",
+          "kotlinx.coroutines.flow.map",
+          "org.brightify.hyperdrive.multiplatformx.BaseViewModel",
+          "org.brightify.hyperdrive.multiplatformx.property.asFlow",
+          "org.brightify.hyperdrive.multiplatformx.property.flatMapLatest",
+          "org.brightify.hyperdrive.multiplatformx.property.identityEqualityPolicy",
+          "org.brightify.hyperdrive.multiplatformx.property.map"
+        ],
+        "metrics": {
+          "rloc": 166,
+          "functions": 3,
+          "mcc": 4,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.session.SessionDetailViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionListItemViewModel.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.domain.composite.ScheduleItem",
+          "co.touchlab.droidcon.domain.service.DateTimeService",
+          "kotlinx.coroutines.delay",
+          "kotlinx.coroutines.flow.flow",
+          "org.brightify.hyperdrive.multiplatformx.BaseViewModel"
+        ],
+        "metrics": {
+          "rloc": 28,
+          "functions": 1,
+          "mcc": 2,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.session.SessionListItemViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorListViewModel.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "co.touchlab.droidcon.composite.Url",
+          "co.touchlab.droidcon.domain.gateway.SponsorGateway",
+          "kotlinx.coroutines.flow.map",
+          "org.brightify.hyperdrive.multiplatformx.BaseViewModel"
+        ],
+        "metrics": {
+          "rloc": 43,
+          "functions": 1,
+          "mcc": 3,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.sponsor.SponsorListViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/util/ToSkiaImage.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "kotlinx.cinterop.ExperimentalForeignApi",
+          "kotlinx.cinterop.get",
+          "org.jetbrains.skia.ColorAlphaType",
+          "org.jetbrains.skia.ColorType",
+          "org.jetbrains.skia.Image",
+          "org.jetbrains.skia.ImageInfo",
+          "platform.CoreFoundation.CFDataGetBytePtr",
+          "platform.CoreFoundation.CFDataGetLength",
+          "platform.CoreFoundation.CFRelease",
+          "platform.CoreGraphics.CGColorSpaceCreateDeviceRGB",
+          "platform.CoreGraphics.CGDataProviderCopyData",
+          "platform.CoreGraphics.CGImageAlphaInfo",
+          "platform.CoreGraphics.CGImageCreateCopyWithColorSpace",
+          "platform.CoreGraphics.CGImageGetAlphaInfo",
+          "platform.CoreGraphics.CGImageGetBytesPerRow",
+          "platform.CoreGraphics.CGImageGetDataProvider",
+          "platform.CoreGraphics.CGImageGetHeight",
+          "platform.CoreGraphics.CGImageGetWidth",
+          "platform.UIKit.UIImage"
+        ],
+        "metrics": {
+          "rloc": 48,
+          "functions": 0,
+          "mcc": 5,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.util.toSkiaImage"
+        ],
+        "source_set": "ios"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/ios/src/iosMain/kotlin/co/touchlab/droidcon/ios/DependencyInjection.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 39,
+          "functions": 1,
+          "mcc": 2,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ios.initKoinIos",
+          "co.touchlab.droidcon.ios.BundleProvider"
+        ],
+        "source_set": "ios"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SpeakerDetailViewModel.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 28,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.session.SpeakerDetailViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/service/impl/DefaultParseUrlViewService.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 8,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.android.service.impl.DefaultParseUrlViewService"
+        ],
+        "source_set": "main"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/Koin.android.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 48,
+          "functions": 0,
+          "mcc": 3,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [],
+        "source_set": "androidMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/ios/src/iosMain/kotlin/co/touchlab/droidcon/ios/service/DefaultParseUrlViewService.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 8,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ios.service.DefaultParseUrlViewService"
+        ],
+        "source_set": "ios"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/settings/AboutViewModel.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 21,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.settings.AboutViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/NotificationService.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 10,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.application.service.NotificationService"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/settings/SettingsViewModel.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 72,
+          "functions": 2,
+          "mcc": 4,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.settings.SettingsViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/repository/impl/DefaultAboutRepository.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 13,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.application.repository.impl.DefaultAboutRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/SponsorGroupRepository.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 5,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.repository.SponsorGroupRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/ConferenceSelector.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 121,
+          "functions": 0,
+          "mcc": 3,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.settings.ConferenceSelectorRow",
+          "co.touchlab.droidcon.ui.settings.ConferenceDropdownMenu"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/SyncService.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 7,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.SyncService"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorDetailViewModel.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 39,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.sponsor.SponsorDetailViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/RoomRepository.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 5,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.repository.RoomRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/SponsorRepository.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 6,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.repository.SponsorRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/Notification.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 25,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.application.service.Notification"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/FeedbackDialogViewModel.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 61,
+          "functions": 4,
+          "mcc": 4,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.FeedbackDialogViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorGroupViewModel.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 22,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.sponsor.SponsorGroupViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/MainComposeView.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 91,
+          "functions": 0,
+          "mcc": 9,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.MainComposeView",
+          "co.touchlab.droidcon.ui.LoadingScreen",
+          "co.touchlab.droidcon.ui.MainAppBody"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/FeedbackService.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 7,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.FeedbackService"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/composite/SponsorGroupWithSponsors.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 4,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.composite.SponsorGroupWithSponsors"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/ScheduleViewModel.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 45,
+          "functions": 2,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.session.ScheduleViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SpeakerListItemViewModel.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 11,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.session.SpeakerListItemViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/ScheduleService.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 5,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.ScheduleService"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/FirstRunConferenceSelector.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 79,
+          "functions": 1,
+          "mcc": 3,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.FirstRunConferenceSelector"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/ProfileRepository.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 11,
+          "functions": 3,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.repository.ProfileRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/ServerApi.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 6,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.ServerApi"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/composite/ScheduleItem.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 5,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.composite.ScheduleItem"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultScheduleService.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 24,
+          "functions": 0,
+          "mcc": 2,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.impl.DefaultScheduleService"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/BottomNavigationView.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 81,
+          "functions": 0,
+          "mcc": 3,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.BottomNavigationView"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorGroupItemViewModel.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 18,
+          "functions": 1,
+          "mcc": 2,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.sponsor.SponsorGroupItemViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/AgendaViewModel.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 38,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.session.AgendaViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/BaseSessionListViewModel.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 52,
+          "functions": 0,
+          "mcc": 4,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.viewmodel.session.BaseSessionListViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultUserIdProvider.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 21,
+          "functions": 0,
+          "mcc": 2,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.service.impl.DefaultUserIdProvider"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/util/AppChecker.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 3,
+          "functions": 0,
+          "mcc": 3,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.util.AppChecker"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/entity/Session.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 27,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.domain.entity.Session"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/service/impl/AndroidAnalyticsService.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 24,
+          "functions": 1,
+          "mcc": 3,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.android.service.impl.AndroidAnalyticsService"
+        ],
+        "source_set": "main"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/util/AssetResourceReader.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 13,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.util.AssetResourceReader"
+        ],
+        "source_set": "androidMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/util/ClasspathResourceReader.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 12,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.util.ClasspathResourceReader"
+        ],
+        "source_set": "androidMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SpeakerDetailView.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 192,
+          "functions": 0,
+          "mcc": 2,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.session.SpeakerDetailView",
+          "co.touchlab.droidcon.ui.session.HeaderView",
+          "co.touchlab.droidcon.ui.session.SocialView",
+          "co.touchlab.droidcon.ui.session.SocialView",
+          "co.touchlab.droidcon.ui.session.BioView"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorsView.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 177,
+          "functions": 0,
+          "mcc": 9,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.sponsors.SponsorsView",
+          "co.touchlab.droidcon.ui.sponsors.SponsorGroupView",
+          "co.touchlab.droidcon.ui.sponsors.EmptyView"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/util/NavigationBackPressWrapper.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 64,
+          "functions": 0,
+          "mcc": 2,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.util.NavigationBackPressWrapper"
+        ],
+        "source_set": "ios"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorDetailView.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 231,
+          "functions": 0,
+          "mcc": 5,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.sponsors.SponsorDetailView",
+          "co.touchlab.droidcon.ui.sponsors.HeaderView",
+          "co.touchlab.droidcon.ui.sponsors.DescriptionView",
+          "co.touchlab.droidcon.ui.sponsors.RepresentativeInfoView"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionDetailView.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 295,
+          "functions": 0,
+          "mcc": 13,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.session.SessionDetailView",
+          "co.touchlab.droidcon.ui.session.HeaderView",
+          "co.touchlab.droidcon.ui.session.InfoView",
+          "co.touchlab.droidcon.ui.session.DescriptionView",
+          "co.touchlab.droidcon.ui.session.SpeakerView"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/FeedbackDialog.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 116,
+          "functions": 0,
+          "mcc": 6,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.FeedbackDialog"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/ComposeRootController.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 12,
+          "functions": 2,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.getRootController",
+          "co.touchlab.droidcon.ui.venueBodyViewController"
+        ],
+        "source_set": "ios"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/UiModule.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 102,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/androidMain/kotlin/co/touchlab/droidcon/ui/util/MainView.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 9,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.util.MainView"
+        ],
+        "source_set": "androidMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionBlockView.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 92,
+          "functions": 0,
+          "mcc": 3,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.session.SessionBlockView"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/AboutView.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 63,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.settings.AboutView",
+          "co.touchlab.droidcon.ui.settings.AboutItemView"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/NavigationController.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 244,
+          "functions": 12,
+          "mcc": 14,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.util.NavigationController",
+          "co.touchlab.droidcon.util.NavigationViewDimensions",
+          "co.touchlab.droidcon.util.rememberNavigationController",
+          "co.touchlab.droidcon.util.ReferenceTracking",
+          "co.touchlab.droidcon.util.BackPressHandler",
+          "co.touchlab.droidcon.util.NavigationStackScope",
+          "co.touchlab.droidcon.util.NavigationLinkWrapper",
+          "co.touchlab.droidcon.util.NavigationStack"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/SettingsView.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 95,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.settings.SettingsView",
+          "co.touchlab.droidcon.ui.settings.IconTextSwitchRow"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/PlatformSpecificSettings.kt",
+        "relation": "transitive",
+        "distance": 2,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 5,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.settings.PlatformSpecificSettingsView"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/androidMain/kotlin/co/touchlab/droidcon/ui/settings/PlatformSpecificSettings.kt",
+        "relation": "transitive",
+        "distance": 2,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 6,
+          "functions": 0,
+          "mcc": 2,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.settings.PlatformSpecificSettingsView"
+        ],
+        "source_set": "androidMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/settings/PlatformSpecificSettings.kt",
+        "relation": "transitive",
+        "distance": 2,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 6,
+          "functions": 0,
+          "mcc": 2,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.settings.PlatformSpecificSettingsView"
+        ],
+        "source_set": "ios"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/util/NotificationLocalizedStringFactory.kt",
+        "relation": "transitive",
+        "distance": 2,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 13,
+          "functions": 4,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.android.util.NotificationLocalizedStringFactory"
+        ],
+        "source_set": "main"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/service/DeepLinkNotificationHandler.kt",
+        "relation": "transitive",
+        "distance": 2,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 5,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.service.DeepLinkNotificationHandler"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/androidMain/kotlin/co/touchlab/droidcon/ui/util/NavigationBackPressWrapper.kt",
+        "relation": "expect_actual",
+        "distance": 2,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 6,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.util.NavigationBackPressWrapper"
+        ],
+        "source_set": "androidMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/NavigationBackPressWrapper.kt",
+        "relation": "expect_actual",
+        "distance": 2,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 4,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": 0.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "co.touchlab.droidcon.ui.util.NavigationBackPressWrapper"
+        ],
+        "source_set": "commonMain"
+      }
+    ],
+    "expect_actual_pairs": [
+      {
+        "expect_fqcn": "co.touchlab.droidcon.domain.repository.impl.SqlDelightDriverFactory",
+        "expect_file": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightDriverFactory.kt",
+        "actual_files": [
+          "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightDriverFactory.android.kt",
+          "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightDriverFactory.ios.kt"
+        ]
+      },
+      {
+        "expect_fqcn": "co.touchlab.droidcon.util.printThrowable",
+        "expect_file": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/util/Platform.kt",
+        "actual_files": [
+          "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/util/Platform.android.kt",
+          "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/util/Platform.ios.kt"
+        ]
+      },
+      {
+        "expect_fqcn": "co.touchlab.droidcon.ui.settings.PlatformSpecificSettingsView",
+        "expect_file": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/PlatformSpecificSettings.kt",
+        "actual_files": [
+          "/tmp/output/phase1/before/shared-ui/src/androidMain/kotlin/co/touchlab/droidcon/ui/settings/PlatformSpecificSettings.kt",
+          "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/settings/PlatformSpecificSettings.kt"
+        ]
+      },
+      {
+        "expect_fqcn": "co.touchlab.droidcon.ui.util.Dialog",
+        "expect_file": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/Dialog.kt",
+        "actual_files": [
+          "/tmp/output/phase1/before/shared-ui/src/androidMain/kotlin/co/touchlab/droidcon/ui/util/Dialog.kt",
+          "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/util/Dialog.kt"
+        ]
+      },
+      {
+        "expect_fqcn": "co.touchlab.droidcon.ui.util.__LocalImage",
+        "expect_file": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/LocalImage.kt",
+        "actual_files": [
+          "/tmp/output/phase1/before/shared-ui/src/androidMain/kotlin/co/touchlab/droidcon/ui/util/LocalImage.jvm.kt",
+          "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/util/LocalImage.kt"
+        ]
+      },
+      {
+        "expect_fqcn": "co.touchlab.droidcon.ui.util.NavigationBackPressWrapper",
+        "expect_file": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/NavigationBackPressWrapper.kt",
+        "actual_files": [
+          "/tmp/output/phase1/before/shared-ui/src/androidMain/kotlin/co/touchlab/droidcon/ui/util/NavigationBackPressWrapper.kt",
+          "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/util/NavigationBackPressWrapper.kt"
+        ]
+      },
+      {
+        "expect_fqcn": "com.example.common.DatabaseDriverFactory",
+        "expect_file": "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/ExpectClass.kt",
+        "actual_files": [
+          "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/ActualAndroid.kt"
+        ]
+      }
+    ],
+    "total_project_files": 169,
+    "total_impacted": 121,
+    "ksp_edges_added": 0
+  },
+  "dynamic_regressions": {
+    "status": "skipped",
+    "blocked_reason": "",
+    "before_screens": [],
+    "after_screens": [],
+    "diffs": [],
+    "activity_coverage_before": {},
+    "activity_coverage_after": {},
+    "nodes_before": 0,
+    "nodes_after": 0,
+    "structures_before": 0,
+    "structures_after": 0
+  },
+  "screen_mappings": [
+    {
+      "screen_name": "Main",
+      "mapped_files": [
+        "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/MainActivity.kt"
+      ],
+      "confidence": 0.5,
+      "method": "filename_heuristic"
+    },
+    {
+      "screen_name": "SessionList",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionListView.kt"
+      ],
+      "confidence": 0.5,
+      "method": "filename_heuristic"
+    },
+    {
+      "screen_name": "Application",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "SessionBlock",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionBlockViewModel.kt",
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionBlockView.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "SessionDay",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDayViewModel.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "SessionDetail",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailViewModel.kt",
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionDetailView.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "SessionListItem",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionListItemViewModel.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "SponsorList",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorListViewModel.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "SpeakerDetail",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SpeakerDetailViewModel.kt",
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SpeakerDetailView.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "About",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/settings/AboutViewModel.kt",
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/AboutView.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "Settings",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/settings/SettingsViewModel.kt",
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/SettingsView.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "SponsorDetail",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorDetailViewModel.kt",
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorDetailView.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "FeedbackDialog",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/FeedbackDialogViewModel.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "SponsorGroup",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorGroupViewModel.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "MainCompose",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/MainComposeView.kt"
+      ],
+      "confidence": 0.5,
+      "method": "filename_heuristic"
+    },
+    {
+      "screen_name": "Schedule",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/ScheduleViewModel.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "SpeakerListItem",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SpeakerListItemViewModel.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "FirstRunConferenceSelector",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/FirstRunConferenceSelector.kt"
+      ],
+      "confidence": 0.9,
+      "method": "composable_declaration"
+    },
+    {
+      "screen_name": "BottomNavigation",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/BottomNavigationView.kt"
+      ],
+      "confidence": 0.5,
+      "method": "filename_heuristic"
+    },
+    {
+      "screen_name": "SponsorGroupItem",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorGroupItemViewModel.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "Agenda",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/AgendaViewModel.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "BaseSessionList",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/BaseSessionListViewModel.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "Sponsors",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorsView.kt"
+      ],
+      "confidence": 0.5,
+      "method": "filename_heuristic"
+    },
+    {
+      "screen_name": "MainView",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared-ui/src/androidMain/kotlin/co/touchlab/droidcon/ui/util/MainView.kt"
+      ],
+      "confidence": 0.9,
+      "method": "composable_declaration"
+    }
+  ],
+  "trace": [
+    {
+      "file_path": "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/MainActivity.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [
+        "Main"
+      ],
+      "metrics": {
+        "rloc": 131,
+        "functions": 4,
+        "mcc": 12,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/MainApp.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 56,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/service/impl/DefaultFirebaseMessagingService.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 39,
+        "functions": 2,
+        "mcc": 2,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/ios/src/iosMain/kotlin/co/touchlab/droidcon/ios/util/NotificationLocalizedStringFactory.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 34,
+        "functions": 4,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/ios/src/iosMain/kotlin/co/touchlab/droidcon/ios/util/formatter/IOSDateFormatter.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 40,
+        "functions": 3,
+        "mcc": 2,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/service/AndroidNotificationService.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 229,
+        "functions": 1,
+        "mcc": 20,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/service/NotificationRescheduler.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 24,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/util/formatter/AndroidDateFormatter.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 29,
+        "functions": 3,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/Koin.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 265,
+        "functions": 7,
+        "mcc": 5,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/gateway/SettingsGateway.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 9,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/gateway/impl/DefaultSettingsGateway.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 17,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/repository/SettingsRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 10,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/repository/impl/DefaultSettingsRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 62,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 124,
+        "functions": 0,
+        "mcc": 8,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/entity/Conference.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 18,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/gateway/SessionGateway.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 12,
+        "functions": 3,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/gateway/SponsorGateway.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 10,
+        "functions": 2,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/gateway/impl/DefaultSessionGateway.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 52,
+        "functions": 3,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/gateway/impl/DefaultSponsorGateway.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 31,
+        "functions": 2,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/ConferenceRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 12,
+        "functions": 2,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/Repository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 18,
+        "functions": 10,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/SessionRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 13,
+        "functions": 3,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/BaseRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 42,
+        "functions": 6,
+        "mcc": 8,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightConferenceRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 90,
+        "functions": 2,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightProfileRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 104,
+        "functions": 9,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightRoomRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 33,
+        "functions": 7,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSessionRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 96,
+        "functions": 10,
+        "mcc": 5,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSponsorGroupRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 43,
+        "functions": 7,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSponsorRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 57,
+        "functions": 7,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/ConferenceConfigProvider.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 16,
+        "functions": 8,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/DateTimeService.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 16,
+        "functions": 6,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultApiDataSource.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 71,
+        "functions": 0,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultConferenceConfigProvider.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 31,
+        "functions": 8,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultDateTimeService.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 14,
+        "functions": 4,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultFeedbackService.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 39,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultServerApi.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 40,
+        "functions": 0,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultSyncService.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 440,
+        "functions": 1,
+        "mcc": 39,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/AboutDto.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 6,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/ConferencesDto.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 24,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/ScheduleDto.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 32,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/SpeakersDto.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 57,
+        "functions": 2,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/SponsorSessionsDto.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 10,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/SponsorsDto.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 30,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/json/AboutJsonResourceDataSource.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 7,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/json/JsonResourceReader.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 10,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/util/formatter/DateFormatter.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 8,
+        "functions": 3,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/Koin.ios.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 77,
+        "functions": 6,
+        "mcc": 11,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/MainScope.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 22,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/service/IOSNotificationService.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 162,
+        "functions": 1,
+        "mcc": 15,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/util/BundleResourceReader.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 44,
+        "functions": 1,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/util/WrapMultiThreadCallback.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 14,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionListView.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [
+        "SessionList"
+      ],
+      "metrics": {
+        "rloc": 211,
+        "functions": 0,
+        "mcc": 7,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/LocalDateTime+startOfMinute.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 5,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [
+        "Application"
+      ],
+      "metrics": {
+        "rloc": 198,
+        "functions": 4,
+        "mcc": 15,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/WaitForLoadedContextModel.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 47,
+        "functions": 0,
+        "mcc": 2,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionBlockViewModel.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [
+        "SessionBlock"
+      ],
+      "metrics": {
+        "rloc": 29,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDayViewModel.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [
+        "SessionDay"
+      ],
+      "metrics": {
+        "rloc": 61,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailScrollStateStorage.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 19,
+        "functions": 2,
+        "mcc": 5,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailViewModel.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [
+        "SessionDetail"
+      ],
+      "metrics": {
+        "rloc": 166,
+        "functions": 3,
+        "mcc": 4,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionListItemViewModel.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [
+        "SessionListItem"
+      ],
+      "metrics": {
+        "rloc": 28,
+        "functions": 1,
+        "mcc": 2,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorListViewModel.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [
+        "SponsorList"
+      ],
+      "metrics": {
+        "rloc": 43,
+        "functions": 1,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/util/ToSkiaImage.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 48,
+        "functions": 0,
+        "mcc": 5,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/ios/src/iosMain/kotlin/co/touchlab/droidcon/ios/DependencyInjection.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 39,
+        "functions": 1,
+        "mcc": 2,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SpeakerDetailViewModel.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "SpeakerDetail"
+      ],
+      "metrics": {
+        "rloc": 28,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/service/impl/DefaultParseUrlViewService.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 8,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/Koin.android.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 48,
+        "functions": 0,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/ios/src/iosMain/kotlin/co/touchlab/droidcon/ios/service/DefaultParseUrlViewService.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 8,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/settings/AboutViewModel.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "About"
+      ],
+      "metrics": {
+        "rloc": 21,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/NotificationService.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 10,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/settings/SettingsViewModel.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "Settings"
+      ],
+      "metrics": {
+        "rloc": 72,
+        "functions": 2,
+        "mcc": 4,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/repository/impl/DefaultAboutRepository.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 13,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/SponsorGroupRepository.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 5,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/ConferenceSelector.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 121,
+        "functions": 0,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/SyncService.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 7,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorDetailViewModel.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "SponsorDetail"
+      ],
+      "metrics": {
+        "rloc": 39,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/RoomRepository.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 5,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/SponsorRepository.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 6,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/Notification.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 25,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/FeedbackDialogViewModel.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "FeedbackDialog"
+      ],
+      "metrics": {
+        "rloc": 61,
+        "functions": 4,
+        "mcc": 4,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorGroupViewModel.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "SponsorGroup"
+      ],
+      "metrics": {
+        "rloc": 22,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/MainComposeView.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "MainCompose"
+      ],
+      "metrics": {
+        "rloc": 91,
+        "functions": 0,
+        "mcc": 9,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/FeedbackService.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 7,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/composite/SponsorGroupWithSponsors.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 4,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/ScheduleViewModel.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "Schedule"
+      ],
+      "metrics": {
+        "rloc": 45,
+        "functions": 2,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SpeakerListItemViewModel.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "SpeakerListItem"
+      ],
+      "metrics": {
+        "rloc": 11,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/ScheduleService.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 5,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/FirstRunConferenceSelector.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "FirstRunConferenceSelector"
+      ],
+      "metrics": {
+        "rloc": 79,
+        "functions": 1,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/ProfileRepository.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 11,
+        "functions": 3,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/ServerApi.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 6,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/composite/ScheduleItem.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 5,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultScheduleService.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 24,
+        "functions": 0,
+        "mcc": 2,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/BottomNavigationView.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "BottomNavigation"
+      ],
+      "metrics": {
+        "rloc": 81,
+        "functions": 0,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorGroupItemViewModel.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "SponsorGroupItem"
+      ],
+      "metrics": {
+        "rloc": 18,
+        "functions": 1,
+        "mcc": 2,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/AgendaViewModel.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "Agenda"
+      ],
+      "metrics": {
+        "rloc": 38,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/BaseSessionListViewModel.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "BaseSessionList"
+      ],
+      "metrics": {
+        "rloc": 52,
+        "functions": 0,
+        "mcc": 4,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultUserIdProvider.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 21,
+        "functions": 0,
+        "mcc": 2,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/util/AppChecker.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 3,
+        "functions": 0,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/entity/Session.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 27,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/service/impl/AndroidAnalyticsService.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 24,
+        "functions": 1,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/util/AssetResourceReader.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 13,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/util/ClasspathResourceReader.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 12,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SpeakerDetailView.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "SpeakerDetail"
+      ],
+      "metrics": {
+        "rloc": 192,
+        "functions": 0,
+        "mcc": 2,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorsView.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "Sponsors"
+      ],
+      "metrics": {
+        "rloc": 177,
+        "functions": 0,
+        "mcc": 9,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/util/NavigationBackPressWrapper.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 64,
+        "functions": 0,
+        "mcc": 2,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorDetailView.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "SponsorDetail"
+      ],
+      "metrics": {
+        "rloc": 231,
+        "functions": 0,
+        "mcc": 5,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionDetailView.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "SessionDetail"
+      ],
+      "metrics": {
+        "rloc": 295,
+        "functions": 0,
+        "mcc": 13,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/FeedbackDialog.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 116,
+        "functions": 0,
+        "mcc": 6,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/ComposeRootController.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 12,
+        "functions": 2,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/UiModule.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 102,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/androidMain/kotlin/co/touchlab/droidcon/ui/util/MainView.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "MainView"
+      ],
+      "metrics": {
+        "rloc": 9,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionBlockView.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "SessionBlock"
+      ],
+      "metrics": {
+        "rloc": 92,
+        "functions": 0,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/AboutView.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "About"
+      ],
+      "metrics": {
+        "rloc": 63,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/NavigationController.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [],
+      "metrics": {
+        "rloc": 244,
+        "functions": 12,
+        "mcc": 14,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/SettingsView.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "Settings"
+      ],
+      "metrics": {
+        "rloc": 95,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/PlatformSpecificSettings.kt",
+      "relation": "transitive",
+      "distance": 2,
+      "screens": [],
+      "metrics": {
+        "rloc": 5,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/androidMain/kotlin/co/touchlab/droidcon/ui/settings/PlatformSpecificSettings.kt",
+      "relation": "transitive",
+      "distance": 2,
+      "screens": [],
+      "metrics": {
+        "rloc": 6,
+        "functions": 0,
+        "mcc": 2,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/settings/PlatformSpecificSettings.kt",
+      "relation": "transitive",
+      "distance": 2,
+      "screens": [],
+      "metrics": {
+        "rloc": 6,
+        "functions": 0,
+        "mcc": 2,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/util/NotificationLocalizedStringFactory.kt",
+      "relation": "transitive",
+      "distance": 2,
+      "screens": [],
+      "metrics": {
+        "rloc": 13,
+        "functions": 4,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/service/DeepLinkNotificationHandler.kt",
+      "relation": "transitive",
+      "distance": 2,
+      "screens": [],
+      "metrics": {
+        "rloc": 5,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/androidMain/kotlin/co/touchlab/droidcon/ui/util/NavigationBackPressWrapper.kt",
+      "relation": "expect_actual",
+      "distance": 2,
+      "screens": [],
+      "metrics": {
+        "rloc": 6,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/NavigationBackPressWrapper.kt",
+      "relation": "expect_actual",
+      "distance": 2,
+      "screens": [],
+      "metrics": {
+        "rloc": 4,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": 0.0,
+        "metrics_source": "heuristic"
+      }
+    }
+  ],
+  "impacted_screens": [
+    "About",
+    "Agenda",
+    "Application",
+    "BaseSessionList",
+    "BottomNavigation",
+    "FeedbackDialog",
+    "FirstRunConferenceSelector",
+    "Main",
+    "MainCompose",
+    "MainView",
+    "Schedule",
+    "SessionBlock",
+    "SessionDay",
+    "SessionDetail",
+    "SessionList",
+    "SessionListItem",
+    "Settings",
+    "SpeakerDetail",
+    "SpeakerListItem",
+    "SponsorDetail",
+    "SponsorGroup",
+    "SponsorGroupItem",
+    "SponsorList",
+    "Sponsors"
+  ],
+  "total_impacted_files": 121,
+  "total_impacted_screens": 24,
+  "stack_compatibility": {
+    "warnings": [],
+    "detected": {
+      "kotlin": "2.2.21",
+      "agp": "8.12.0",
+      "compose-compiler": "1.5.15"
+    }
+  }
+}

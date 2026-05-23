@@ -1,0 +1,27 @@
+{
+  "before_dir": "/tmp/output/phase1/before",
+  "after_dir": "/tmp/output/phase1/after",
+  "version_change": {
+    "dependency_group": "io.ktor",
+    "version_key": "ktor",
+    "before": "3.2.0",
+    "after": "3.5.0"
+  },
+  "init_script_injected": false,
+  "detekt_reports": {},
+  "kover_reports": {
+    "ios": "/tmp/output/phase1/before/ios/build/reports/kover/report.xml"
+  },
+  "compilation_after": {
+    "status": "failure",
+    "errors": [
+      "e: KLIB resolver: Could not find \"/home/runner/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-logging-iosx64/3.5.0/f92248c17fe250f959aa8d83efa916d014d16cbc/ktor-client-logging-iosX64Main-3.5.0.klib\" in [/home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.2.21/klib/common, /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.2.21/klib/platform/ios_x64, /tmp/output/phase1/after]"
+    ],
+    "tasks": [
+      "shared-ui:compileKotlinIosX64",
+      "shared:compileKotlinMetadata",
+      "ios:compileKotlinMetadata"
+    ]
+  },
+  "compile_targets": {}
+}

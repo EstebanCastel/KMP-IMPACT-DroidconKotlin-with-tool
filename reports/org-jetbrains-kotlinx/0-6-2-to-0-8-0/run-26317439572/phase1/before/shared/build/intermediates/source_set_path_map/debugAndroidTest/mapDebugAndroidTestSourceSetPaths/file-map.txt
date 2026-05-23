@@ -1,0 +1,16 @@
+co.touchlab.droidcon.shared.test.shared-core-1.17.0-0 /home/runner/.gradle/caches/8.14.3/transforms/22997338e68a8911fb96b0c343cf0abe/transformed/core-1.17.0/res
+co.touchlab.droidcon.shared.test.shared-lifecycle-runtime-2.6.2-1 /home/runner/.gradle/caches/8.14.3/transforms/33cf3e04172d438accd9c5f558215772/transformed/lifecycle-runtime-2.6.2/res
+co.touchlab.droidcon.shared.test.shared-core-ktx-1.17.0-2 /home/runner/.gradle/caches/8.14.3/transforms/4e3c8260c1372576e680ea02a084df69/transformed/core-ktx-1.17.0/res
+co.touchlab.droidcon.shared.test.shared-sqlite-framework-release-3 /home/runner/.gradle/caches/8.14.3/transforms/576d8b08a3bad47a32a781399147b37d/transformed/sqlite-framework-release/res
+co.touchlab.droidcon.shared.test.shared-profileinstaller-1.3.0-4 /home/runner/.gradle/caches/8.14.3/transforms/9838c060aff6923ecfeaff65635c0725/transformed/profileinstaller-1.3.0/res
+co.touchlab.droidcon.shared.test.shared-tracing-1.2.0-5 /home/runner/.gradle/caches/8.14.3/transforms/abd16e7a9505d09bd8f34a3c7f122040/transformed/tracing-1.2.0/res
+co.touchlab.droidcon.shared.test.shared-core-runtime-2.2.0-6 /home/runner/.gradle/caches/8.14.3/transforms/c9eb5b9cc849726969ae11b065166d88/transformed/core-runtime-2.2.0/res
+co.touchlab.droidcon.shared.test.shared-startup-runtime-1.1.1-7 /home/runner/.gradle/caches/8.14.3/transforms/d391a53df25227c0fafb302f5f7eb274/transformed/startup-runtime-1.1.1/res
+co.touchlab.droidcon.shared.test.shared-annotation-experimental-1.4.1-8 /home/runner/.gradle/caches/8.14.3/transforms/d849068a43c4f0d9ea80fe7d8f296348/transformed/annotation-experimental-1.4.1/res
+co.touchlab.droidcon.shared.test.shared-core-viewtree-1.0.0-9 /home/runner/.gradle/caches/8.14.3/transforms/d8c426889033dbe50fc9d75596a00663/transformed/core-viewtree-1.0.0/res
+co.touchlab.droidcon.shared.test.shared-sqlite-release-10 /home/runner/.gradle/caches/8.14.3/transforms/fa314f07eb104ad8cff56d7576bea003/transformed/sqlite-release/res
+co.touchlab.droidcon.shared.test.shared-androidTest-11 /tmp/output/phase1/before/shared/build/generated/res/resValues/androidTest/debug
+co.touchlab.droidcon.shared.test.shared-mergeDebugAndroidTestResources-12 /tmp/output/phase1/before/shared/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+co.touchlab.droidcon.shared.test.shared-mergeDebugAndroidTestResources-13 /tmp/output/phase1/before/shared/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+co.touchlab.droidcon.shared.test.shared-debugAndroidTest-14 /tmp/output/phase1/before/shared/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
+co.touchlab.droidcon.shared.test.shared-debug-15 /tmp/output/phase1/before/shared/build/intermediates/packaged_res/debug/packageDebugResources

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="4.3">
+<file name="/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/util/Dialog.kt">
+	<error line="14" column="21" severity="warning" message="Function names should match the pattern: [a-z][a-zA-Z0-9]*" source="detekt.FunctionNaming" />
+</file>
+<file name="/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/util/LocalImage.kt">
+	<error line="26" column="21" severity="warning" message="Function names should match the pattern: [a-z][a-zA-Z0-9]*" source="detekt.FunctionNaming" />
+	<error line="27" column="1" severity="warning" message="Line detected, which is longer than the defined maximum line length in the code style." source="detekt.MaxLineLength" />
+	<error line="37" column="1" severity="warning" message="Line detected, which is longer than the defined maximum line length in the code style." source="detekt.MaxLineLength" />
+</file>
+<file name="/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/util/NavigationBackPressWrapper.kt">
+	<error line="30" column="21" severity="warning" message="Function names should match the pattern: [a-z][a-zA-Z0-9]*" source="detekt.FunctionNaming" />
+	<error line="31" column="40" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />
+</file>
+<file name="/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/settings/PlatformSpecificSettings.kt">
+	<error line="7" column="21" severity="warning" message="Function names should match the pattern: [a-z][a-zA-Z0-9]*" source="detekt.FunctionNaming" />
+</file>
+<file name="/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/util/ToSkiaImage.kt">
+	<error line="38" column="1" severity="warning" message="Line detected, which is longer than the defined maximum line length in the code style." source="detekt.MaxLineLength" />
+	<error line="40" column="1" severity="warning" message="Line detected, which is longer than the defined maximum line length in the code style." source="detekt.MaxLineLength" />
+	<error line="23" column="1" severity="warning" message="Forbidden TODO todo marker in comment, please do the changes." source="detekt.ForbiddenComment" />
+</file>
+</checkstyle>

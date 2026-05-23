@@ -1,0 +1,2 @@
+
+<Droidcon:shared-ui>:co.touchlab.droidcon.ui:co.touchlab.droidcon.ui.session: co.touchlab.droidcon.ui.settings: co.touchlab.droidcon.ui.sponsors:co.touchlab.droidcon.ui.theme:co.touchlab.droidcon.ui.util:co.touchlab.droidcon.ui.venue:co.touchlab.droidcon.util:co.touchlab.droidcon.viewmodel:&co.touchlab.droidcon.viewmodel.session:'co.touchlab.droidcon.viewmodel.settings:&co.touchlab.droidcon.viewmodel.sponsor:&droidcon.shared_ui.generated.resources

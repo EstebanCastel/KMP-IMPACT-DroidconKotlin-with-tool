@@ -1,0 +1,38 @@
+<svg viewBox='0 0 880 540' xmlns='http://www.w3.org/2000/svg' style='width:100%;font-family:Inter,system-ui,sans-serif;background:#ffffff;'>
+<text x='440' y='22' text-anchor='middle' fill='#1e293b' font-size='13' font-weight='700'>Code city — area = RLOC, colour = impact level</text>
+<rect x='2' y='36.0' width='876' height='350.4' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1'/>
+<text x='14' y='52.0' fill='#475569' font-size='11' font-weight='700' text-transform='uppercase'>commonMain (9 files)</text>
+<rect x='8.0' y='60.0' width='327.1' height='318.4' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<text x='171.5' y='222.2' text-anchor='middle' fill='white' font-size='10' font-weight='600'>Koin.kt</text>
+<rect x='335.1' y='60.0' width='246.9' height='165.6' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<text x='458.5' y='145.8' text-anchor='middle' fill='white' font-size='10' font-weight='600'>SqlDelightProfile…</text>
+<rect x='335.1' y='225.6' width='246.9' height='152.8' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<text x='458.5' y='305.0' text-anchor='middle' fill='white' font-size='10' font-weight='600'>SqlDelightSession…</text>
+<rect x='581.9' y='60.0' width='177.6' height='199.2' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<text x='670.7' y='162.6' text-anchor='middle' fill='white' font-size='10' font-weight='600'>SqlDelightConfere…</text>
+<rect x='759.5' y='60.0' width='112.5' height='199.2' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<text x='815.8' y='162.6' text-anchor='middle' fill='white' font-size='10' font-weight='600'>SqlDelightSponsor…</text>
+<rect x='581.9' y='259.2' width='141.7' height='119.2' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<text x='652.8' y='321.8' text-anchor='middle' fill='white' font-size='10' font-weight='600'>SqlDelightSponsor…</text>
+<rect x='723.7' y='259.2' width='108.8' height='119.2' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<text x='778.1' y='321.8' text-anchor='middle' fill='white' font-size='10' font-weight='600'>SqlDelightRoomRep…</text>
+<rect x='832.4' y='259.2' width='39.6' height='69.5' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<rect x='832.4' y='328.7' width='39.6' height='49.7' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<rect x='2' y='386.4' width='876' height='61.6' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1'/>
+<text x='14' y='402.4' fill='#475569' font-size='11' font-weight='700' text-transform='uppercase'>iosMain (3 files)</text>
+<rect x='8.0' y='410.4' width='540.9' height='29.6' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<text x='278.4' y='428.2' text-anchor='middle' fill='white' font-size='10' font-weight='600'>Koin.ios.kt</text>
+<rect x='548.9' y='410.4' width='274.0' height='29.6' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='685.9' y='428.2' text-anchor='middle' fill='white' font-size='10' font-weight='600'>DependencyInjecti…</text>
+<rect x='822.8' y='410.4' width='49.2' height='29.6' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<rect x='2' y='447.9' width='876' height='56.1' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1'/>
+<text x='14' y='463.9' fill='#475569' font-size='11' font-weight='700' text-transform='uppercase'>other (1 files)</text>
+<rect x='8.0' y='471.9' width='864.0' height='24.1' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='440.0' y='487.0' text-anchor='middle' fill='white' font-size='10' font-weight='600'>MainApp.kt</text>
+<rect x='24' y='514' width='14' height='14' fill='#dc2626' rx='2'/>
+<text x='46' y='526' fill='#475569' font-size='12' font-weight='600'>Direct</text>
+<rect x='224' y='514' width='14' height='14' fill='#f59e0b' rx='2'/>
+<text x='246' y='526' fill='#475569' font-size='12' font-weight='600'>Transitive</text>
+<rect x='424' y='514' width='14' height='14' fill='#7c3aed' rx='2'/>
+<text x='446' y='526' fill='#475569' font-size='12' font-weight='600'>Expect/Actual</text>
+</svg>

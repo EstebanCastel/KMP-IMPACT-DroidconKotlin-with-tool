@@ -1,0 +1,6 @@
+co.touchlab.droidcon.sharedui
+font montserrat_bold
+font montserrat_light
+font montserrat_medium
+font montserrat_regular
+font montserrat_semi_bold

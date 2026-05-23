@@ -1,0 +1,1 @@
+PackageNaming - [ActualResourceCollectors.kt] at /tmp/output/phase1/before/shared-ui/build/generated/compose/resourceGenerator/kotlin/iosX64MainResourceCollectors/droidcon/shared_ui/generated/resources/ActualResourceCollectors.kt:3:1 - Signature=ActualResourceCollectors.kt$package droidcon.shared_ui.generated.resources

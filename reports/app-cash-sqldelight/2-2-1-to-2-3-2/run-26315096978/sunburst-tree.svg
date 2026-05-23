@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2250 440" width="2250" height="440" font-family="system-ui,sans-serif"><rect width="100%" height="100%" fill="#F5F4F0"/><text x="30" y="22" font-size="14" font-weight="700" fill="#1F2937">Propagation tree</text><text x="30" y="38" font-size="11" fill="#6B7280">Same hierarchy as the sunburst, flattened for reading.</text>
+<path d="M 30.0 247.0 C 130.0 247.0, 130.0 106.0, 230.0 106.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 230.0 106.0 C 330.0 106.0, 330.0 106.0, 430.0 106.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 430.0 106.0 C 530.0 106.0, 530.0 106.0, 630.0 106.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 630.0 106.0 C 730.0 106.0, 730.0 106.0, 830.0 106.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 830.0 106.0 C 930.0 106.0, 930.0 52.0, 1030.0 52.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 830.0 106.0 C 930.0 106.0, 930.0 160.0, 1030.0 160.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1030.0 160.0 C 1130.0 160.0, 1130.0 160.0, 1230.0 160.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1230.0 160.0 C 1330.0 160.0, 1330.0 160.0, 1430.0 160.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1430.0 160.0 C 1530.0 160.0, 1530.0 76.0, 1630.0 76.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1430.0 160.0 C 1530.0 160.0, 1530.0 100.0, 1630.0 100.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1430.0 160.0 C 1530.0 160.0, 1530.0 124.0, 1630.0 124.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1430.0 160.0 C 1530.0 160.0, 1530.0 148.0, 1630.0 148.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1430.0 160.0 C 1530.0 160.0, 1530.0 172.0, 1630.0 172.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1430.0 160.0 C 1530.0 160.0, 1530.0 196.0, 1630.0 196.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1430.0 160.0 C 1530.0 160.0, 1530.0 220.0, 1630.0 220.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1430.0 160.0 C 1530.0 160.0, 1530.0 244.0, 1630.0 244.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1630.0 244.0 C 1730.0 244.0, 1730.0 244.0, 1830.0 244.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 30.0 247.0 C 130.0 247.0, 130.0 280.0, 230.0 280.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 230.0 280.0 C 330.0 280.0, 330.0 280.0, 430.0 280.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 430.0 280.0 C 530.0 280.0, 530.0 280.0, 630.0 280.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 630.0 280.0 C 730.0 280.0, 730.0 280.0, 830.0 280.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 830.0 280.0 C 930.0 280.0, 930.0 268.0, 1030.0 268.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 830.0 280.0 C 930.0 280.0, 930.0 292.0, 1030.0 292.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1030.0 292.0 C 1130.0 292.0, 1130.0 292.0, 1230.0 292.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1230.0 292.0 C 1330.0 292.0, 1330.0 292.0, 1430.0 292.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1430.0 292.0 C 1530.0 292.0, 1530.0 292.0, 1630.0 292.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 30.0 247.0 C 130.0 247.0, 130.0 340.0, 230.0 340.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 230.0 340.0 C 330.0 340.0, 330.0 340.0, 430.0 340.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 430.0 340.0 C 530.0 340.0, 530.0 340.0, 630.0 340.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 630.0 340.0 C 730.0 340.0, 730.0 340.0, 830.0 340.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 830.0 340.0 C 930.0 340.0, 930.0 316.0, 1030.0 316.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1030.0 316.0 C 1130.0 316.0, 1130.0 316.0, 1230.0 316.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 830.0 340.0 C 930.0 340.0, 930.0 340.0, 1030.0 340.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 830.0 340.0 C 930.0 340.0, 930.0 364.0, 1030.0 364.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1030.0 364.0 C 1130.0 364.0, 1130.0 364.0, 1230.0 364.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1230.0 364.0 C 1330.0 364.0, 1330.0 364.0, 1430.0 364.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1430.0 364.0 C 1530.0 364.0, 1530.0 364.0, 1630.0 364.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 30.0 247.0 C 130.0 247.0, 130.0 388.0, 230.0 388.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 230.0 388.0 C 330.0 388.0, 330.0 388.0, 430.0 388.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 430.0 388.0 C 530.0 388.0, 530.0 388.0, 630.0 388.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 630.0 388.0 C 730.0 388.0, 730.0 388.0, 830.0 388.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 830.0 388.0 C 930.0 388.0, 930.0 388.0, 1030.0 388.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1030.0 388.0 C 1130.0 388.0, 1130.0 388.0, 1230.0 388.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<path d="M 1230.0 388.0 C 1330.0 388.0, 1330.0 388.0, 1430.0 388.0" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-opacity="0.85"/>
+<circle cx="30.0" cy="247.0" r="6" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="20.0" y="251.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">src</text>
+<circle cx="230.0" cy="106.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="220.0" y="110.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">commonMain</text>
+<circle cx="430.0" cy="106.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="420.0" y="110.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">co</text>
+<circle cx="630.0" cy="106.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="620.0" y="110.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">touchlab</text>
+<circle cx="830.0" cy="106.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="820.0" y="110.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">droidcon</text>
+<circle cx="1030.0" cy="52.0" r="4" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1040.0" y="56.0" font-size="11" font-weight="500" text-anchor="start" fill="#1F2937">Koin</text>
+<circle cx="1030.0" cy="160.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1020.0" y="164.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">domain</text>
+<circle cx="1230.0" cy="160.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1220.0" y="164.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">repository</text>
+<circle cx="1430.0" cy="160.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1420.0" y="164.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">impl</text>
+<circle cx="1630.0" cy="76.0" r="4" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1640.0" y="80.0" font-size="11" font-weight="500" text-anchor="start" fill="#1F2937">SqlDelightConferenceRepos…</text>
+<circle cx="1630.0" cy="100.0" r="4" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1640.0" y="104.0" font-size="11" font-weight="500" text-anchor="start" fill="#1F2937">SqlDelightDriverFactory</text>
+<circle cx="1630.0" cy="124.0" r="4" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1640.0" y="128.0" font-size="11" font-weight="500" text-anchor="start" fill="#1F2937">SqlDelightProfileReposito…</text>
+<circle cx="1630.0" cy="148.0" r="4" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1640.0" y="152.0" font-size="11" font-weight="500" text-anchor="start" fill="#1F2937">SqlDelightRoomRepository</text>
+<circle cx="1630.0" cy="172.0" r="4" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1640.0" y="176.0" font-size="11" font-weight="500" text-anchor="start" fill="#1F2937">SqlDelightSessionReposito…</text>
+<circle cx="1630.0" cy="196.0" r="4" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1640.0" y="200.0" font-size="11" font-weight="500" text-anchor="start" fill="#1F2937">SqlDelightSponsorGroupRep…</text>
+<circle cx="1630.0" cy="220.0" r="4" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1640.0" y="224.0" font-size="11" font-weight="500" text-anchor="start" fill="#1F2937">SqlDelightSponsorReposito…</text>
+<circle cx="1630.0" cy="244.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1620.0" y="248.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">adapter</text>
+<circle cx="1830.0" cy="244.0" r="4" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1840.0" y="248.0" font-size="11" font-weight="500" text-anchor="start" fill="#1F2937">InstantSqlDelightAdapter</text>
+<circle cx="230.0" cy="280.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="220.0" y="284.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">androidMain</text>
+<circle cx="430.0" cy="280.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="420.0" y="284.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">co</text>
+<circle cx="630.0" cy="280.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="620.0" y="284.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">touchlab</text>
+<circle cx="830.0" cy="280.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="820.0" y="284.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">droidcon</text>
+<circle cx="1030.0" cy="268.0" r="4" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1040.0" y="272.0" font-size="11" font-weight="500" text-anchor="start" fill="#1F2937">Koin.android</text>
+<circle cx="1030.0" cy="292.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1020.0" y="296.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">domain</text>
+<circle cx="1230.0" cy="292.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1220.0" y="296.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">repository</text>
+<circle cx="1430.0" cy="292.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1420.0" y="296.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">impl</text>
+<circle cx="1630.0" cy="292.0" r="4" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1640.0" y="296.0" font-size="11" font-weight="500" text-anchor="start" fill="#1F2937">SqlDelightDriverFactory.a…</text>
+<circle cx="230.0" cy="340.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="220.0" y="344.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">iosMain</text>
+<circle cx="430.0" cy="340.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="420.0" y="344.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">co</text>
+<circle cx="630.0" cy="340.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="620.0" y="344.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">touchlab</text>
+<circle cx="830.0" cy="340.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="820.0" y="344.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">droidcon</text>
+<circle cx="1030.0" cy="316.0" r="5" fill="#FFF" stroke="#1D4ED8" stroke-width="2.5"/>
+<text x="1020.0" y="320.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">ios</text>
+<circle cx="1230.0" cy="316.0" r="4" fill="#FFF" stroke="#1D4ED8" stroke-width="2.5"/>
+<text x="1240.0" y="320.0" font-size="11" font-weight="500" text-anchor="start" fill="#1F2937">DependencyInjection</text>
+<circle cx="1030.0" cy="340.0" r="4" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1040.0" y="344.0" font-size="11" font-weight="500" text-anchor="start" fill="#1F2937">Koin.ios</text>
+<circle cx="1030.0" cy="364.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1020.0" y="368.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">domain</text>
+<circle cx="1230.0" cy="364.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1220.0" y="368.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">repository</text>
+<circle cx="1430.0" cy="364.0" r="5" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1420.0" y="368.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">impl</text>
+<circle cx="1630.0" cy="364.0" r="4" fill="#FFF" stroke="#B91C1C" stroke-width="2.5"/>
+<text x="1640.0" y="368.0" font-size="11" font-weight="500" text-anchor="start" fill="#1F2937">SqlDelightDriverFactory.i…</text>
+<circle cx="230.0" cy="388.0" r="5" fill="#FFF" stroke="#1D4ED8" stroke-width="2.5"/>
+<text x="220.0" y="392.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">main</text>
+<circle cx="430.0" cy="388.0" r="5" fill="#FFF" stroke="#1D4ED8" stroke-width="2.5"/>
+<text x="420.0" y="392.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">java</text>
+<circle cx="630.0" cy="388.0" r="5" fill="#FFF" stroke="#1D4ED8" stroke-width="2.5"/>
+<text x="620.0" y="392.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">co</text>
+<circle cx="830.0" cy="388.0" r="5" fill="#FFF" stroke="#1D4ED8" stroke-width="2.5"/>
+<text x="820.0" y="392.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">touchlab</text>
+<circle cx="1030.0" cy="388.0" r="5" fill="#FFF" stroke="#1D4ED8" stroke-width="2.5"/>
+<text x="1020.0" y="392.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">droidcon</text>
+<circle cx="1230.0" cy="388.0" r="5" fill="#FFF" stroke="#1D4ED8" stroke-width="2.5"/>
+<text x="1220.0" y="392.0" font-size="11" font-weight="600" text-anchor="end" fill="#1F2937">android</text>
+<circle cx="1430.0" cy="388.0" r="4" fill="#FFF" stroke="#1D4ED8" stroke-width="2.5"/>
+<text x="1440.0" y="392.0" font-size="11" font-weight="500" text-anchor="start" fill="#1F2937">MainApp</text>
+</svg>

@@ -1,0 +1,4 @@
+com.droidcon.app.test.android-androidTest-0 /tmp/output/phase1/before/android/build/generated/res/resValues/androidTest/debug
+com.droidcon.app.test.android-mergeDebugAndroidTestResources-1 /tmp/output/phase1/before/android/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.droidcon.app.test.android-mergeDebugAndroidTestResources-2 /tmp/output/phase1/before/android/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.droidcon.app.test.android-debugAndroidTest-3 /tmp/output/phase1/before/android/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

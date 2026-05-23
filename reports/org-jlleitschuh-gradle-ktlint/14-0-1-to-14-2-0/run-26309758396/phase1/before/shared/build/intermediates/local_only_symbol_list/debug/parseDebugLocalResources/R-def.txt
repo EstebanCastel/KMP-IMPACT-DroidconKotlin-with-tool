@@ -1,0 +1,5 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_baseline_insert_invitation_24
+string notification_channel_description
+string notification_channel_name

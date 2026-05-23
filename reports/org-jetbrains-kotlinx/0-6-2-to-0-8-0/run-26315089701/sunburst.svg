@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 880" width="760" height="880" font-family="system-ui,sans-serif">
+<rect width="100%" height="100%" fill="#F5F4F0"/>
+<text x="380.0" y="30" text-anchor="middle" fill="#1E293B" font-size="18" font-weight="700">KMP Impact . org.jetbrains.kotlinx</text>
+<text x="380.0" y="52" text-anchor="middle" fill="#64748b" font-size="12">0.6.2 -&gt; 0.8.0 . 169 archivos</text>
+<path d="M 380.00 350.00 A 100.00 100.00 0 1 1 281.23 434.39 L 310.86 439.07 A 70.00 70.00 0 1 0 380.00 380.00 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 380.00 318.00 A 132.00 132.00 0 1 1 363.49 580.96 L 367.24 551.20 A 102.00 102.00 0 1 0 380.00 348.00 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 380.00 286.00 A 164.00 164.00 0 1 1 359.49 612.71 L 363.24 582.95 A 134.00 134.00 0 1 0 380.00 316.00 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 380.00 254.00 A 196.00 196.00 0 1 1 355.49 644.46 L 359.24 614.70 A 166.00 166.00 0 1 0 380.00 284.00 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 380.00 222.00 A 228.00 228.00 0 0 1 495.14 646.79 L 479.99 620.90 A 198.00 198.00 0 0 0 380.00 252.00 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 495.14 646.79 A 228.00 228.00 0 0 1 397.45 677.33 L 395.16 647.42 A 198.00 198.00 0 0 0 479.99 620.90 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 397.45 677.33 A 228.00 228.00 0 0 1 373.65 677.91 L 374.48 647.92 A 198.00 198.00 0 0 0 395.16 647.42 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 373.65 677.91 A 228.00 228.00 0 0 1 357.80 676.92 L 360.72 647.06 A 198.00 198.00 0 0 0 374.48 647.92 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 357.80 676.92 A 228.00 228.00 0 0 1 351.49 676.21 L 355.24 646.45 A 198.00 198.00 0 0 0 360.72 647.06 Z" fill="#60A5FA" fill-opacity="1"/>
+<path d="M 363.49 580.96 A 132.00 132.00 0 0 1 249.62 429.40 L 279.25 434.08 A 102.00 102.00 0 0 0 367.24 551.20 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 359.49 612.71 A 164.00 164.00 0 0 1 236.47 529.35 L 262.73 514.83 A 134.00 134.00 0 0 0 363.24 582.95 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 355.49 644.46 A 196.00 196.00 0 0 1 261.72 606.29 L 279.83 582.37 A 166.00 166.00 0 0 0 359.24 614.70 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 351.49 676.21 A 228.00 228.00 0 0 1 335.81 673.68 L 341.63 644.25 A 198.00 198.00 0 0 0 355.24 646.45 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 335.81 673.68 A 228.00 228.00 0 0 1 320.35 670.06 L 328.20 641.10 A 198.00 198.00 0 0 0 341.63 644.25 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 320.35 670.06 A 228.00 228.00 0 0 1 305.18 665.37 L 315.02 637.03 A 198.00 198.00 0 0 0 328.20 641.10 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 305.18 665.37 A 228.00 228.00 0 0 1 290.37 659.64 L 302.16 632.06 A 198.00 198.00 0 0 0 315.02 637.03 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 290.37 659.64 A 228.00 228.00 0 0 1 276.00 652.90 L 289.68 626.20 A 198.00 198.00 0 0 0 302.16 632.06 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 276.00 652.90 A 228.00 228.00 0 0 1 268.99 649.15 L 283.60 622.95 A 198.00 198.00 0 0 0 289.68 626.20 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 268.99 649.15 A 228.00 228.00 0 0 1 262.13 645.17 L 277.64 619.49 A 198.00 198.00 0 0 0 283.60 622.95 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 262.13 645.17 A 228.00 228.00 0 0 1 255.40 640.94 L 271.80 615.82 A 198.00 198.00 0 0 0 277.64 619.49 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 255.40 640.94 A 228.00 228.00 0 0 1 248.83 636.49 L 266.09 611.95 A 198.00 198.00 0 0 0 271.80 615.82 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 248.83 636.49 A 228.00 228.00 0 0 1 242.41 631.81 L 260.52 607.89 A 198.00 198.00 0 0 0 266.09 611.95 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 261.72 606.29 A 196.00 196.00 0 0 1 236.43 583.43 L 258.41 563.01 A 166.00 166.00 0 0 0 279.83 582.37 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 242.41 631.81 A 228.00 228.00 0 0 1 230.09 621.79 L 249.82 599.19 A 198.00 198.00 0 0 0 260.52 607.89 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 230.09 621.79 A 228.00 228.00 0 0 1 224.20 616.47 L 244.70 594.56 A 198.00 198.00 0 0 0 249.82 599.19 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 224.20 616.47 A 228.00 228.00 0 0 1 218.50 610.94 L 239.75 589.76 A 198.00 198.00 0 0 0 244.70 594.56 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 218.50 610.94 A 228.00 228.00 0 0 1 212.99 605.22 L 234.97 584.79 A 198.00 198.00 0 0 0 239.75 589.76 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 236.43 583.43 A 196.00 196.00 0 0 1 227.49 573.12 L 250.84 554.27 A 166.00 166.00 0 0 0 258.41 563.01 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 227.49 573.12 A 196.00 196.00 0 0 1 219.29 562.20 L 243.89 545.03 A 166.00 166.00 0 0 0 250.84 554.27 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 219.29 562.20 A 196.00 196.00 0 0 1 211.87 550.75 L 237.61 535.33 A 166.00 166.00 0 0 0 243.89 545.03 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 193.06 580.52 A 228.00 228.00 0 0 1 188.62 573.93 L 213.81 557.63 A 198.00 198.00 0 0 0 217.65 563.35 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 188.62 573.93 A 228.00 228.00 0 0 1 184.43 567.19 L 210.16 551.77 A 198.00 198.00 0 0 0 213.81 557.63 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 211.87 550.75 A 196.00 196.00 0 0 1 208.47 544.83 L 234.72 530.32 A 166.00 166.00 0 0 0 237.61 535.33 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 236.47 529.35 A 164.00 164.00 0 0 1 216.22 441.44 L 246.18 443.00 A 134.00 134.00 0 0 0 262.73 514.83 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 208.47 544.83 A 196.00 196.00 0 0 1 194.63 513.68 L 223.00 503.93 A 166.00 166.00 0 0 0 234.72 530.32 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 180.46 560.31 A 228.00 228.00 0 0 1 173.27 546.16 L 200.47 533.50 A 198.00 198.00 0 0 0 206.72 545.80 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 173.27 546.16 A 228.00 228.00 0 0 1 170.05 538.90 L 197.67 527.20 A 198.00 198.00 0 0 0 200.47 533.50 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 170.05 538.90 A 228.00 228.00 0 0 1 167.08 531.53 L 195.09 520.81 A 198.00 198.00 0 0 0 197.67 527.20 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 167.08 531.53 A 228.00 228.00 0 0 1 164.37 524.07 L 192.74 514.32 A 198.00 198.00 0 0 0 195.09 520.81 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 194.63 513.68 A 196.00 196.00 0 0 1 187.85 488.66 L 217.26 482.74 A 166.00 166.00 0 0 0 223.00 503.93 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 164.37 524.07 A 228.00 228.00 0 0 1 161.92 516.52 L 190.61 507.77 A 198.00 198.00 0 0 0 192.74 514.32 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 161.92 516.52 A 228.00 228.00 0 0 1 159.73 508.88 L 188.72 501.14 A 198.00 198.00 0 0 0 190.61 507.77 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 159.73 508.88 A 228.00 228.00 0 0 1 157.82 501.18 L 187.05 494.44 A 198.00 198.00 0 0 0 188.72 501.14 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 157.82 501.18 A 228.00 228.00 0 0 1 156.48 494.97 L 185.89 489.05 A 198.00 198.00 0 0 0 187.05 494.44 Z" fill="#60A5FA" fill-opacity="1" stroke="#64748B" stroke-width="1.5" stroke-dasharray="3,2"/>
+<path d="M 187.85 488.66 A 196.00 196.00 0 0 1 185.63 475.19 L 215.38 471.33 A 166.00 166.00 0 0 0 217.26 482.74 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 156.48 494.97 A 228.00 228.00 0 0 1 155.05 487.16 L 184.65 482.27 A 198.00 198.00 0 0 0 185.89 489.05 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 155.05 487.16 A 228.00 228.00 0 0 1 153.89 479.30 L 183.64 475.45 A 198.00 198.00 0 0 0 184.65 482.27 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 185.63 475.19 A 196.00 196.00 0 0 1 184.87 468.40 L 214.73 465.59 A 166.00 166.00 0 0 0 215.38 471.33 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 184.87 468.40 A 196.00 196.00 0 0 1 184.34 461.60 L 214.29 459.82 A 166.00 166.00 0 0 0 214.73 465.59 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 184.34 461.60 A 196.00 196.00 0 0 1 184.06 454.78 L 214.05 454.05 A 166.00 166.00 0 0 0 214.29 459.82 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 184.06 454.78 A 196.00 196.00 0 0 1 184.01 447.95 L 214.01 448.27 A 166.00 166.00 0 0 0 214.05 454.05 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 184.01 447.95 A 196.00 196.00 0 0 1 184.20 441.13 L 214.17 442.49 A 166.00 166.00 0 0 0 214.01 448.27 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 184.20 441.13 A 196.00 196.00 0 0 1 184.27 439.76 L 214.23 441.33 A 166.00 166.00 0 0 0 214.17 442.49 Z" fill="#94A3B8" fill-opacity="0.28"/>
+<path d="M 152.23 439.68 A 228.00 228.00 0 0 1 152.31 438.09 L 182.27 439.66 A 198.00 198.00 0 0 0 182.20 441.04 Z" fill="#94A3B8" fill-opacity="0.28" stroke="#64748B" stroke-width="1.5" stroke-dasharray="3,2"/>
+<path d="M 216.22 441.44 A 164.00 164.00 0 0 1 218.01 424.40 L 247.64 429.08 A 134.00 134.00 0 0 0 246.18 443.00 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 184.27 439.76 A 196.00 196.00 0 0 1 185.45 426.17 L 215.23 429.81 A 166.00 166.00 0 0 0 214.23 441.33 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 185.45 426.17 A 196.00 196.00 0 0 1 186.40 419.41 L 216.03 424.09 A 166.00 166.00 0 0 0 215.23 429.81 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 281.23 434.39 A 100.00 100.00 0 0 1 316.38 372.85 L 335.46 396.00 A 70.00 70.00 0 0 0 310.86 439.07 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 249.62 429.40 A 132.00 132.00 0 0 1 296.02 348.16 L 315.10 371.31 A 102.00 102.00 0 0 0 279.25 434.08 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 218.01 424.40 A 164.00 164.00 0 0 1 275.66 323.48 L 294.74 346.62 A 134.00 134.00 0 0 0 247.64 429.08 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 186.40 419.41 A 196.00 196.00 0 0 1 255.30 298.79 L 274.38 321.93 A 166.00 166.00 0 0 0 216.03 424.09 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 154.79 414.41 A 228.00 228.00 0 0 1 167.08 368.47 L 195.09 379.19 A 198.00 198.00 0 0 0 184.43 419.09 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 167.08 368.47 A 228.00 228.00 0 0 1 183.61 334.17 L 209.45 349.41 A 198.00 198.00 0 0 0 195.09 379.19 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 183.61 334.17 A 228.00 228.00 0 0 1 201.60 308.02 L 225.07 326.70 A 198.00 198.00 0 0 0 209.45 349.41 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 201.60 308.02 A 228.00 228.00 0 0 1 211.92 295.95 L 234.03 316.22 A 198.00 198.00 0 0 0 225.07 326.70 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 211.92 295.95 A 228.00 228.00 0 0 1 223.05 284.62 L 243.70 306.38 A 198.00 198.00 0 0 0 234.03 316.22 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 223.05 284.62 A 228.00 228.00 0 0 1 234.94 274.10 L 254.02 297.25 A 198.00 198.00 0 0 0 243.70 306.38 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 316.38 372.85 A 100.00 100.00 0 0 1 349.83 354.66 L 358.88 383.26 A 70.00 70.00 0 0 0 335.46 396.00 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 296.02 348.16 A 132.00 132.00 0 0 1 340.17 324.15 L 349.22 352.75 A 102.00 102.00 0 0 0 315.10 371.31 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 275.66 323.48 A 164.00 164.00 0 0 1 330.52 293.64 L 339.57 322.24 A 134.00 134.00 0 0 0 294.74 346.62 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 255.30 298.79 A 196.00 196.00 0 0 1 320.86 263.13 L 329.91 291.74 A 166.00 166.00 0 0 0 274.38 321.93 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 234.94 274.10 A 228.00 228.00 0 0 1 260.77 255.66 L 276.46 281.23 A 198.00 198.00 0 0 0 254.02 297.25 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 260.77 255.66 A 228.00 228.00 0 0 1 288.91 240.99 L 300.90 268.49 A 198.00 198.00 0 0 0 276.46 281.23 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 288.91 240.99 A 228.00 228.00 0 0 1 303.68 235.15 L 313.72 263.42 A 198.00 198.00 0 0 0 300.90 268.49 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 303.68 235.15 A 228.00 228.00 0 0 1 311.21 232.63 L 320.26 261.23 A 198.00 198.00 0 0 0 313.72 263.42 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 349.83 354.66 A 100.00 100.00 0 0 1 380.00 350.00 L 380.00 380.00 A 70.00 70.00 0 0 0 358.88 383.26 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 340.17 324.15 A 132.00 132.00 0 0 1 380.00 318.00 L 380.00 348.00 A 102.00 102.00 0 0 0 349.22 352.75 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 330.52 293.64 A 164.00 164.00 0 0 1 380.00 286.00 L 380.00 316.00 A 134.00 134.00 0 0 0 339.57 322.24 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 320.86 263.13 A 196.00 196.00 0 0 1 380.00 254.00 L 380.00 284.00 A 166.00 166.00 0 0 0 329.91 291.74 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 311.21 232.63 A 228.00 228.00 0 0 1 380.00 222.00 L 380.00 252.00 A 198.00 198.00 0 0 0 320.26 261.23 Z" fill="#B91C1C" fill-opacity="1"/>
+<text x="435.2" y="514.6" text-anchor="middle" dominant-baseline="middle" transform="rotate(49.5 435.2 514.6)" font-size="11" font-weight="700" fill="#FFFFFF">commonMain</text>
+<text x="496.8" y="457.3" text-anchor="middle" dominant-baseline="middle" transform="rotate(3.6 496.8 457.3)" font-size="11" font-weight="700" fill="#FFFFFF">co</text>
+<text x="528.7" y="459.3" text-anchor="middle" dominant-baseline="middle" transform="rotate(3.6 528.7 459.3)" font-size="11" font-weight="700" fill="#FFFFFF">touchlab</text>
+<text x="560.6" y="461.3" text-anchor="middle" dominant-baseline="middle" transform="rotate(3.6 560.6 461.3)" font-size="11" font-weight="700" fill="#FFFFFF">droidcon</text>
+<text x="585.6" y="394.3" text-anchor="middle" dominant-baseline="middle" transform="rotate(-15.2 585.6 394.3)" font-size="11" font-weight="700" fill="#FFFFFF">domain</text>
+<text x="388.5" y="206.1" text-anchor="start" dominant-baseline="middle" transform="rotate(-88.0 388.5 206.1)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">AboutDto</text>
+<text x="405.4" y="207.3" text-anchor="start" dominant-baseline="middle" transform="rotate(-84.0 405.4 207.3)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">ConferencesDto</text>
+<text x="422.3" y="209.7" text-anchor="start" dominant-baseline="middle" transform="rotate(-80.0 422.3 209.7)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">ScheduleDto</text>
+<text x="438.9" y="213.2" text-anchor="start" dominant-baseline="middle" transform="rotate(-76.0 438.9 213.2)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">SpeakersDto</text>
+<text x="455.2" y="217.9" text-anchor="start" dominant-baseline="middle" transform="rotate(-72.0 455.2 217.9)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">SponsorSessionsDto</text>
+<text x="471.2" y="223.7" text-anchor="start" dominant-baseline="middle" transform="rotate(-68.0 471.2 223.7)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">SponsorsDto</text>
+<text x="486.7" y="230.6" text-anchor="start" dominant-baseline="middle" transform="rotate(-64.1 486.7 230.6)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">AboutJsonResource.</text>
+<text x="501.8" y="238.5" text-anchor="start" dominant-baseline="middle" transform="rotate(-60.1 501.8 238.5)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">JsonResourceReader</text>
+<text x="516.2" y="247.5" text-anchor="start" dominant-baseline="middle" transform="rotate(-56.1 516.2 247.5)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">DefaultApiDataSou.</text>
+<text x="529.9" y="257.5" text-anchor="start" dominant-baseline="middle" transform="rotate(-52.1 529.9 257.5)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">DefaultConference.</text>
+<text x="543.0" y="268.4" text-anchor="start" dominant-baseline="middle" transform="rotate(-48.1 543.0 268.4)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">DefaultDateTimeSe.</text>
+<text x="555.2" y="280.2" text-anchor="start" dominant-baseline="middle" transform="rotate(-44.1 555.2 280.2)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">DefaultFeedbackSe.</text>
+<text x="566.6" y="292.8" text-anchor="start" dominant-baseline="middle" transform="rotate(-40.1 566.6 292.8)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">DefaultServerApi</text>
+<text x="577.1" y="306.2" text-anchor="start" dominant-baseline="middle" transform="rotate(-36.1 577.1 306.2)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">DefaultSyncService</text>
+<text x="595.2" y="334.9" text-anchor="start" dominant-baseline="middle" transform="rotate(-28.1 595.2 334.9)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">ConferenceConfigP.</text>
+<text x="602.7" y="350.2" text-anchor="start" dominant-baseline="middle" transform="rotate(-24.1 602.7 350.2)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">DateTimeService</text>
+<text x="618.5" y="398.5" text-anchor="start" dominant-baseline="middle" transform="rotate(-12.2 618.5 398.5)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">BaseRepository</text>
+<text x="621.5" y="415.3" text-anchor="start" dominant-baseline="middle" transform="rotate(-8.2 621.5 415.3)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">SqlDelightConfere.</text>
+<text x="623.3" y="432.2" text-anchor="start" dominant-baseline="middle" transform="rotate(-4.2 623.3 432.2)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">SqlDelightProfile.</text>
+<text x="624.0" y="449.2" text-anchor="start" dominant-baseline="middle" transform="rotate(-0.2 624.0 449.2)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">SqlDelightRoomRep.</text>
+<text x="623.5" y="466.1" text-anchor="start" dominant-baseline="middle" transform="rotate(3.8 623.5 466.1)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">SqlDelightSession.</text>
+<text x="621.8" y="483.0" text-anchor="start" dominant-baseline="middle" transform="rotate(7.8 621.8 483.0)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">SqlDelightSponsor.</text>
+<text x="618.9" y="499.8" text-anchor="start" dominant-baseline="middle" transform="rotate(11.8 618.9 499.8)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">SqlDelightSponsor.</text>
+<text x="614.8" y="516.3" text-anchor="start" dominant-baseline="middle" transform="rotate(15.8 614.8 516.3)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">ConferenceReposit.</text>
+<text x="609.6" y="532.5" text-anchor="start" dominant-baseline="middle" transform="rotate(19.8 609.6 532.5)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">Repository</text>
+<text x="603.3" y="548.3" text-anchor="start" dominant-baseline="middle" transform="rotate(23.7 603.3 548.3)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">SessionRepository</text>
+<text x="578.1" y="592.5" text-anchor="start" dominant-baseline="middle" transform="rotate(35.7 578.1 592.5)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">DefaultSessionGat.</text>
+<text x="567.7" y="605.9" text-anchor="start" dominant-baseline="middle" transform="rotate(39.7 567.7 605.9)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">DefaultSponsorGat.</text>
+<text x="556.4" y="618.6" text-anchor="start" dominant-baseline="middle" transform="rotate(43.7 556.4 618.6)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">SessionGateway</text>
+<text x="544.2" y="630.5" text-anchor="start" dominant-baseline="middle" transform="rotate(47.7 544.2 630.5)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">SponsorGateway</text>
+<text x="531.3" y="641.4" text-anchor="start" dominant-baseline="middle" transform="rotate(51.7 531.3 641.4)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">Conference</text>
+<text x="443.6" y="653.3" text-anchor="middle" dominant-baseline="middle" transform="rotate(72.6 443.6 653.3)" font-size="11" font-weight="700" fill="#FFFFFF">applica.</text>
+<text x="495.8" y="664.8" text-anchor="start" dominant-baseline="middle" transform="rotate(61.7 495.8 664.8)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">DefaultSettingsRe.</text>
+<text x="472.8" y="675.7" text-anchor="start" dominant-baseline="middle" transform="rotate(67.6 472.8 675.7)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">SettingsRepository</text>
+<text x="456.9" y="681.6" text-anchor="start" dominant-baseline="middle" transform="rotate(71.6 456.9 681.6)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">SettingsGateway</text>
+<text x="440.5" y="686.4" text-anchor="start" dominant-baseline="middle" transform="rotate(75.6 440.5 686.4)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">DefaultSettingsGa.</text>
+<text x="424.0" y="690.0" text-anchor="start" dominant-baseline="middle" transform="rotate(79.6 424.0 690.0)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">DefaultNotificati.</text>
+<text x="390.2" y="693.8" text-anchor="start" dominant-baseline="middle" transform="rotate(87.6 390.2 693.8)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">DateFormatter</text>
+<text x="286.5" y="520.3" text-anchor="middle" dominant-baseline="middle" transform="rotate(323.1 286.5 520.3)" font-size="11" font-weight="700" fill="#FFFFFF">co.touchlab.dr.</text>
+<text x="296.4" y="573.3" text-anchor="middle" dominant-baseline="middle" transform="rotate(304.1 296.4 573.3)" font-size="11" font-weight="700" fill="#FFFFFF">viewmodel</text>
+<text x="311.8" y="617.6" text-anchor="middle" dominant-baseline="middle" transform="rotate(292.2 311.8 617.6)" font-size="11" font-weight="700" fill="#FFFFFF">session</text>
+<text x="234.8" y="483.4" text-anchor="middle" dominant-baseline="middle" transform="rotate(347.0 234.8 483.4)" font-size="11" font-weight="700" fill="#FFFFFF">ui</text>
+<text x="306.2" y="407.8" text-anchor="middle" dominant-baseline="middle" transform="rotate(389.7 306.2 407.8)" font-size="11" font-weight="700" fill="#FFFFFF">iosM.</text>
+<text x="278.4" y="392.0" text-anchor="middle" dominant-baseline="middle" transform="rotate(389.7 278.4 392.0)" font-size="11" font-weight="700" fill="#FFFFFF">co</text>
+<text x="250.6" y="376.1" text-anchor="middle" dominant-baseline="middle" transform="rotate(389.7 250.6 376.1)" font-size="11" font-weight="700" fill="#FFFFFF">touchlab</text>
+<text x="222.8" y="360.2" text-anchor="middle" dominant-baseline="middle" transform="rotate(389.7 222.8 360.2)" font-size="11" font-weight="700" fill="#FFFFFF">droidcon</text>
+<text x="174.2" y="395.0" text-anchor="middle" dominant-baseline="middle" transform="rotate(375.0 174.2 395.0)" font-size="11" font-weight="700" fill="#FFFFFF">ios</text>
+<text x="140.5" y="403.5" text-anchor="end" dominant-baseline="middle" transform="rotate(371.0 140.5 403.5)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">NotificationLocal.</text>
+<text x="144.3" y="387.0" text-anchor="end" dominant-baseline="middle" transform="rotate(375.0 144.3 387.0)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">IOSDateFormatter</text>
+<text x="155.3" y="354.9" text-anchor="end" dominant-baseline="middle" transform="rotate(382.9 155.3 354.9)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">ToSkiaImage</text>
+<text x="174.3" y="318.8" text-anchor="end" dominant-baseline="middle" transform="rotate(392.5 174.3 318.8)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">BundleResourceRea.</text>
+<text x="183.9" y="304.8" text-anchor="end" dominant-baseline="middle" transform="rotate(396.5 183.9 304.8)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">WrapMultiThreadCa.</text>
+<text x="218.3" y="267.3" text-anchor="end" dominant-baseline="middle" transform="rotate(408.5 218.3 267.3)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">IOSNotificationSe.</text>
+<text x="339.4" y="375.3" text-anchor="middle" dominant-baseline="middle" transform="rotate(421.5 339.4 375.3)" font-size="11" font-weight="700" fill="#FFFFFF">and.</text>
+<text x="324.1" y="347.2" text-anchor="middle" dominant-baseline="middle" transform="rotate(421.5 324.1 347.2)" font-size="11" font-weight="700" fill="#FFFFFF">co</text>
+<text x="308.8" y="319.1" text-anchor="middle" dominant-baseline="middle" transform="rotate(421.5 308.8 319.1)" font-size="11" font-weight="700" fill="#FFFFFF">tou.</text>
+<text x="293.5" y="291.0" text-anchor="middle" dominant-baseline="middle" transform="rotate(421.5 293.5 291.0)" font-size="11" font-weight="700" fill="#FFFFFF">droi.</text>
+<text x="231.4" y="256.5" text-anchor="end" dominant-baseline="middle" transform="rotate(412.5 231.4 256.5)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">AndroidNotificati.</text>
+<text x="245.2" y="246.6" text-anchor="end" dominant-baseline="middle" transform="rotate(416.5 245.2 246.6)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">NotificationResch.</text>
+<text x="259.7" y="237.7" text-anchor="end" dominant-baseline="middle" transform="rotate(420.5 259.7 237.7)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">AndroidDateFormat.</text>
+<text x="367.0" y="366.0" text-anchor="middle" dominant-baseline="middle" transform="rotate(441.2 367.0 366.0)" font-size="11" font-weight="700" fill="#FFFFFF">main</text>
+<text x="362.1" y="334.4" text-anchor="middle" dominant-baseline="middle" transform="rotate(441.2 362.1 334.4)" font-size="11" font-weight="700" fill="#FFFFFF">java</text>
+<text x="357.3" y="302.7" text-anchor="middle" dominant-baseline="middle" transform="rotate(441.2 357.3 302.7)" font-size="11" font-weight="700" fill="#FFFFFF">co</text>
+<text x="352.4" y="271.1" text-anchor="middle" dominant-baseline="middle" transform="rotate(441.2 352.4 271.1)" font-size="11" font-weight="700" fill="#FFFFFF">tou.</text>
+<text x="347.5" y="239.5" text-anchor="middle" dominant-baseline="middle" transform="rotate(441.2 347.5 239.5)" font-size="11" font-weight="700" fill="#FFFFFF">droi.</text>
+<text x="314.5" y="214.9" text-anchor="end" dominant-baseline="middle" transform="rotate(434.4 314.5 214.9)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">DefaultFirebaseMe.</text>
+<text x="347.8" y="208.1" text-anchor="end" dominant-baseline="middle" transform="rotate(442.4 347.8 208.1)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">MainActivity</text>
+<text x="364.7" y="206.5" text-anchor="end" dominant-baseline="middle" transform="rotate(446.4 364.7 206.5)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">MainApp</text>
+<circle cx="380.0" cy="450.0" r="70" fill="#F5F4F0" stroke="#D8D6D0"/><text x="380.0" y="454.0" text-anchor="middle" font-size="13" font-weight="700" fill="#64748B">src</text>
+<rect x="20" y="850" width="14" height="14" rx="3" fill="#B91C1C"/><text x="40" y="861" fill="#475569" font-size="11">Directo</text>
+<rect x="164" y="850" width="14" height="14" rx="3" fill="#1D4ED8"/><text x="184" y="861" fill="#475569" font-size="11">Transitivo d1</text>
+<rect x="308" y="850" width="14" height="14" rx="3" fill="#60A5FA"/><text x="328" y="861" fill="#475569" font-size="11">Transitivo d2+</text>
+<rect x="452" y="850" width="14" height="14" rx="3" fill="#94A3B8"/><text x="472" y="861" fill="#475569" font-size="11">Sin impacto</text>
+<rect x="596" y="850" width="14" height="14" rx="3" fill="none" stroke="#64748B" stroke-width="1.5" stroke-dasharray="3,2"/><text x="616" y="861" fill="#475569" font-size="11">Expect/Actual</text>
+</svg>

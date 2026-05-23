@@ -1,0 +1,28 @@
+{
+  "before_dir": "/tmp/output/phase1/before",
+  "after_dir": "/tmp/output/phase1/after",
+  "version_change": {
+    "dependency_group": "io.insert-koin",
+    "version_key": "koin",
+    "before": "4.1.1",
+    "after": "4.2.1"
+  },
+  "init_script_injected": false,
+  "detekt_reports": {},
+  "kover_reports": {
+    "ios": "/tmp/output/phase1/before/ios/build/reports/kover/report.xml"
+  },
+  "compilation_after": {
+    "status": "failure",
+    "errors": [
+      "e: KLIB resolver: Could not find \"/home/runner/.gradle/caches/modules-2/files-2.1/io.insert-koin/koin-core-iosarm64/4.2.1/bbc26f7202ceb0e232d34e3a7ff14e92a4620cf1/koin-core-iosArm64Main-4.2.1.klib\" in [/home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.2.21/klib/common, /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.2.21/klib/platform/ios_arm64, /tmp/output/phase1/after]",
+      "e: KLIB resolver: Could not find \"/home/runner/.gradle/caches/modules-2/files-2.1/io.insert-koin/koin-core-iosx64/4.2.1/effba22aebf8688755fee73ad57f4a398bf90c32/koin-core-iosX64Main-4.2.1.klib\" in [/home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.2.21/klib/common, /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.2.21/klib/platform/ios_x64, /tmp/output/phase1/after]"
+    ],
+    "tasks": [
+      "shared:compileKotlinIosArm64",
+      "shared-ui:compileKotlinIosX64",
+      "ios:compileKotlinIosX64"
+    ]
+  },
+  "compile_targets": {}
+}

@@ -1,0 +1,25 @@
+{
+  "before_dir": "/tmp/output/phase1/before",
+  "after_dir": "/tmp/output/phase1/after",
+  "version_change": {
+    "dependency_group": "co.touchlab",
+    "version_key": "sqliter",
+    "before": "2.0.6",
+    "after": "2.1.0"
+  },
+  "init_script_injected": false,
+  "detekt_reports": {},
+  "kover_reports": {
+    "ios": "/tmp/output/phase1/before/ios/build/reports/kover/report.xml"
+  },
+  "compilation_after": {
+    "status": "failure",
+    "errors": [],
+    "tasks": [
+      "ios:compileKotlinIosArm64",
+      "ios:compileKotlinMetadata",
+      "shared:compileKotlinIosArm64"
+    ]
+  },
+  "compile_targets": {}
+}

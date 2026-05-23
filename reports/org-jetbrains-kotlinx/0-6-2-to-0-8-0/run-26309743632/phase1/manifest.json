@@ -1,0 +1,28 @@
+{
+  "before_dir": "/tmp/output/phase1/before",
+  "after_dir": "/tmp/output/phase1/after",
+  "version_change": {
+    "dependency_group": "org.jetbrains.kotlinx",
+    "version_key": "coroutines",
+    "before": "0.6.2",
+    "after": "0.8.0"
+  },
+  "init_script_injected": false,
+  "detekt_reports": {},
+  "kover_reports": {
+    "shared-ui": "/tmp/output/phase1/before/shared-ui/build/reports/kover/report.xml",
+    "ios": "/tmp/output/phase1/before/ios/build/reports/kover/report.xml",
+    "shared": "/tmp/output/phase1/before/shared/build/reports/kover/report.xml",
+    "android": "/tmp/output/phase1/before/android/build/reports/kover/report.xml"
+  },
+  "compilation_after": {
+    "status": "success",
+    "errors": [],
+    "tasks": [
+      "shared:compileKotlinIosSimulatorArm64",
+      "ios:compileKotlinIosSimulatorArm64",
+      "shared-ui:compileKotlinMetadata"
+    ]
+  },
+  "compile_targets": {}
+}

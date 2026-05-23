@@ -1,0 +1,67 @@
+{
+  "dependency_group": "io.coil-kt.coil3",
+  "version_before": "3.3.0",
+  "version_after": "3.4.0",
+  "seed_files": [],
+  "impacted_files": [],
+  "expect_actual_pairs": [
+    {
+      "expect_fqcn": "co.touchlab.droidcon.domain.repository.impl.SqlDelightDriverFactory",
+      "expect_file": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightDriverFactory.kt",
+      "actual_files": [
+        "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightDriverFactory.android.kt",
+        "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightDriverFactory.ios.kt"
+      ]
+    },
+    {
+      "expect_fqcn": "co.touchlab.droidcon.util.printThrowable",
+      "expect_file": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/util/Platform.kt",
+      "actual_files": [
+        "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/util/Platform.android.kt",
+        "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/util/Platform.ios.kt"
+      ]
+    },
+    {
+      "expect_fqcn": "co.touchlab.droidcon.ui.settings.PlatformSpecificSettingsView",
+      "expect_file": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/PlatformSpecificSettings.kt",
+      "actual_files": [
+        "/tmp/output/phase1/before/shared-ui/src/androidMain/kotlin/co/touchlab/droidcon/ui/settings/PlatformSpecificSettings.kt",
+        "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/settings/PlatformSpecificSettings.kt"
+      ]
+    },
+    {
+      "expect_fqcn": "co.touchlab.droidcon.ui.util.Dialog",
+      "expect_file": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/Dialog.kt",
+      "actual_files": [
+        "/tmp/output/phase1/before/shared-ui/src/androidMain/kotlin/co/touchlab/droidcon/ui/util/Dialog.kt",
+        "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/util/Dialog.kt"
+      ]
+    },
+    {
+      "expect_fqcn": "co.touchlab.droidcon.ui.util.__LocalImage",
+      "expect_file": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/LocalImage.kt",
+      "actual_files": [
+        "/tmp/output/phase1/before/shared-ui/src/androidMain/kotlin/co/touchlab/droidcon/ui/util/LocalImage.jvm.kt",
+        "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/util/LocalImage.kt"
+      ]
+    },
+    {
+      "expect_fqcn": "co.touchlab.droidcon.ui.util.NavigationBackPressWrapper",
+      "expect_file": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/NavigationBackPressWrapper.kt",
+      "actual_files": [
+        "/tmp/output/phase1/before/shared-ui/src/androidMain/kotlin/co/touchlab/droidcon/ui/util/NavigationBackPressWrapper.kt",
+        "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/util/NavigationBackPressWrapper.kt"
+      ]
+    },
+    {
+      "expect_fqcn": "com.example.common.DatabaseDriverFactory",
+      "expect_file": "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/ExpectClass.kt",
+      "actual_files": [
+        "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/ActualAndroid.kt"
+      ]
+    }
+  ],
+  "total_project_files": 169,
+  "total_impacted": 0,
+  "ksp_edges_added": 0
+}

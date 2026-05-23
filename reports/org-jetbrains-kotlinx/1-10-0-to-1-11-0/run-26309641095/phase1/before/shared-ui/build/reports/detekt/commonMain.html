@@ -1,0 +1,1836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+    </style>
+    <meta charset="utf-8">
+    <title>detekt report</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            font-weight: 400;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            font-weight: 600;
+            width: fit-content;
+            background: -webkit-linear-gradient(left, rgba(105, 33, 224, 1), rgba(247, 44, 67, 1));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-family: Arial, sans-serif;
+            font-weight: 400;
+            background: rgb(105, 33, 224);
+            background: linear-gradient(90deg, rgba(105, 33, 224, 0.8) 0%, rgba(158, 41, 156, 0.8) 50%, rgba(247, 44, 67, 0.8) 100%);
+            padding: 0.2em;
+            color: #ffffff;
+            border-radius: 4px;
+        }
+
+        h3 {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, rgba(105, 33, 224, 0.4) 0%, rgba(158, 41, 156, 0.4) 50%, rgba(247, 44, 67, 0.4) 100%);
+            padding: 0.5em;
+            border-radius: 4px;
+        }
+
+        .rule-container {
+            background: linear-gradient(90deg, rgba(105, 33, 224, 0.2) 0%, rgba(158, 41, 156, 0.2) 100%);
+            border-radius: 4px;
+            padding-left: 1em;
+            padding-bottom: 0.3em;
+            padding-top: 0.3em;
+            padding-right: 1em;
+            line-height: 1.5em;
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+
+        .rule {
+            font-family: Arial, sans-serif;
+            padding: 0.3em;
+            font-weight: 600;
+            border-radius: 3px;
+        }
+
+        .description {
+            font-family: Arial, sans-serif;
+            color: #000000;
+            padding: 0.3em;
+        }
+
+        .location {
+            font-family: Jetbrains Mono, monospace;
+            font-weight: 500;
+            color: #000000;
+            display: block;
+        }
+
+        .message {
+            font-family: Arial, sans-serif;
+            font-size: 0.8em;
+            color: #444444;
+            display: block;
+            margin-top: 1pt;
+        }
+
+        code {
+            font-family: JetBrains Mono, monospace;
+            font-weight: 400;
+        }
+
+        pre {
+            font-family: JetBrains Mono, monospace;
+            font-weight: 500;
+            border: 1px solid #e0e0e0;
+            overflow: auto;
+        }
+
+        .lineno {
+            margin-right: 24px;
+            color: #9771c3;
+            background-color: rgba(230, 211, 243, 0.51);
+        }
+
+        .error {
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AwCFR4T/3uLMgAAADxJREFUCNdNyLERQEAABMCjL4lQwIzcjErpguAL+C9AvgKJDbeD/PRpLdm35Hm+MU+cB+tCKaJW4L4YBy+CAiLJrFs9mgAAAABJRU5ErkJggg==) bottom repeat-x;
+        }
+
+        .exception {
+            color: #b60808;
+            display: inline-block;
+            background-color: #ecdada;
+            border-color: #b60808;
+            border-radius: 10px;
+            border: solid 2px;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="225" height="53" viewBox="0 0 225 53" fill="none"
+     style="padding-top: 8px">
+    <path d="M88.8883 42.2665V7.99487H81.6954V20.389C79.9918 18.3703 77.6257 16.6332 73.7926 16.6332C67.7828 16.6332 62.2461 21.2341 62.2461 29.6377V29.7316C62.2461 38.1352 67.8774 42.736 73.7926 42.736C77.5311 42.736 79.9445 40.9989 81.6954 38.6516V42.2665H88.8883ZM81.79 29.7316C81.79 33.9099 78.998 36.6798 75.6382 36.6798C72.2783 36.6798 69.439 33.9099 69.439 29.7316V29.6377C69.439 25.4124 72.2783 22.6894 75.6382 22.6894C78.998 22.6894 81.79 25.4593 81.79 29.6377V29.7316Z"
+          fill="#222222"/>
+    <path d="M120.325 30.3888V30.2949C120.325 23.1589 116.444 16.6332 107.974 16.6332C100.591 16.6332 95.4334 22.5486 95.4334 29.7316V29.8254C95.4334 37.5248 101.065 42.8299 108.683 42.8299C113.274 42.8299 116.681 41.0459 119.047 38.1352L114.93 34.5202C112.942 36.3511 111.192 37.1023 108.778 37.1023C105.56 37.1023 103.289 35.4122 102.579 32.1728H120.23C120.277 31.5156 120.325 31.093 120.325 30.3888ZM113.321 27.7128H102.484C103.052 24.4734 104.992 22.3608 107.974 22.3608C111.002 22.3608 112.895 24.5204 113.321 27.7128Z"
+          fill="#222222"/>
+    <path d="M141.278 41.2337V35.5061C140.237 36.0695 139.054 36.3981 137.729 36.3981C136.12 36.3981 135.41 35.6 135.41 33.9568V23.2059H141.373V17.1027H135.41V10.6709H128.217V17.1027H125.189V23.2059H128.217V35.1305C128.217 40.952 131.199 42.6891 135.599 42.6891C138.013 42.6891 139.764 42.1257 141.278 41.2337Z"
+          fill="#222222"/>
+    <path d="M172.008 30.3888V30.2949C172.008 23.1589 168.128 16.6332 159.657 16.6332C152.275 16.6332 147.117 22.5486 147.117 29.7316V29.8254C147.117 37.5248 152.748 42.8299 160.367 42.8299C164.958 42.8299 168.365 41.0459 170.731 38.1352L166.614 34.5202C164.626 36.3511 162.875 37.1023 160.462 37.1023C157.244 37.1023 154.973 35.4122 154.263 32.1728H171.914C171.961 31.5156 172.008 31.093 172.008 30.3888ZM165.005 27.7128H154.168C154.736 24.4734 156.676 22.3608 159.657 22.3608C162.686 22.3608 164.579 24.5204 165.005 27.7128Z"
+          fill="#222222"/>
+    <path d="M203.278 42.2665L193.293 27.0086L202.947 17.1027H194.334L185.911 26.2574V7.99487H178.718V42.2665H185.911V34.6141L188.419 31.985L195.044 42.2665H203.278Z"
+          fill="#222222"/>
+    <path d="M224.905 41.2337V35.5061C223.864 36.0695 222.681 36.3981 221.356 36.3981C219.747 36.3981 219.037 35.6 219.037 33.9568V23.2059H225V17.1027H219.037V10.6709H211.844V17.1027H208.816V23.2059H211.844V35.1305C211.844 40.952 214.826 42.6891 219.227 42.6891C221.64 42.6891 223.391 42.1257 224.905 41.2337Z"
+          fill="#222222"/>
+    <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M2.18611 0C0.978755 0 0 0.978755 0 2.18611V40.771C0 41.9783 0.978755 42.9571 2.18611 42.9571H24.2534C25.6525 42.9571 26.6258 41.5473 26.3774 40.1705C26.2109 39.2481 26.124 38.2981 26.124 37.3279C26.124 28.5443 33.2445 21.4239 42.028 21.4239C42.8689 21.4239 43.6945 21.4892 44.5001 21.6149C45.8578 21.8268 47.22 20.8585 47.22 19.4844V2.18611C47.22 0.978755 46.2412 0 45.0339 0H2.18611Z"
+          fill="url(#paint0_linear)"/>
+    <path d="M55.3358 48.6166L54.7673 48.0481L53.2421 46.5229L52.9516 46.2324C52.2427 45.5234 52.1855 44.4067 52.673 43.5306C53.6299 41.8109 54.1762 39.833 54.1762 37.7293C54.1762 32.9104 51.3147 28.7499 47.2029 26.8501C46.5196 26.5344 45.8024 26.2808 45.0573 26.0974C44.3636 25.9268 43.6467 25.8164 42.9118 25.7727C42.6749 25.7587 42.4369 25.7495 42.1966 25.7495C38.5166 25.7495 35.2203 27.4188 33.0211 30.0381C31.9784 31.2802 31.1838 32.7357 30.7114 34.3293C30.3916 35.4079 30.217 36.5481 30.217 37.7291C30.217 38.0293 30.2319 38.3259 30.2537 38.6205C30.3082 39.3559 30.4265 40.0733 30.6082 40.766C30.8038 41.5117 31.0689 42.2296 31.3974 42.9116C33.3332 46.9295 37.4465 49.7089 42.1967 49.7089C43.957 49.7089 45.6291 49.3259 47.1357 48.6403C47.9841 48.2543 49.0046 48.3536 49.6636 49.0127L50.0894 49.4385L51.6301 50.9794L52.3016 51.6509C52.7205 52.0699 53.2697 52.2794 53.8186 52.2794C54.3677 52.2794 54.9169 52.0699 55.3357 51.6509C56.1738 50.8129 56.1738 49.4544 55.3358 48.6166ZM42.1967 45.418C39.9525 45.418 37.93 44.451 36.5232 42.9122C35.9485 42.2836 35.4772 41.5594 35.135 40.7667C34.845 40.0954 34.6493 39.3746 34.5617 38.6211C34.5277 38.3283 34.5084 38.0314 34.5084 37.7297C34.5084 33.4903 37.9574 30.0413 42.1968 30.0413C42.4379 30.0413 42.6762 30.0539 42.912 30.0756C43.6638 30.1455 44.3837 30.3242 45.0576 30.5956C45.8458 30.9127 46.5689 31.3564 47.2031 31.902C48.8434 33.3131 49.8852 35.4015 49.8852 37.7297C49.885 41.9688 46.4361 45.418 42.1967 45.418Z"
+          fill="url(#paint1_linear)"/>
+    <path d="M9.9936 25.6979C9.34217 25.6979 8.84618 25.4958 8.50566 25.0914C8.16514 24.6709 7.99487 24.1695 7.99487 23.5873V23.4903C7.99487 22.908 8.16514 22.4147 8.50566 22.0104C8.84618 21.5899 9.34217 21.3796 9.9936 21.3796C10.645 21.3796 11.141 21.5899 11.4815 22.0104C11.8221 22.4147 11.9923 22.908 11.9923 23.4903V23.5873C11.9923 24.1695 11.8221 24.6709 11.4815 25.0914C11.141 25.4958 10.645 25.6979 9.9936 25.6979ZM8.17254 10.8158V7.99487H11.8147V10.8158L10.6598 19.1612H9.32736L8.17254 10.8158Z"
+          fill="white"/>
+    <path d="M20.2729 25.6979C19.6215 25.6979 19.1255 25.4958 18.785 25.0914C18.4444 24.6709 18.2742 24.1695 18.2742 23.5873V23.4903C18.2742 22.908 18.4444 22.4147 18.785 22.0104C19.1255 21.5899 19.6215 21.3796 20.2729 21.3796C20.9243 21.3796 21.4203 21.5899 21.7608 22.0104C22.1014 22.4147 22.2716 22.908 22.2716 23.4903V23.5873C22.2716 24.1695 22.1014 24.6709 21.7608 25.0914C21.4203 25.4958 20.9243 25.6979 20.2729 25.6979ZM18.4518 10.8158V7.99487H22.094V10.8158L20.9391 19.1612H19.6067L18.4518 10.8158Z"
+          fill="white"/>
+    <defs>
+        <linearGradient id="paint0_linear" x1="5.222e-07" y1="41.3361" x2="51.982" y2="33.29"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#7942EE"/>
+            <stop offset="1" stop-color="#FF4651"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear" x1="53.0121" y1="51.5465" x2="60.9801" y2="30.2423"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#7942EE"/>
+            <stop offset="1" stop-color="#FF4651"/>
+        </linearGradient>
+    </defs>
+</svg>
+
+<h2>Metrics</h2>
+
+<div>
+  <ul>
+    <li>270 number of properties</li>
+    <li>110 number of functions</li>
+    <li>63 number of classes</li>
+    <li>13 number of packages</li>
+    <li>52 number of kt files</li>
+  </ul>
+</div>
+
+
+<h2>Complexity Report</h2>
+
+<div>
+  <ul>
+    <li>4,133 lines of code (loc)</li>
+    <li>3,634 source lines of code (sloc)</li>
+    <li>2,357 logical lines of code (lloc)</li>
+    <li>56 comment lines of code (cloc)</li>
+    <li>262 cyclomatic complexity (mcc)</li>
+    <li>219 cognitive complexity</li>
+    <li>171 number of total code smells</li>
+    <li>1% comment source ratio</li>
+    <li>111 mcc per 1,000 lloc</li>
+    <li>72 code smells per 1,000 lloc</li>
+  </ul>
+</div>
+
+
+<h2>Findings</h2>
+<div>Total: 171
+  <h3>complexity: 15</h3>
+  <details id="CyclomaticComplexMethod" open="open">
+    <summary class="rule-container"><span class="rule">CyclomaticComplexMethod: 1 </span><span class="description">Prefer splitting up complex methods into smaller, easier to test methods.</span></summary>
+<a href="https://detekt.dev/docs/rules/complexity#cyclomaticcomplexmethod">Documentation</a>
+    <ul>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionDetailView.kt:61:14</span><span class="message">The function SessionDetailView appears to be too complex based on Cyclomatic Complexity (complexity: 15). Defined complexity threshold for methods is set to '15'</span>
+        <pre><code><span class="lineno">  58 </span>
+<span class="lineno">  59 </span>@OptIn(ExperimentalMaterial3Api::class)
+<span class="lineno">  60 </span>@Composable
+<span class="lineno">  61 </span>internal fun <span class="error">SessionDetailView</span>(viewModel: SessionDetailViewModel) {
+<span class="lineno">  62 </span>    NavigationStack(
+<span class="lineno">  63 </span>        key = viewModel,
+<span class="lineno">  64 </span>        links = {
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <details id="LongMethod" open="open">
+    <summary class="rule-container"><span class="rule">LongMethod: 7 </span><span class="description">One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.</span></summary>
+<a href="https://detekt.dev/docs/rules/complexity#longmethod">Documentation</a>
+    <ul>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/FeedbackDialog.kt:40:14</span><span class="message">The function FeedbackDialog is too long (79). The maximum length is 60.</span>
+        <pre><code><span class="lineno">  37 </span>
+<span class="lineno">  38 </span>@OptIn(ExperimentalMaterial3Api::class)
+<span class="lineno">  39 </span>@Composable
+<span class="lineno">  40 </span>internal fun <span class="error">FeedbackDialog</span>(feedback: FeedbackDialogViewModel) {
+<span class="lineno">  41 </span>    Dialog(dismiss = feedback::skipTapped) {
+<span class="lineno">  42 </span>        Card(
+<span class="lineno">  43 </span>            modifier = Modifier.padding(Dimensions.Padding.double),
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionBlockView.kt:32:14</span><span class="message">The function SessionBlockView is too long (63). The maximum length is 60.</span>
+        <pre><code><span class="lineno">  29 </span>
+<span class="lineno">  30 </span>@OptIn(ExperimentalMaterial3Api::class)
+<span class="lineno">  31 </span>@Composable
+<span class="lineno">  32 </span>internal fun <span class="error">SessionBlockView</span>(sessionsBlock: SessionBlockViewModel) {
+<span class="lineno">  33 </span>    Box(modifier = Modifier.fillMaxWidth(), contentAlignment = Alignment.TopStart) {
+<span class="lineno">  34 </span>        Text(
+<span class="lineno">  35 </span>            text = sessionsBlock.time,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionDetailView.kt:61:14</span><span class="message">The function SessionDetailView is too long (115). The maximum length is 60.</span>
+        <pre><code><span class="lineno">  58 </span>
+<span class="lineno">  59 </span>@OptIn(ExperimentalMaterial3Api::class)
+<span class="lineno">  60 </span>@Composable
+<span class="lineno">  61 </span>internal fun <span class="error">SessionDetailView</span>(viewModel: SessionDetailViewModel) {
+<span class="lineno">  62 </span>    NavigationStack(
+<span class="lineno">  63 </span>        key = viewModel,
+<span class="lineno">  64 </span>        links = {
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionListView.kt:63:14</span><span class="message">The function SessionListView is too long (118). The maximum length is 60.</span>
+        <pre><code><span class="lineno">  60 </span>
+<span class="lineno">  61 </span>@OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
+<span class="lineno">  62 </span>@Composable
+<span class="lineno">  63 </span>internal fun <span class="error">SessionListView</span>(viewModel: BaseSessionListViewModel, title: String, emptyText: String) {
+<span class="lineno">  64 </span>    NavigationStack(
+<span class="lineno">  65 </span>        key = viewModel,
+<span class="lineno">  66 </span>        links = {
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorDetailView.kt:180:13</span><span class="message">The function RepresentativeInfoView is too long (61). The maximum length is 60.</span>
+        <pre><code><span class="lineno"> 177 </span>}
+<span class="lineno"> 178 </span>
+<span class="lineno"> 179 </span>@Composable
+<span class="lineno"> 180 </span>private fun <span class="error">RepresentativeInfoView</span>(profile: SpeakerListItemViewModel) {
+<span class="lineno"> 181 </span>    Column(
+<span class="lineno"> 182 </span>        modifier = Modifier
+<span class="lineno"> 183 </span>            .fillMaxWidth()
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorsView.kt:98:13</span><span class="message">The function SponsorGroupView is too long (64). The maximum length is 60.</span>
+        <pre><code><span class="lineno">  95 </span>}
+<span class="lineno">  96 </span>
+<span class="lineno">  97 </span>@Composable
+<span class="lineno">  98 </span>private fun <span class="error">SponsorGroupView</span>(sponsorGroup: SponsorGroupViewModel) {
+<span class="lineno">  99 </span>    Card(
+<span class="lineno"> 100 </span>        modifier = Modifier.padding(
+<span class="lineno"> 101 </span>            vertical = Dimensions.Padding.quarter,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/WebLinkText.kt:31:14</span><span class="message">The function WebLinkText is too long (68). The maximum length is 60.</span>
+        <pre><code><span class="lineno">  28 </span>import co.touchlab.droidcon.dto.WebLink
+<span class="lineno">  29 </span>
+<span class="lineno">  30 </span>@Composable
+<span class="lineno">  31 </span>internal fun <span class="error">WebLinkText</span>(
+<span class="lineno">  32 </span>    text: String,
+<span class="lineno">  33 </span>    links: List&lt;WebLink&gt;,
+<span class="lineno">  34 </span>    modifier: Modifier = Modifier,
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <details id="LongParameterList" open="open">
+    <summary class="rule-container"><span class="rule">LongParameterList: 7 </span><span class="description">The more parameters a function has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer functions with short parameter lists.</span></summary>
+<a href="https://detekt.dev/docs/rules/complexity#longparameterlist">Documentation</a>
+    <ul>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/WebLinkText.kt:31:25</span><span class="message">The function WebLinkText(text: String, links: List&lt;WebLink&gt;, modifier: Modifier, normalTextColor: Color, fontSize: TextUnit, fontStyle: FontStyle?, fontWeight: FontWeight?, fontFamily: FontFamily?, letterSpacing: TextUnit, normalTextDecoration: TextDecoration?, textAlign: TextAlign?, lineHeight: TextUnit, overflow: TextOverflow, softWrap: Boolean, maxLines: Int, onTextLayout: (TextLayoutResult) -&gt; Unit, style: TextStyle) has too many parameters. The current threshold is set to 6.</span>
+        <pre><code><span class="lineno">  28 </span>import co.touchlab.droidcon.dto.WebLink
+<span class="lineno">  29 </span>
+<span class="lineno">  30 </span>@Composable
+<span class="lineno">  31 </span>internal fun WebLinkText<span class="error">(</span>
+<span class="lineno">  32 </span><span class="error">    text: String,</span>
+<span class="lineno">  33 </span><span class="error">    links: List&lt;WebLink&gt;,</span>
+<span class="lineno">  34 </span><span class="error">    modifier: Modifier = Modifier,</span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt:22:27</span><span class="message">The constructor(scheduleFactory: ScheduleViewModel.Factory, agendaFactory: AgendaViewModel.Factory, sponsorsFactory: SponsorListViewModel.Factory, settingsFactory: SettingsViewModel.Factory, feedbackDialogFactory: FeedbackDialogViewModel.Factory, syncService: SyncService, notificationSchedulingService: NotificationSchedulingService, notificationService: NotificationService, feedbackService: FeedbackService, settingsGateway: SettingsGateway, conferenceRepository: ConferenceRepository) has too many parameters. The current threshold is set to 7.</span>
+        <pre><code><span class="lineno">  19 </span>import org.brightify.hyperdrive.multiplatformx.property.MutableObservableProperty
+<span class="lineno">  20 </span>import org.brightify.hyperdrive.multiplatformx.property.ObservableProperty
+<span class="lineno">  21 </span>
+<span class="lineno">  22 </span>class ApplicationViewModel<span class="error">(</span>
+<span class="lineno">  23 </span><span class="error">    scheduleFactory: ScheduleViewModel.Factory,</span>
+<span class="lineno">  24 </span><span class="error">    agendaFactory: AgendaViewModel.Factory,</span>
+<span class="lineno">  25 </span><span class="error">    sponsorsFactory: SponsorListViewModel.Factory,</span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt:37:18</span><span class="message">The constructor(scheduleFactory: ScheduleViewModel.Factory, agendaFactory: AgendaViewModel.Factory, sponsorsFactory: SponsorListViewModel.Factory, settingsFactory: SettingsViewModel.Factory, feedbackDialogFactory: FeedbackDialogViewModel.Factory, syncService: SyncService, notificationSchedulingService: NotificationSchedulingService, notificationService: NotificationService, feedbackService: FeedbackService, settingsGateway: SettingsGateway, conferenceRepository: ConferenceRepository) has too many parameters. The current threshold is set to 7.</span>
+        <pre><code><span class="lineno">  34 </span>) : BaseViewModel(),
+<span class="lineno">  35 </span>    DeepLinkNotificationHandler {
+<span class="lineno">  36 </span>
+<span class="lineno">  37 </span>    class Factory<span class="error">(</span>
+<span class="lineno">  38 </span><span class="error">        private val scheduleFactory: ScheduleViewModel.Factory,</span>
+<span class="lineno">  39 </span><span class="error">        private val agendaFactory: AgendaViewModel.Factory,</span>
+<span class="lineno">  40 </span><span class="error">        private val sponsorsFactory: SponsorListViewModel.Factory,</span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/BaseSessionListViewModel.kt:9:40</span><span class="message">The constructor(sessionGateway: SessionGateway, sessionDayFactory: SessionDayViewModel.Factory, sessionDetailFactory: SessionDetailViewModel.Factory, sessionDetailScrollStateStorage: SessionDetailScrollStateStorage, dateTimeService: DateTimeService, conferenceConfigProvider: ConferenceConfigProvider, attendingOnly: Boolean) has too many parameters. The current threshold is set to 7.</span>
+        <pre><code><span class="lineno">   6 </span>import co.touchlab.droidcon.domain.service.toConferenceDateTime
+<span class="lineno">   7 </span>import org.brightify.hyperdrive.multiplatformx.BaseViewModel
+<span class="lineno">   8 </span>
+<span class="lineno">   9 </span>abstract class BaseSessionListViewModel<span class="error">(</span>
+<span class="lineno">  10 </span><span class="error">    private val sessionGateway: SessionGateway,</span>
+<span class="lineno">  11 </span><span class="error">    private val sessionDayFactory: SessionDayViewModel.Factory,</span>
+<span class="lineno">  12 </span><span class="error">    private val sessionDetailFactory: SessionDetailViewModel.Factory,</span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDayViewModel.kt:12:26</span><span class="message">The constructor(sessionBlockFactory: SessionBlockViewModel.Factory, dateFormatter: DateFormatter, dateTimeService: DateTimeService, conferenceConfigProvider: ConferenceConfigProvider, date: LocalDate, attendingOnly: Boolean, sessionDetailScrollStateStorage: SessionDetailScrollStateStorage, items: List&lt;ScheduleItem&gt;, onScheduleItemSelected: (ScheduleItem) -&gt; Unit) has too many parameters. The current threshold is set to 7.</span>
+        <pre><code><span class="lineno">   9 </span>import kotlinx.datetime.LocalDate
+<span class="lineno">  10 </span>import org.brightify.hyperdrive.multiplatformx.BaseViewModel
+<span class="lineno">  11 </span>
+<span class="lineno">  12 </span>class SessionDayViewModel<span class="error">(</span>
+<span class="lineno">  13 </span><span class="error">    sessionBlockFactory: SessionBlockViewModel.Factory,</span>
+<span class="lineno">  14 </span><span class="error">    dateFormatter: DateFormatter,</span>
+<span class="lineno">  15 </span><span class="error">    dateTimeService: DateTimeService,</span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailViewModel.kt:25:29</span><span class="message">The constructor(sessionGateway: SessionGateway, settingsGateway: SettingsGateway, conferenceConfigProvider: ConferenceConfigProvider, speakerListItemFactory: SpeakerListItemViewModel.Factory, speakerDetailFactory: SpeakerDetailViewModel.Factory, feedbackDialogFactory: FeedbackDialogViewModel.Factory, dateFormatter: DateFormatter, dateTimeService: DateTimeService, parseUrlViewService: ParseUrlViewService, feedbackService: FeedbackService, notificationService: NotificationService, initialItem: ScheduleItem) has too many parameters. The current threshold is set to 7.</span>
+        <pre><code><span class="lineno">  22 </span>import org.brightify.hyperdrive.multiplatformx.property.identityEqualityPolicy
+<span class="lineno">  23 </span>import org.brightify.hyperdrive.multiplatformx.property.map
+<span class="lineno">  24 </span>
+<span class="lineno">  25 </span>class SessionDetailViewModel<span class="error">(</span>
+<span class="lineno">  26 </span><span class="error">    private val sessionGateway: SessionGateway,</span>
+<span class="lineno">  27 </span><span class="error">    private val settingsGateway: SettingsGateway,</span>
+<span class="lineno">  28 </span><span class="error">    private val conferenceConfigProvider: ConferenceConfigProvider,</span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailViewModel.kt:155:18</span><span class="message">The constructor(sessionGateway: SessionGateway, settingsGateway: SettingsGateway, conferenceConfigProvider: ConferenceConfigProvider, speakerListItemFactory: SpeakerListItemViewModel.Factory, speakerDetailFactory: SpeakerDetailViewModel.Factory, feedbackDialogFactory: FeedbackDialogViewModel.Factory, dateFormatter: DateFormatter, dateTimeService: DateTimeService, parseUrlViewService: ParseUrlViewService, feedbackService: FeedbackService, notificationService: NotificationService) has too many parameters. The current threshold is set to 7.</span>
+        <pre><code><span class="lineno"> 152 </span>        Ended,
+<span class="lineno"> 153 </span>    }
+<span class="lineno"> 154 </span>
+<span class="lineno"> 155 </span>    class Factory<span class="error">(</span>
+<span class="lineno"> 156 </span><span class="error">        private val sessionGateway: SessionGateway,</span>
+<span class="lineno"> 157 </span><span class="error">        private val settingsGateway: SettingsGateway,</span>
+<span class="lineno"> 158 </span><span class="error">        private val conferenceConfigProvider: ConferenceConfigProvider,</span>
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <h3>exceptions: 11</h3>
+  <details id="SwallowedException" open="open">
+    <summary class="rule-container"><span class="rule">SwallowedException: 1 </span><span class="description">The caught exception is swallowed. The original exception could be lost.</span></summary>
+<a href="https://detekt.dev/docs/rules/exceptions#swallowedexception">Documentation</a>
+    <ul>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorGroupItemViewModel.kt:16:18</span><span class="message">The caught exception is swallowed. The original exception could be lost.</span>
+        <pre><code><span class="lineno">  13 </span>    val validImageUrl: String? =
+<span class="lineno">  14 </span>        try {
+<span class="lineno">  15 </span>            Url(sponsor.icon.string).toString()
+<span class="lineno">  16 </span>        } catch (<span class="error">e: URLParserException</span>) {
+<span class="lineno">  17 </span>            null
+<span class="lineno">  18 </span>        }
+<span class="lineno">  19 </span>
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <details id="TooGenericExceptionCaught" open="open">
+    <summary class="rule-container"><span class="rule">TooGenericExceptionCaught: 10 </span><span class="description">The caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.</span></summary>
+<a href="https://detekt.dev/docs/rules/exceptions#toogenericexceptioncaught">Documentation</a>
+    <ul>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt:107:22</span><span class="message">The caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.</span>
+        <pre><code><span class="lineno"> 104 </span>        lifecycle.whileAttached {
+<span class="lineno"> 105 </span>            try {
+<span class="lineno"> 106 </span>                notificationSchedulingService.runScheduling()
+<span class="lineno"> 107 </span>            } catch (<span class="error">e: Exception</span>) {
+<span class="lineno"> 108 </span>                log.e(e) { &quot;Error starting notification scheduling service&quot; }
+<span class="lineno"> 109 </span>            }
+<span class="lineno"> 110 </span>        }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt:115:22</span><span class="message">The caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.</span>
+        <pre><code><span class="lineno"> 112 </span>        lifecycle.whileAttached {
+<span class="lineno"> 113 </span>            try {
+<span class="lineno"> 114 </span>                syncService.runSynchronization(conference = conference)
+<span class="lineno"> 115 </span>            } catch (<span class="error">e: Exception</span>) {
+<span class="lineno"> 116 </span>                log.e(e) { &quot;Error starting sync service&quot; }
+<span class="lineno"> 117 </span>            }
+<span class="lineno"> 118 </span>        }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt:125:22</span><span class="message">The caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.</span>
+        <pre><code><span class="lineno"> 122 </span>                if (feedbackEnabled) {
+<span class="lineno"> 123 </span>                    presentNextFeedback()
+<span class="lineno"> 124 </span>                }
+<span class="lineno"> 125 </span>            } catch (<span class="error">e: Exception</span>) {
+<span class="lineno"> 126 </span>                log.e(e) { &quot;Error in onAppear&quot; }
+<span class="lineno"> 127 </span>            }
+<span class="lineno"> 128 </span>        }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt:141:22</span><span class="message">The caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.</span>
+        <pre><code><span class="lineno"> 138 </span>                conferenceRepository.observeAll().collect { conferences -&gt;
+<span class="lineno"> 139 </span>                    _allConferences.value = conferences
+<span class="lineno"> 140 </span>                }
+<span class="lineno"> 141 </span>            } catch (<span class="error">e: Exception</span>) {
+<span class="lineno"> 142 </span>                log.e(e) { &quot;Error initializing conferences&quot; }
+<span class="lineno"> 143 </span>            }
+<span class="lineno"> 144 </span>        }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt:152:22</span><span class="message">The caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.</span>
+        <pre><code><span class="lineno"> 149 </span>                settingsGateway.settings().collect { settings -&gt;
+<span class="lineno"> 150 </span>                    _isFirstRun.value = settings.isFirstRun
+<span class="lineno"> 151 </span>                }
+<span class="lineno"> 152 </span>            } catch (<span class="error">e: Exception</span>) {
+<span class="lineno"> 153 </span>                log.e(e) { &quot;Error observing first run status&quot; }
+<span class="lineno"> 154 </span>            }
+<span class="lineno"> 155 </span>        }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt:167:30</span><span class="message">The caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.</span>
+        <pre><code><span class="lineno"> 164 </span>                    // We're not checking whether feedback is enabled, because the user opened a feedback notification.
+<span class="lineno"> 165 </span>                    try {
+<span class="lineno"> 166 </span>                        presentNextFeedback()
+<span class="lineno"> 167 </span>                    } catch (<span class="error">e: Exception</span>) {
+<span class="lineno"> 168 </span>                        log.e(e) { &quot;Error processing feedback notification&quot; }
+<span class="lineno"> 169 </span>                    }
+<span class="lineno"> 170 </span>                }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt:187:22</span><span class="message">The caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.</span>
+        <pre><code><span class="lineno"> 184 </span>
+<span class="lineno"> 185 </span>                // Mark first run complete after conference selection
+<span class="lineno"> 186 </span>                settingsGateway.setFirstRun(false)
+<span class="lineno"> 187 </span>            } catch (<span class="error">e: Exception</span>) {
+<span class="lineno"> 188 </span>                log.e(e) { &quot;Error selecting conference&quot; }
+<span class="lineno"> 189 </span>            }
+<span class="lineno"> 190 </span>        }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt:216:18</span><span class="message">The caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.</span>
+        <pre><code><span class="lineno"> 213 </span>            } else {
+<span class="lineno"> 214 </span>                presentedFeedback = null
+<span class="lineno"> 215 </span>            }
+<span class="lineno"> 216 </span>        } catch (<span class="error">e: Exception</span>) {
+<span class="lineno"> 217 </span>            log.e(e) { &quot;Error presenting feedback&quot; }
+<span class="lineno"> 218 </span>            presentedFeedback = null
+<span class="lineno"> 219 </span>        }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/WaitForLoadedContextModel.kt:42:26</span><span class="message">The caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.</span>
+        <pre><code><span class="lineno">  39 </span>            withContext(Dispatchers.IO) {
+<span class="lineno">  40 </span>                try {
+<span class="lineno">  41 </span>                    syncService.syncConferences()
+<span class="lineno">  42 </span>                } catch (<span class="error">e: Exception</span>) {
+<span class="lineno">  43 </span>                    log.e(e) { &quot;Failed to sync conferences&quot; }
+<span class="lineno">  44 </span>                }
+<span class="lineno">  45 </span>            }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/settings/SettingsViewModel.kt:77:26</span><span class="message">The caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.</span>
+        <pre><code><span class="lineno">  74 </span>                    val selectedConf = conferenceRepository.getSelected()
+<span class="lineno">  75 </span>                    log.d { &quot;Got updated conference: ${selectedConf.name} (ID: ${selectedConf.id})&quot; }
+<span class="lineno">  76 </span>                    _selectedConference.value = selectedConf
+<span class="lineno">  77 </span>                } catch (<span class="error">e: Exception</span>) {
+<span class="lineno">  78 </span>                    log.e(e) { &quot;Error getting selected conference after selection&quot; }
+<span class="lineno">  79 </span>                }
+<span class="lineno">  80 </span>            }
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <h3>naming: 103</h3>
+  <details id="FunctionNaming" open="open">
+    <summary class="rule-container"><span class="rule">FunctionNaming: 50 </span><span class="description">Function names should follow the naming convention set in the configuration.</span></summary>
+<a href="https://detekt.dev/docs/rules/naming#functionnaming">Documentation</a>
+    <ul>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/build/generated/compose/resourceGenerator/kotlin/commonMainResourceAccessors/droidcon/shared_ui/generated/resources/Drawable0.commonMain.kt:21:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  18 </span>    }
+<span class="lineno">  19 </span>
+<span class="lineno">  20 </span>@InternalResourceApi
+<span class="lineno">  21 </span>internal fun <span class="error">_collectCommonMainDrawable0Resources</span>(map: MutableMap&lt;String, DrawableResource&gt;) {
+<span class="lineno">  22 </span>  map.put(&quot;venue_map_1&quot;, Res.drawable.venue_map_1)
+<span class="lineno">  23 </span>}
+<span class="lineno">  24 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/BottomNavigationView.kt:30:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  27 </span>import co.touchlab.droidcon.viewmodel.ApplicationViewModel
+<span class="lineno">  28 </span>
+<span class="lineno">  29 </span>@Composable
+<span class="lineno">  30 </span>internal fun <span class="error">BottomNavigationView</span>(viewModel: ApplicationViewModel, currentConference: Conference, modifier: Modifier = Modifier) {
+<span class="lineno">  31 </span>    val selectedTab by viewModel.observeSelectedTab.observeAsState()
+<span class="lineno">  32 </span>
+<span class="lineno">  33 </span>    Scaffold(
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/FeedbackDialog.kt:40:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  37 </span>
+<span class="lineno">  38 </span>@OptIn(ExperimentalMaterial3Api::class)
+<span class="lineno">  39 </span>@Composable
+<span class="lineno">  40 </span>internal fun <span class="error">FeedbackDialog</span>(feedback: FeedbackDialogViewModel) {
+<span class="lineno">  41 </span>    Dialog(dismiss = feedback::skipTapped) {
+<span class="lineno">  42 </span>        Card(
+<span class="lineno">  43 </span>            modifier = Modifier.padding(Dimensions.Padding.double),
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/FirstRunConferenceSelector.kt:23:5</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  20 </span>import co.touchlab.droidcon.domain.entity.Conference
+<span class="lineno">  21 </span>
+<span class="lineno">  22 </span>@Composable
+<span class="lineno">  23 </span>fun <span class="error">FirstRunConferenceSelector</span>(
+<span class="lineno">  24 </span>    conferences: List&lt;Conference&gt;,
+<span class="lineno">  25 </span>    onConferenceSelected: (Conference) -&gt; Unit,
+<span class="lineno">  26 </span>    onDismiss: () -&gt; Unit,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/MainComposeView.kt:28:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  25 </span>
+<span class="lineno">  26 </span>@OptIn(ExperimentalCoilApi::class)
+<span class="lineno">  27 </span>@Composable
+<span class="lineno">  28 </span>internal fun <span class="error">MainComposeView</span>(waitForLoadedContextModel: WaitForLoadedContextModel, modifier: Modifier = Modifier) {
+<span class="lineno">  29 </span>    setSingletonImageLoaderFactory { context -&gt;
+<span class="lineno">  30 </span>        dcImageLoader(context, true)
+<span class="lineno">  31 </span>    }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/MainComposeView.kt:52:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  49 </span>}
+<span class="lineno">  50 </span>
+<span class="lineno">  51 </span>@Composable
+<span class="lineno">  52 </span>private fun <span class="error">LoadingScreen</span>() {
+<span class="lineno">  53 </span>    Box(
+<span class="lineno">  54 </span>        modifier = Modifier.fillMaxSize(),
+<span class="lineno">  55 </span>        contentAlignment = Alignment.Center,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/MainComposeView.kt:68:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  65 </span>}
+<span class="lineno">  66 </span>
+<span class="lineno">  67 </span>@Composable
+<span class="lineno">  68 </span>private fun <span class="error">MainAppBody</span>(waitForLoadedContextModel: WaitForLoadedContextModel, selectedConference: Conference, modifier: Modifier) {
+<span class="lineno">  69 </span>    LaunchedEffect(selectedConference) {
+<span class="lineno">  70 </span>        waitForLoadedContextModel.applicationViewModel.runAllLiveTasks(selectedConference)
+<span class="lineno">  71 </span>    }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionBlockView.kt:32:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  29 </span>
+<span class="lineno">  30 </span>@OptIn(ExperimentalMaterial3Api::class)
+<span class="lineno">  31 </span>@Composable
+<span class="lineno">  32 </span>internal fun <span class="error">SessionBlockView</span>(sessionsBlock: SessionBlockViewModel) {
+<span class="lineno">  33 </span>    Box(modifier = Modifier.fillMaxWidth(), contentAlignment = Alignment.TopStart) {
+<span class="lineno">  34 </span>        Text(
+<span class="lineno">  35 </span>            text = sessionsBlock.time,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionDetailView.kt:61:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  58 </span>
+<span class="lineno">  59 </span>@OptIn(ExperimentalMaterial3Api::class)
+<span class="lineno">  60 </span>@Composable
+<span class="lineno">  61 </span>internal fun <span class="error">SessionDetailView</span>(viewModel: SessionDetailViewModel) {
+<span class="lineno">  62 </span>    NavigationStack(
+<span class="lineno">  63 </span>        key = viewModel,
+<span class="lineno">  64 </span>        links = {
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionDetailView.kt:187:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 184 </span>}
+<span class="lineno"> 185 </span>
+<span class="lineno"> 186 </span>@Composable
+<span class="lineno"> 187 </span>private fun <span class="error">HeaderView</span>(title: String, locationInfo: String) {
+<span class="lineno"> 188 </span>    Column(
+<span class="lineno"> 189 </span>        modifier = Modifier.fillMaxWidth(),
+<span class="lineno"> 190 </span>        verticalArrangement = Arrangement.Center,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionDetailView.kt:215:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 212 </span>}
+<span class="lineno"> 213 </span>
+<span class="lineno"> 214 </span>@Composable
+<span class="lineno"> 215 </span>private fun <span class="error">InfoView</span>(status: String) {
+<span class="lineno"> 216 </span>    Row(
+<span class="lineno"> 217 </span>        modifier = Modifier.fillMaxWidth().padding(top = Dimensions.Padding.default),
+<span class="lineno"> 218 </span>        verticalAlignment = Alignment.CenterVertically,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionDetailView.kt:243:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 240 </span>}
+<span class="lineno"> 241 </span>
+<span class="lineno"> 242 </span>@Composable
+<span class="lineno"> 243 </span>private fun <span class="error">DescriptionView</span>(description: String, links: List&lt;WebLink&gt;) {
+<span class="lineno"> 244 </span>    Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.Top) {
+<span class="lineno"> 245 </span>        Icon(
+<span class="lineno"> 246 </span>            imageVector = Icons.Default.Description,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionDetailView.kt:266:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 263 </span>}
+<span class="lineno"> 264 </span>
+<span class="lineno"> 265 </span>@Composable
+<span class="lineno"> 266 </span>private fun <span class="error">SpeakerView</span>(speaker: SpeakerListItemViewModel) {
+<span class="lineno"> 267 </span>    Column(
+<span class="lineno"> 268 </span>        modifier = Modifier
+<span class="lineno"> 269 </span>            .fillMaxWidth()
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionListView.kt:63:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  60 </span>
+<span class="lineno">  61 </span>@OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
+<span class="lineno">  62 </span>@Composable
+<span class="lineno">  63 </span>internal fun <span class="error">SessionListView</span>(viewModel: BaseSessionListViewModel, title: String, emptyText: String) {
+<span class="lineno">  64 </span>    NavigationStack(
+<span class="lineno">  65 </span>        key = viewModel,
+<span class="lineno">  66 </span>        links = {
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionListView.kt:188:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 185 </span>}
+<span class="lineno"> 186 </span>
+<span class="lineno"> 187 </span>@Composable
+<span class="lineno"> 188 </span>private fun <span class="error">TabIndicator</span>(modifier: Modifier = Modifier) {
+<span class="lineno"> 189 </span>    Box(
+<span class="lineno"> 190 </span>        modifier
+<span class="lineno"> 191 </span>            .fillMaxWidth()
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionListView.kt:200:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 197 </span>}
+<span class="lineno"> 198 </span>
+<span class="lineno"> 199 </span>@Composable
+<span class="lineno"> 200 </span>private fun <span class="error">EmptyView</span>(text: String) {
+<span class="lineno"> 201 </span>    Column(
+<span class="lineno"> 202 </span>        modifier = Modifier.fillMaxSize(),
+<span class="lineno"> 203 </span>        verticalArrangement = Arrangement.Center,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SpeakerDetailView.kt:48:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  45 </span>
+<span class="lineno">  46 </span>@OptIn(ExperimentalMaterial3Api::class)
+<span class="lineno">  47 </span>@Composable
+<span class="lineno">  48 </span>internal fun <span class="error">SpeakerDetailView</span>(viewModel: SpeakerDetailViewModel) {
+<span class="lineno">  49 </span>    val scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior(rememberTopAppBarState())
+<span class="lineno">  50 </span>    Scaffold(
+<span class="lineno">  51 </span>        modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SpeakerDetailView.kt:93:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  90 </span>}
+<span class="lineno">  91 </span>
+<span class="lineno">  92 </span>@Composable
+<span class="lineno">  93 </span>private fun <span class="error">HeaderView</span>(name: String, tagLine: String, imageUrl: Url?) {
+<span class="lineno">  94 </span>    Row(
+<span class="lineno">  95 </span>        modifier = Modifier.fillMaxWidth(),
+<span class="lineno">  96 </span>        verticalAlignment = Alignment.CenterVertically,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SpeakerDetailView.kt:136:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 133 </span>}
+<span class="lineno"> 134 </span>
+<span class="lineno"> 135 </span>@Composable
+<span class="lineno"> 136 </span>private fun <span class="error">SocialView</span>(url: WebLink, iconName: String) {
+<span class="lineno"> 137 </span>    Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+<span class="lineno"> 138 </span>        LocalImage(
+<span class="lineno"> 139 </span>            imageResourceName = iconName,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SpeakerDetailView.kt:158:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 155 </span>}
+<span class="lineno"> 156 </span>
+<span class="lineno"> 157 </span>@Composable
+<span class="lineno"> 158 </span>private fun <span class="error">SocialView</span>(url: WebLink, icon: ImageVector) {
+<span class="lineno"> 159 </span>    Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+<span class="lineno"> 160 </span>        Icon(
+<span class="lineno"> 161 </span>            imageVector = icon,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SpeakerDetailView.kt:180:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 177 </span>}
+<span class="lineno"> 178 </span>
+<span class="lineno"> 179 </span>@Composable
+<span class="lineno"> 180 </span>private fun <span class="error">BioView</span>(bio: String, webLinks: List&lt;WebLink&gt;) {
+<span class="lineno"> 181 </span>    Row(
+<span class="lineno"> 182 </span>        modifier = Modifier.fillMaxWidth().padding(vertical = Dimensions.Padding.half),
+<span class="lineno"> 183 </span>        verticalAlignment = Alignment.Top,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/AboutView.kt:24:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  21 </span>import co.touchlab.droidcon.viewmodel.settings.AboutViewModel
+<span class="lineno">  22 </span>
+<span class="lineno">  23 </span>@Composable
+<span class="lineno">  24 </span>internal fun <span class="error">AboutView</span>(viewModel: AboutViewModel) {
+<span class="lineno">  25 </span>    val items by viewModel.observeItemViewModels.observeAsState()
+<span class="lineno">  26 </span>    items.forEach { aboutItem -&gt;
+<span class="lineno">  27 </span>        AboutItemView(aboutItem)
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/AboutView.kt:32:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  29 </span>}
+<span class="lineno">  30 </span>
+<span class="lineno">  31 </span>@Composable
+<span class="lineno">  32 </span>private fun <span class="error">AboutItemView</span>(viewModel: AboutItemViewModel) {
+<span class="lineno">  33 </span>    Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.Top) {
+<span class="lineno">  34 </span>        Icon(
+<span class="lineno">  35 </span>            modifier = Modifier.padding(Dimensions.Padding.default),
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/ConferenceSelector.kt:31:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  28 </span>import co.touchlab.droidcon.viewmodel.settings.SettingsViewModel
+<span class="lineno">  29 </span>
+<span class="lineno">  30 </span>@Composable
+<span class="lineno">  31 </span>internal fun <span class="error">ConferenceSelectorRow</span>(viewModel: SettingsViewModel) {
+<span class="lineno">  32 </span>    var expanded by remember { mutableStateOf(false) }
+<span class="lineno">  33 </span>    val conferences by viewModel.allConferences.observeAsState()
+<span class="lineno">  34 </span>    val selectedConference by viewModel.selectedConference.observeAsState()
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/ConferenceSelector.kt:86:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  83 </span>}
+<span class="lineno">  84 </span>
+<span class="lineno">  85 </span>@Composable
+<span class="lineno">  86 </span>private fun <span class="error">ConferenceDropdownMenu</span>(
+<span class="lineno">  87 </span>    expanded: Boolean,
+<span class="lineno">  88 </span>    onDismissRequest: () -&gt; Unit,
+<span class="lineno">  89 </span>    conferences: List&lt;Conference&gt;,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/PlatformSpecificSettings.kt:7:21</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">   4 </span>import co.touchlab.droidcon.viewmodel.settings.SettingsViewModel
+<span class="lineno">   5 </span>
+<span class="lineno">   6 </span>@Composable
+<span class="lineno">   7 </span>internal expect fun <span class="error">PlatformSpecificSettingsView</span>(viewModel: SettingsViewModel)
+<span class="lineno">   8 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/SettingsView.kt:37:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  34 </span>
+<span class="lineno">  35 </span>@OptIn(ExperimentalMaterial3Api::class)
+<span class="lineno">  36 </span>@Composable
+<span class="lineno">  37 </span>internal fun <span class="error">SettingsView</span>(viewModel: SettingsViewModel) {
+<span class="lineno">  38 </span>    val scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior(rememberTopAppBarState())
+<span class="lineno">  39 </span>    Scaffold(
+<span class="lineno">  40 </span>        modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/SettingsView.kt:82:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  79 </span>}
+<span class="lineno">  80 </span>
+<span class="lineno">  81 </span>@Composable
+<span class="lineno">  82 </span>internal fun <span class="error">IconTextSwitchRow</span>(text: String, image: ImageVector, checked: MutableObservableProperty&lt;Boolean&gt;) {
+<span class="lineno">  83 </span>    val isChecked by checked.observeAsState()
+<span class="lineno">  84 </span>    Row(
+<span class="lineno">  85 </span>        modifier = Modifier
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorDetailView.kt:50:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  47 </span>
+<span class="lineno">  48 </span>@OptIn(ExperimentalMaterial3Api::class)
+<span class="lineno">  49 </span>@Composable
+<span class="lineno">  50 </span>internal fun <span class="error">SponsorDetailView</span>(viewModel: SponsorDetailViewModel) {
+<span class="lineno">  51 </span>    NavigationStack(
+<span class="lineno">  52 </span>        key = viewModel,
+<span class="lineno">  53 </span>        links = {
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorDetailView.kt:100:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  97 </span>}
+<span class="lineno">  98 </span>
+<span class="lineno">  99 </span>@Composable
+<span class="lineno"> 100 </span>private fun <span class="error">HeaderView</span>(name: String, groupTitle: String, imageUrl: Url?) {
+<span class="lineno"> 101 </span>    Row(
+<span class="lineno"> 102 </span>        Modifier
+<span class="lineno"> 103 </span>            .fillMaxWidth()
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorDetailView.kt:159:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 156 </span>}
+<span class="lineno"> 157 </span>
+<span class="lineno"> 158 </span>@Composable
+<span class="lineno"> 159 </span>private fun <span class="error">DescriptionView</span>(description: String) {
+<span class="lineno"> 160 </span>    Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.Top) {
+<span class="lineno"> 161 </span>        Icon(
+<span class="lineno"> 162 </span>            imageVector = Icons.Default.Description,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorDetailView.kt:180:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 177 </span>}
+<span class="lineno"> 178 </span>
+<span class="lineno"> 179 </span>@Composable
+<span class="lineno"> 180 </span>private fun <span class="error">RepresentativeInfoView</span>(profile: SpeakerListItemViewModel) {
+<span class="lineno"> 181 </span>    Column(
+<span class="lineno"> 182 </span>        modifier = Modifier
+<span class="lineno"> 183 </span>            .fillMaxWidth()
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorsView.kt:54:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  51 </span>
+<span class="lineno">  52 </span>@OptIn(ExperimentalMaterial3Api::class)
+<span class="lineno">  53 </span>@Composable
+<span class="lineno">  54 </span>internal fun <span class="error">SponsorsView</span>(viewModel: SponsorListViewModel) {
+<span class="lineno">  55 </span>    NavigationStack(
+<span class="lineno">  56 </span>        key = viewModel,
+<span class="lineno">  57 </span>        links = {
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorsView.kt:98:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  95 </span>}
+<span class="lineno">  96 </span>
+<span class="lineno">  97 </span>@Composable
+<span class="lineno">  98 </span>private fun <span class="error">SponsorGroupView</span>(sponsorGroup: SponsorGroupViewModel) {
+<span class="lineno">  99 </span>    Card(
+<span class="lineno"> 100 </span>        modifier = Modifier.padding(
+<span class="lineno"> 101 </span>            vertical = Dimensions.Padding.quarter,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorsView.kt:166:13</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 163 </span>}
+<span class="lineno"> 164 </span>
+<span class="lineno"> 165 </span>@Composable
+<span class="lineno"> 166 </span>private fun <span class="error">EmptyView</span>() {
+<span class="lineno"> 167 </span>    Column(
+<span class="lineno"> 168 </span>        modifier = Modifier.fillMaxSize(),
+<span class="lineno"> 169 </span>        verticalArrangement = Arrangement.Center,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/theme/Theme.kt:18:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  15 </span>)
+<span class="lineno">  16 </span>
+<span class="lineno">  17 </span>@Composable
+<span class="lineno">  18 </span>internal fun <span class="error">DroidconTheme</span>(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -&gt; Unit) {
+<span class="lineno">  19 </span>    val colorScheme = if (darkTheme) {
+<span class="lineno">  20 </span>        DarkColorScheme
+<span class="lineno">  21 </span>    } else {
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/Dialog.kt:6:21</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">   3 </span>import androidx.compose.runtime.Composable
+<span class="lineno">   4 </span>
+<span class="lineno">   5 </span>@Composable
+<span class="lineno">   6 </span>internal expect fun <span class="error">Dialog</span>(dismiss: () -&gt; Unit, content: @Composable () -&gt; Unit)
+<span class="lineno">   7 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/Image.kt:13:5</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  10 </span>import coil3.util.DebugLogger
+<span class="lineno">  11 </span>
+<span class="lineno">  12 </span>@Composable
+<span class="lineno">  13 </span>fun <span class="error">DcAsyncImage</span>(logTag: String, model: Any?, contentDescription: String?, modifier: Modifier = Modifier) {
+<span class="lineno">  14 </span>    AsyncImage(
+<span class="lineno">  15 </span>        modifier = modifier,
+<span class="lineno">  16 </span>        model = model,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/LocalImage.kt:7:21</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">   4 </span>import androidx.compose.ui.Modifier
+<span class="lineno">   5 </span>
+<span class="lineno">   6 </span>@Composable
+<span class="lineno">   7 </span>internal expect fun <span class="error">__LocalImage</span>(imageResourceName: String, modifier: Modifier, contentDescription: String?)
+<span class="lineno">   8 </span>
+<span class="lineno">   9 </span>@Composable
+<span class="lineno">  10 </span>internal fun LocalImage(imageResourceName: String, modifier: Modifier = Modifier, contentDescription: String? = null) {
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/LocalImage.kt:10:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">   7 </span>internal expect fun __LocalImage(imageResourceName: String, modifier: Modifier, contentDescription: String?)
+<span class="lineno">   8 </span>
+<span class="lineno">   9 </span>@Composable
+<span class="lineno">  10 </span>internal fun <span class="error">LocalImage</span>(imageResourceName: String, modifier: Modifier = Modifier, contentDescription: String? = null) {
+<span class="lineno">  11 </span>    __LocalImage(imageResourceName, modifier, contentDescription)
+<span class="lineno">  12 </span>}
+<span class="lineno">  13 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/NavigationBackPressWrapper.kt:6:21</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">   3 </span>import androidx.compose.runtime.Composable
+<span class="lineno">   4 </span>
+<span class="lineno">   5 </span>@Composable
+<span class="lineno">   6 </span>internal expect fun <span class="error">NavigationBackPressWrapper</span>(content: @Composable () -&gt; Unit)
+<span class="lineno">   7 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/WebLinkText.kt:31:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  28 </span>import co.touchlab.droidcon.dto.WebLink
+<span class="lineno">  29 </span>
+<span class="lineno">  30 </span>@Composable
+<span class="lineno">  31 </span>internal fun <span class="error">WebLinkText</span>(
+<span class="lineno">  32 </span>    text: String,
+<span class="lineno">  33 </span>    links: List&lt;WebLink&gt;,
+<span class="lineno">  34 </span>    modifier: Modifier = Modifier,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/venue/VenueView.kt:19:5</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  16 </span>import com.github.panpf.zoomimage.ZoomImage
+<span class="lineno">  17 </span>
+<span class="lineno">  18 </span>@Composable
+<span class="lineno">  19 </span>fun <span class="error">VenueView</span>(venueMapUrl: String?) {
+<span class="lineno">  20 </span>    Scaffold { paddingValues -&gt;
+<span class="lineno">  21 </span>        VenueBodyView(
+<span class="lineno">  22 </span>            modifier = Modifier.padding(paddingValues),
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/venue/VenueView.kt:29:5</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  26 </span>}
+<span class="lineno">  27 </span>
+<span class="lineno">  28 </span>@Composable
+<span class="lineno">  29 </span>fun <span class="error">VenueBodyView</span>(modifier: Modifier = Modifier, venueMapUrl: String?) {
+<span class="lineno">  30 </span>    val painter = rememberAsyncImagePainter(venueMapUrl)
+<span class="lineno">  31 </span>    val state by painter.state.collectAsState()
+<span class="lineno">  32 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/NavigationController.kt:117:18</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 114 </span>    }
+<span class="lineno"> 115 </span>
+<span class="lineno"> 116 </span>    @Composable
+<span class="lineno"> 117 </span>    internal fun <span class="error">PushedStack</span>(itemModifier: Modifier = Modifier) {
+<span class="lineno"> 118 </span>        val currentStack by observeStack.observeAsState()
+<span class="lineno"> 119 </span>
+<span class="lineno"> 120 </span>        var i = 0
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/NavigationController.kt:130:27</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 127 </span>    }
+<span class="lineno"> 128 </span>
+<span class="lineno"> 129 </span>    @Composable
+<span class="lineno"> 130 </span>    private fun &lt;T : Any&gt; <span class="error">PushedStackItem</span>(item: NavigationStackItem.Push&lt;T&gt;, itemModifier: Modifier) {
+<span class="lineno"> 131 </span>        println(&quot;$item&quot;)
+<span class="lineno"> 132 </span>        val itemValue by item.item.observeAsState()
+<span class="lineno"> 133 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/NavigationController.kt:142:28</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 139 </span>    }
+<span class="lineno"> 140 </span>
+<span class="lineno"> 141 </span>    @Composable
+<span class="lineno"> 142 </span>    internal fun &lt;T : Any&gt; <span class="error">Pushed</span>(item: MutableObservableProperty&lt;T?&gt;, content: @Composable (T) -&gt; Unit) {
+<span class="lineno"> 143 </span>        remember {
+<span class="lineno"> 144 </span>            val stackItem = NavigationStackItem.Push(item, content).also {
+<span class="lineno"> 145 </span>                notifyingStackChange {
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/NavigationController.kt:158:18</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 155 </span>    }
+<span class="lineno"> 156 </span>
+<span class="lineno"> 157 </span>    @Composable
+<span class="lineno"> 158 </span>    internal fun <span class="error">HandleBackPressEffect</span>(onBackPressed: BackPressHandlerScope.() -&gt; Unit) {
+<span class="lineno"> 159 </span>        remember {
+<span class="lineno"> 160 </span>            val stackItem = NavigationStackItem.BackPressHandler(onBackPressed).also {
+<span class="lineno"> 161 </span>                stack.add(it)
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/NavigationController.kt:204:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 201 </span>}
+<span class="lineno"> 202 </span>
+<span class="lineno"> 203 </span>@Composable
+<span class="lineno"> 204 </span>internal fun <span class="error">BackPressHandler</span>(onBackPressed: NavigationController.BackPressHandlerScope.() -&gt; Unit) {
+<span class="lineno"> 205 </span>    val navigationController = LocalNavigationController.current
+<span class="lineno"> 206 </span>    navigationController.HandleBackPressEffect(onBackPressed)
+<span class="lineno"> 207 </span>}
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/NavigationController.kt:242:14</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno"> 239 </span>
+<span class="lineno"> 240 </span>@OptIn(ExperimentalAnimationApi::class)
+<span class="lineno"> 241 </span>@Composable
+<span class="lineno"> 242 </span>internal fun <span class="error">NavigationStack</span>(key: Any?, links: NavigationStackScope.() -&gt; Unit, content: @Composable () -&gt; Unit) {
+<span class="lineno"> 243 </span>    val activeLinkComposables by remember(key) {
+<span class="lineno"> 244 </span>        val constructedLinks = mutableListOf&lt;ObservableProperty&lt;NavigationLinkWrapper&lt;*&gt;&gt;&gt;()
+<span class="lineno"> 245 </span>        val scope = object : NavigationStackScope {
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <details id="InvalidPackageDeclaration" open="open">
+    <summary class="rule-container"><span class="rule">InvalidPackageDeclaration: 49 </span><span class="description">Kotlin source files should be stored in the directory corresponding to its package statement.</span></summary>
+<a href="https://detekt.dev/docs/rules/naming#invalidpackagedeclaration">Documentation</a>
+    <ul>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/BottomNavigationView.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.foundation.layout.Box
+<span class="lineno">   4 </span>import androidx.compose.foundation.layout.padding
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/FeedbackDialog.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.foundation.clickable
+<span class="lineno">   4 </span>import androidx.compose.foundation.layout.Arrangement
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/FirstRunConferenceSelector.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.foundation.clickable
+<span class="lineno">   4 </span>import androidx.compose.foundation.layout.Column
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/MainComposeView.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.foundation.layout.Box
+<span class="lineno">   4 </span>import androidx.compose.foundation.layout.Column
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/UiModule.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.viewmodel.ApplicationViewModel
+<span class="lineno">   4 </span>import co.touchlab.droidcon.viewmodel.FeedbackDialogViewModel
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionBlockView.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.session</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.foundation.background
+<span class="lineno">   4 </span>import androidx.compose.foundation.layout.Arrangement
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionDetailView.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.session</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.foundation.background
+<span class="lineno">   4 </span>import androidx.compose.foundation.clickable
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionListView.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.session</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.foundation.ExperimentalFoundationApi
+<span class="lineno">   4 </span>import androidx.compose.foundation.background
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SpeakerDetailView.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.session</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.foundation.layout.Column
+<span class="lineno">   4 </span>import androidx.compose.foundation.layout.Row
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/AboutView.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.settings</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.foundation.layout.Column
+<span class="lineno">   4 </span>import androidx.compose.foundation.layout.Row
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/ConferenceSelector.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.settings</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.foundation.clickable
+<span class="lineno">   4 </span>import androidx.compose.foundation.layout.Column
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/PlatformSpecificSettings.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.settings</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.runtime.Composable
+<span class="lineno">   4 </span>import co.touchlab.droidcon.viewmodel.settings.SettingsViewModel
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/SettingsView.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.settings</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.foundation.clickable
+<span class="lineno">   4 </span>import androidx.compose.foundation.layout.Column
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorDetailView.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.sponsors</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.foundation.Image
+<span class="lineno">   4 </span>import androidx.compose.foundation.background
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorsView.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.sponsors</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.foundation.background
+<span class="lineno">   4 </span>import androidx.compose.foundation.clickable
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/theme/Colors.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.theme</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.ui.graphics.Color
+<span class="lineno">   4 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/theme/Dimensions.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.theme</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.ui.unit.dp
+<span class="lineno">   4 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/theme/Theme.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.theme</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.foundation.isSystemInDarkTheme
+<span class="lineno">   4 </span>import androidx.compose.material3.MaterialTheme
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/theme/Type.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.theme</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.ui.text.font.FontFamily
+<span class="lineno">   4 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/theme/Typography.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.theme</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.material3.Typography
+<span class="lineno">   4 </span>import androidx.compose.ui.text.TextStyle
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/Dialog.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.util</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.runtime.Composable
+<span class="lineno">   4 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/Image.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.util</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.runtime.Composable
+<span class="lineno">   4 </span>import androidx.compose.ui.Modifier
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/LocalImage.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.util</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.runtime.Composable
+<span class="lineno">   4 </span>import androidx.compose.ui.Modifier
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/NavigationBackPressWrapper.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.util</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.runtime.Composable
+<span class="lineno">   4 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/ObserveAsState.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.util</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.runtime.Composable
+<span class="lineno">   4 </span>import androidx.compose.runtime.DisposableEffect
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/util/WebLinkText.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.util</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.foundation.gestures.detectTapGestures
+<span class="lineno">   4 </span>import androidx.compose.material3.LocalTextStyle
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/venue/VenueView.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.ui.venue</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.foundation.layout.Box
+<span class="lineno">   4 </span>import androidx.compose.foundation.layout.fillMaxSize
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/LocalDateTime+startOfMinute.kt:3:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span>@file:Suppress(&quot;ktlint:standard:filename&quot;)
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span><span class="error">package co.touchlab.droidcon.util</span>
+<span class="lineno">   4 </span>
+<span class="lineno">   5 </span>import kotlinx.datetime.LocalDateTime
+<span class="lineno">   6 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/NavigationController.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.util</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import androidx.compose.animation.AnimatedContent
+<span class="lineno">   4 </span>import androidx.compose.animation.ExperimentalAnimationApi
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.application.gateway.SettingsGateway
+<span class="lineno">   4 </span>import co.touchlab.droidcon.application.service.Notification
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/FeedbackDialogViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.domain.entity.Session
+<span class="lineno">   4 </span>import co.touchlab.droidcon.domain.gateway.SessionGateway
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/WaitForLoadedContextModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.application.gateway.SettingsGateway
+<span class="lineno">   4 </span>import co.touchlab.droidcon.domain.entity.Conference
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/AgendaViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.session</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.domain.gateway.SessionGateway
+<span class="lineno">   4 </span>import co.touchlab.droidcon.domain.service.ConferenceConfigProvider
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/BaseSessionListViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.session</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.domain.gateway.SessionGateway
+<span class="lineno">   4 </span>import co.touchlab.droidcon.domain.service.ConferenceConfigProvider
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/ScheduleViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.session</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.domain.entity.Session
+<span class="lineno">   4 </span>import co.touchlab.droidcon.domain.gateway.SessionGateway
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionBlockViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.session</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.domain.composite.ScheduleItem
+<span class="lineno">   4 </span>import co.touchlab.droidcon.util.formatter.DateFormatter
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDayViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.session</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.domain.composite.ScheduleItem
+<span class="lineno">   4 </span>import co.touchlab.droidcon.domain.service.ConferenceConfigProvider
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailScrollStateStorage.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.session</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import kotlinx.datetime.LocalDate
+<span class="lineno">   4 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.session</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.application.gateway.SettingsGateway
+<span class="lineno">   4 </span>import co.touchlab.droidcon.application.service.NotificationService
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionListItemViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.session</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.domain.composite.ScheduleItem
+<span class="lineno">   4 </span>import co.touchlab.droidcon.domain.service.DateTimeService
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SpeakerDetailViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.session</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.composite.Url
+<span class="lineno">   4 </span>import co.touchlab.droidcon.domain.entity.Profile
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SpeakerListItemViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.session</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.domain.entity.Profile
+<span class="lineno">   4 </span>import org.brightify.hyperdrive.multiplatformx.BaseViewModel
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/settings/AboutItemViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.settings</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.dto.WebLink
+<span class="lineno">   4 </span>import org.brightify.hyperdrive.multiplatformx.BaseViewModel
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/settings/AboutViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.settings</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.application.composite.AboutItem
+<span class="lineno">   4 </span>import co.touchlab.droidcon.application.repository.AboutRepository
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/settings/SettingsViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.settings</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.application.gateway.SettingsGateway
+<span class="lineno">   4 </span>import co.touchlab.droidcon.domain.entity.Conference
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorDetailViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.sponsor</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.domain.entity.Sponsor
+<span class="lineno">   4 </span>import co.touchlab.droidcon.domain.gateway.SponsorGateway
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorGroupItemViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.sponsor</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.domain.entity.Sponsor
+<span class="lineno">   4 </span>import io.ktor.http.URLParserException
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorGroupViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.sponsor</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.domain.composite.SponsorGroupWithSponsors
+<span class="lineno">   4 </span>import co.touchlab.droidcon.domain.entity.Sponsor
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorListViewModel.kt:1:1</span><span class="message">The package declaration does not match the actual file location.</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package co.touchlab.droidcon.viewmodel.sponsor</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import co.touchlab.droidcon.composite.Url
+<span class="lineno">   4 </span>import co.touchlab.droidcon.domain.gateway.SponsorGateway
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <details id="MemberNameEqualsClassName" open="open">
+    <summary class="rule-container"><span class="rule">MemberNameEqualsClassName: 1 </span><span class="description">A member should not be given the same name as its parent class or object.</span></summary>
+<a href="https://detekt.dev/docs/rules/naming#membernameequalsclassname">Documentation</a>
+    <ul>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/theme/Typography.kt:9:5</span><span class="message">A member is named after the object. This might result in confusion. Please rename the member.</span>
+        <pre><code><span class="lineno">   6 </span>import androidx.compose.ui.unit.sp
+<span class="lineno">   7 </span>
+<span class="lineno">   8 </span>internal object Typography {
+<span class="lineno">   9 </span>    <span class="error">val typography = Typography(</span>
+<span class="lineno">  10 </span><span class="error">        headlineLarge = TextStyle(</span>
+<span class="lineno">  11 </span><span class="error">            fontFamily = montserratFontFamily,</span>
+<span class="lineno">  12 </span><span class="error">            fontWeight = FontWeight.Medium,</span>
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <details id="PackageNaming" open="open">
+    <summary class="rule-container"><span class="rule">PackageNaming: 3 </span><span class="description">Package names should match the naming convention set in the configuration.</span></summary>
+<a href="https://detekt.dev/docs/rules/naming#packagenaming">Documentation</a>
+    <ul>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/build/generated/compose/resourceGenerator/kotlin/commonMainResourceAccessors/droidcon/shared_ui/generated/resources/Drawable0.commonMain.kt:3:1</span><span class="message">Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*</span>
+        <pre><code><span class="lineno">   1 </span>@file:OptIn(InternalResourceApi::class)
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span><span class="error">package droidcon.shared_ui.generated.resources</span>
+<span class="lineno">   4 </span>
+<span class="lineno">   5 </span>import kotlin.OptIn
+<span class="lineno">   6 </span>import kotlin.String
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/build/generated/compose/resourceGenerator/kotlin/commonMainResourceCollectors/droidcon/shared_ui/generated/resources/ExpectResourceCollectors.kt:1:1</span><span class="message">Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package droidcon.shared_ui.generated.resources</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import kotlin.String
+<span class="lineno">   4 </span>import kotlin.collections.Map
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/build/generated/compose/resourceGenerator/kotlin/commonResClass/droidcon/shared_ui/generated/resources/Res.kt:7:1</span><span class="message">Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*</span>
+        <pre><code><span class="lineno">   4 </span>  &quot;REDUNDANT_VISIBILITY_MODIFIER&quot;,
+<span class="lineno">   5 </span>)
+<span class="lineno">   6 </span>
+<span class="lineno">   7 </span><span class="error">package droidcon.shared_ui.generated.resources</span>
+<span class="lineno">   8 </span>
+<span class="lineno">   9 </span>import kotlin.ByteArray
+<span class="lineno">  10 </span>import kotlin.OptIn
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <h3>style: 42</h3>
+  <details id="ForbiddenComment" open="open">
+    <summary class="rule-container"><span class="rule">ForbiddenComment: 3 </span><span class="description">Flags a forbidden comment.</span></summary>
+<a href="https://detekt.dev/docs/rules/style#forbiddencomment">Documentation</a>
+    <ul>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/BottomNavigationView.kt:40:25</span><span class="message">Forbidden FIXME todo marker in comment, please fix the problem.</span>
+        <pre><code><span class="lineno">  37 </span>                viewModel.listTabs(currentConference).forEach { tab -&gt;
+<span class="lineno">  38 </span>                    val (title, icon) = when (tab) {
+<span class="lineno">  39 </span>                        ApplicationViewModel.Tab.Schedule -&gt; &quot;Schedule&quot; to Icons.Filled.CalendarMonth
+<span class="lineno">  40 </span>                        <span class="error">// FIXME: Was originally &quot;My agenda&quot; but then it doesn't seem to fit.</span>
+<span class="lineno">  41 </span>                        ApplicationViewModel.Tab.MyAgenda -&gt; &quot;Agenda&quot; to Icons.Filled.Schedule
+<span class="lineno">  42 </span>                        ApplicationViewModel.Tab.Venue -&gt; &quot;Venue&quot; to Icons.Filled.Map
+<span class="lineno">  43 </span>                        ApplicationViewModel.Tab.Sponsors -&gt; &quot;Sponsors&quot; to Icons.Filled.LocalFireDepartment
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/settings/SettingsViewModel.kt:23:13</span><span class="message">Forbidden TODO todo marker in comment, please do the changes.</span>
+        <pre><code><span class="lineno">  20 </span>        settingsGateway.settings(),
+<span class="lineno">  21 </span>        mapping = { it.isFeedbackEnabled },
+<span class="lineno">  22 </span>        set = { newValue -&gt;
+<span class="lineno">  23 </span>            <span class="error">// TODO: Remove when `binding` supports suspend closures.</span>
+<span class="lineno">  24 </span>            instanceLock.runExclusively {
+<span class="lineno">  25 </span>                settingsGateway.setFeedbackEnabled(newValue)
+<span class="lineno">  26 </span>            }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/settings/SettingsViewModel.kt:35:13</span><span class="message">Forbidden TODO todo marker in comment, please do the changes.</span>
+        <pre><code><span class="lineno">  32 </span>        settingsGateway.settings(),
+<span class="lineno">  33 </span>        mapping = { it.isRemindersEnabled },
+<span class="lineno">  34 </span>        set = { newValue -&gt;
+<span class="lineno">  35 </span>            <span class="error">// TODO: Remove when `binding` supports suspend closures.</span>
+<span class="lineno">  36 </span>            instanceLock.runExclusively {
+<span class="lineno">  37 </span>                settingsGateway.setRemindersEnabled(newValue)
+<span class="lineno">  38 </span>            }
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <details id="MagicNumber" open="open">
+    <summary class="rule-container"><span class="rule">MagicNumber: 11 </span><span class="description">Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.</span></summary>
+<a href="https://detekt.dev/docs/rules/style#magicnumber">Documentation</a>
+    <ul>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/settings/ConferenceSelector.kt:96:42</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
+        <pre><code><span class="lineno">  93 </span>    DropdownMenu(
+<span class="lineno">  94 </span>        expanded = expanded,
+<span class="lineno">  95 </span>        onDismissRequest = onDismissRequest,
+<span class="lineno">  96 </span>        modifier = Modifier.fillMaxWidth(<span class="error">0.9f</span>),
+<span class="lineno">  97 </span>    ) {
+<span class="lineno">  98 </span>        Text(
+<span class="lineno">  99 </span>            text = &quot;Select Conference&quot;,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorsView.kt:116:61</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
+        <pre><code><span class="lineno"> 113 </span>                ),
+<span class="lineno"> 114 </span>                style = MaterialTheme.typography.headlineLarge,
+<span class="lineno"> 115 </span>            )
+<span class="lineno"> 116 </span>            val columnCount = if (sponsorGroup.isProminent) <span class="error">3</span> else 4
+<span class="lineno"> 117 </span>
+<span class="lineno"> 118 </span>            val sponsors by sponsorGroup.observeSponsors.observeAsState()
+<span class="lineno"> 119 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/sponsors/SponsorsView.kt:116:68</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
+        <pre><code><span class="lineno"> 113 </span>                ),
+<span class="lineno"> 114 </span>                style = MaterialTheme.typography.headlineLarge,
+<span class="lineno"> 115 </span>            )
+<span class="lineno"> 116 </span>            val columnCount = if (sponsorGroup.isProminent) 3 else <span class="error">4</span>
+<span class="lineno"> 117 </span>
+<span class="lineno"> 118 </span>            val sponsors by sponsorGroup.observeSponsors.observeAsState()
+<span class="lineno"> 119 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/theme/Colors.kt:6:31</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
+        <pre><code><span class="lineno">   3 </span>import androidx.compose.ui.graphics.Color
+<span class="lineno">   4 </span>
+<span class="lineno">   5 </span>object Colors {
+<span class="lineno">   6 </span>    val droidconGreen = Color(<span class="error">0xFF4CE2C3</span>)
+<span class="lineno">   7 </span>    val droidconBlue = Color(0xFF010DEB)
+<span class="lineno">   8 </span>    val droidconRed = Color(0xFFF66E4D)
+<span class="lineno">   9 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/theme/Colors.kt:7:30</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
+        <pre><code><span class="lineno">   4 </span>
+<span class="lineno">   5 </span>object Colors {
+<span class="lineno">   6 </span>    val droidconGreen = Color(0xFF4CE2C3)
+<span class="lineno">   7 </span>    val droidconBlue = Color(<span class="error">0xFF010DEB</span>)
+<span class="lineno">   8 </span>    val droidconRed = Color(0xFFF66E4D)
+<span class="lineno">   9 </span>
+<span class="lineno">  10 </span>    val primary = droidconGreen
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/theme/Colors.kt:8:29</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
+        <pre><code><span class="lineno">   5 </span>object Colors {
+<span class="lineno">   6 </span>    val droidconGreen = Color(0xFF4CE2C3)
+<span class="lineno">   7 </span>    val droidconBlue = Color(0xFF010DEB)
+<span class="lineno">   8 </span>    val droidconRed = Color(<span class="error">0xFFF66E4D</span>)
+<span class="lineno">   9 </span>
+<span class="lineno">  10 </span>    val primary = droidconGreen
+<span class="lineno">  11 </span>}
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/NavigationController.kt:51:89</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
+        <pre><code><span class="lineno">  48 </span>    internal sealed class NavigationStackItem {
+<span class="lineno">  49 </span>        class BackPressHandler(val onBackPressed: BackPressHandlerScope.() -&gt; Unit) : NavigationStackItem() {
+<span class="lineno">  50 </span>
+<span class="lineno">  51 </span>            override fun toString(): String = &quot;BackPress@${hashCode().toUInt().toString(<span class="error">16</span>)}&quot;
+<span class="lineno">  52 </span>        }
+<span class="lineno">  53 </span>
+<span class="lineno">  54 </span>        class Push&lt;T : Any&gt;(val item: MutableObservableProperty&lt;T?&gt;, val content: @Composable (T) -&gt; Unit) : NavigationStackItem() {
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/NavigationController.kt:57:73</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
+        <pre><code><span class="lineno">  54 </span>        class Push&lt;T : Any&gt;(val item: MutableObservableProperty&lt;T?&gt;, val content: @Composable (T) -&gt; Unit) : NavigationStackItem() {
+<span class="lineno">  55 </span>
+<span class="lineno">  56 </span>            override fun toString(): String =
+<span class="lineno">  57 </span>                &quot;Push(${item.value}@${item.hashCode().toUInt().toString(<span class="error">16</span>)})@${hashCode().toUInt().toString(16)}&quot;
+<span class="lineno">  58 </span>        }
+<span class="lineno">  59 </span>    }
+<span class="lineno">  60 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/NavigationController.kt:57:110</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
+        <pre><code><span class="lineno">  54 </span>        class Push&lt;T : Any&gt;(val item: MutableObservableProperty&lt;T?&gt;, val content: @Composable (T) -&gt; Unit) : NavigationStackItem() {
+<span class="lineno">  55 </span>
+<span class="lineno">  56 </span>            override fun toString(): String =
+<span class="lineno">  57 </span>                &quot;Push(${item.value}@${item.hashCode().toUInt().toString(16)})@${hashCode().toUInt().toString(<span class="error">16</span>)}&quot;
+<span class="lineno">  58 </span>        }
+<span class="lineno">  59 </span>    }
+<span class="lineno">  60 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailViewModel.kt:48:23</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
+        <pre><code><span class="lineno">  45 </span>        flow {
+<span class="lineno">  46 </span>            while (true) {
+<span class="lineno">  47 </span>                emit(dateTimeService.now())
+<span class="lineno">  48 </span>                delay(<span class="error">10_000</span>)
+<span class="lineno">  49 </span>            }
+<span class="lineno">  50 </span>        },
+<span class="lineno">  51 </span>    )
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionListItemViewModel.kt:23:23</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
+        <pre><code><span class="lineno">  20 </span>            while (true) {
+<span class="lineno">  21 </span>                val isInPast = dateTimeService.now() &gt; item.session.endsAt
+<span class="lineno">  22 </span>                emit(isInPast)
+<span class="lineno">  23 </span>                delay(<span class="error">10_000</span>)
+<span class="lineno">  24 </span>            }
+<span class="lineno">  25 </span>        },
+<span class="lineno">  26 </span>    )
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <details id="MaxLineLength" open="open">
+    <summary class="rule-container"><span class="rule">MaxLineLength: 25 </span><span class="description">Line detected, which is longer than the defined maximum line length in the code style.</span></summary>
+<a href="https://detekt.dev/docs/rules/style#maxlinelength">Documentation</a>
+    <ul>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/build/generated/compose/resourceGenerator/kotlin/commonResClass/droidcon/shared_ui/generated/resources/Res.kt:26:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">  23 </span>   * @param path The path of the file to read in the compose resource's directory.
+<span class="lineno">  24 </span>   * @return The content of the file as a byte array.
+<span class="lineno">  25 </span>   */
+<span class="lineno">  26 </span><span class="error">  public suspend fun readBytes(path: String): ByteArray = readResourceBytes(&quot;composeResources/droidcon.shared_ui.generated.resources/&quot; + path)</span>
+<span class="lineno">  27 </span>
+<span class="lineno">  28 </span>  /**
+<span class="lineno">  29 </span>   * Returns the URI string of the resource file at the specified path.
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/build/generated/compose/resourceGenerator/kotlin/commonResClass/droidcon/shared_ui/generated/resources/Res.kt:36:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">  33 </span>   * @param path The path of the file in the compose resource's directory.
+<span class="lineno">  34 </span>   * @return The URI string of the file.
+<span class="lineno">  35 </span>   */
+<span class="lineno">  36 </span><span class="error">  public fun getUri(path: String): String = getResourceUri(&quot;composeResources/droidcon.shared_ui.generated.resources/&quot; + path)</span>
+<span class="lineno">  37 </span>
+<span class="lineno">  38 </span>  public object drawable
+<span class="lineno">  39 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/BottomNavigationView.kt:30:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">  27 </span>import co.touchlab.droidcon.viewmodel.ApplicationViewModel
+<span class="lineno">  28 </span>
+<span class="lineno">  29 </span>@Composable
+<span class="lineno">  30 </span><span class="error">internal fun BottomNavigationView(viewModel: ApplicationViewModel, currentConference: Conference, modifier: Modifier = Modifier) {</span>
+<span class="lineno">  31 </span>    val selectedTab by viewModel.observeSelectedTab.observeAsState()
+<span class="lineno">  32 </span>
+<span class="lineno">  33 </span>    Scaffold(
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/FeedbackDialog.kt:105:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno"> 102 </span>                    TextButton(onClick = feedback::submitTapped, enabled = !isSubmitDisabled) {
+<span class="lineno"> 103 </span>                        Text(
+<span class="lineno"> 104 </span>                            text = &quot;SUBMIT&quot;,
+<span class="lineno"> 105 </span><span class="error">                            color = if (isSubmitDisabled) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.primary,</span>
+<span class="lineno"> 106 </span>                        )
+<span class="lineno"> 107 </span>                    }
+<span class="lineno"> 108 </span>                    TextButton(onClick = feedback::closeAndDisableTapped) {
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/MainComposeView.kt:46:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">  43 </span>    DroidconTheme {
+<span class="lineno">  44 </span>        when (val state = loadingState) {
+<span class="lineno">  45 </span>            WaitForLoadedContextModel.State.Loading -&gt; LoadingScreen()
+<span class="lineno">  46 </span><span class="error">            is WaitForLoadedContextModel.State.Ready -&gt; MainAppBody(waitForLoadedContextModel, state.conference, modifier)</span>
+<span class="lineno">  47 </span>        }
+<span class="lineno">  48 </span>    }
+<span class="lineno">  49 </span>}
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/MainComposeView.kt:68:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">  65 </span>}
+<span class="lineno">  66 </span>
+<span class="lineno">  67 </span>@Composable
+<span class="lineno">  68 </span><span class="error">private fun MainAppBody(waitForLoadedContextModel: WaitForLoadedContextModel, selectedConference: Conference, modifier: Modifier) {</span>
+<span class="lineno">  69 </span>    LaunchedEffect(selectedConference) {
+<span class="lineno">  70 </span>        waitForLoadedContextModel.applicationViewModel.runAllLiveTasks(selectedConference)
+<span class="lineno">  71 </span>    }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/UiModule.kt:102:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">  99 </span>
+<span class="lineno"> 100 </span>    single { SpeakerDetailViewModel.Factory(parseUrlViewService = get()) }
+<span class="lineno"> 101 </span>
+<span class="lineno"> 102 </span><span class="error">    single { SponsorListViewModel.Factory(sponsorGateway = get(), sponsorGroupFactory = get(), sponsorDetailFactory = get()) }</span>
+<span class="lineno"> 103 </span>    single { SponsorGroupViewModel.Factory(sponsorGroupItemFactory = get()) }
+<span class="lineno"> 104 </span>    single { SponsorGroupItemViewModel.Factory() }
+<span class="lineno"> 105 </span>    single { SponsorDetailViewModel.Factory(sponsorGateway = get(), speakerListItemFactory = get(), speakerDetailFactory = get()) }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/UiModule.kt:105:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno"> 102 </span>    single { SponsorListViewModel.Factory(sponsorGateway = get(), sponsorGroupFactory = get(), sponsorDetailFactory = get()) }
+<span class="lineno"> 103 </span>    single { SponsorGroupViewModel.Factory(sponsorGroupItemFactory = get()) }
+<span class="lineno"> 104 </span>    single { SponsorGroupItemViewModel.Factory() }
+<span class="lineno"> 105 </span><span class="error">    single { SponsorDetailViewModel.Factory(sponsorGateway = get(), speakerListItemFactory = get(), speakerDetailFactory = get()) }</span>
+<span class="lineno"> 106 </span>
+<span class="lineno"> 107 </span>    single { SettingsViewModel.Factory(settingsGateway = get(), aboutFactory = get(), conferenceRepository = get()) }
+<span class="lineno"> 108 </span>    single { AboutViewModel.Factory(aboutRepository = get(), parseUrlViewService = get()) }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/UiModule.kt:110:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno"> 107 </span>    single { SettingsViewModel.Factory(settingsGateway = get(), aboutFactory = get(), conferenceRepository = get()) }
+<span class="lineno"> 108 </span>    single { AboutViewModel.Factory(aboutRepository = get(), parseUrlViewService = get()) }
+<span class="lineno"> 109 </span>
+<span class="lineno"> 110 </span><span class="error">    single { FeedbackDialogViewModel.Factory(sessionGateway = get(), get(parameters = { parametersOf(&quot;FeedbackDialogViewModel&quot;) })) }</span>
+<span class="lineno"> 111 </span>
+<span class="lineno"> 112 </span>    single { SessionDetailScrollStateStorage() }
+<span class="lineno"> 113 </span>}
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionBlockView.kt:42:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">  39 </span>            textAlign = TextAlign.End,
+<span class="lineno">  40 </span>        )
+<span class="lineno">  41 </span>
+<span class="lineno">  42 </span><span class="error">        Column(modifier = Modifier.padding(start = 72.dp), verticalArrangement = Arrangement.spacedBy(Dimensions.Padding.quarter)) {</span>
+<span class="lineno">  43 </span>            sessionsBlock.sessions.forEach { session -&gt;
+<span class="lineno">  44 </span>                Row(verticalAlignment = Alignment.CenterVertically) {
+<span class="lineno">  45 </span>                    val isInPast by session.observeIsInPast.observeAsState()
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionBlockView.kt:52:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">  49 </span>                        session.isInConflict -&gt; MaterialTheme.colorScheme.error
+<span class="lineno">  50 </span>                        else -&gt; MaterialTheme.colorScheme.primary
+<span class="lineno">  51 </span>                    }
+<span class="lineno">  52 </span><span class="error">                    Box(modifier = Modifier.padding(Dimensions.Padding.default).size(8.dp).clip(CircleShape).background(badgeColor))</span>
+<span class="lineno">  53 </span>
+<span class="lineno">  54 </span>                    val isClickable = !session.isServiceSession
+<span class="lineno">  55 </span>                    Card(
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionDetailView.kt:130:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno"> 127 </span>                }
+<span class="lineno"> 128 </span>
+<span class="lineno"> 129 </span>                val status = when (state) {
+<span class="lineno"> 130 </span><span class="error">                    SessionDetailViewModel.SessionState.InConflict -&gt; &quot;This session is in conflict with another session in your schedule.&quot;</span>
+<span class="lineno"> 131 </span>                    SessionDetailViewModel.SessionState.InProgress -&gt; &quot;This session is happening now.&quot;
+<span class="lineno"> 132 </span>                    SessionDetailViewModel.SessionState.Ended -&gt; &quot;This session has already ended.&quot;
+<span class="lineno"> 133 </span>                    null -&gt; &quot;This session hasn't started yet.&quot;
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/NavigationController.kt:54:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">  51 </span>            override fun toString(): String = &quot;BackPress@${hashCode().toUInt().toString(16)}&quot;
+<span class="lineno">  52 </span>        }
+<span class="lineno">  53 </span>
+<span class="lineno">  54 </span><span class="error">        class Push&lt;T : Any&gt;(val item: MutableObservableProperty&lt;T?&gt;, val content: @Composable (T) -&gt; Unit) : NavigationStackItem() {</span>
+<span class="lineno">  55 </span>
+<span class="lineno">  56 </span>            override fun toString(): String =
+<span class="lineno">  57 </span>                &quot;Push(${item.value}@${item.hashCode().toUInt().toString(16)})@${hashCode().toUInt().toString(16)}&quot;
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/NavigationController.kt:246:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno"> 243 </span>    val activeLinkComposables by remember(key) {
+<span class="lineno"> 244 </span>        val constructedLinks = mutableListOf&lt;ObservableProperty&lt;NavigationLinkWrapper&lt;*&gt;&gt;&gt;()
+<span class="lineno"> 245 </span>        val scope = object : NavigationStackScope {
+<span class="lineno"> 246 </span><span class="error">            override fun &lt;T : Any&gt; navigationLink(item: MutableObservableProperty&lt;T?&gt;, content: @Composable (T) -&gt; Unit) {</span>
+<span class="lineno"> 247 </span>                constructedLinks.add(
+<span class="lineno"> 248 </span>                    item.map {
+<span class="lineno"> 249 </span>                        NavigationLinkWrapper(index = constructedLinks.size, value = it, reset = { item.value = null }, content)
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/NavigationController.kt:249:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno"> 246 </span>            override fun &lt;T : Any&gt; navigationLink(item: MutableObservableProperty&lt;T?&gt;, content: @Composable (T) -&gt; Unit) {
+<span class="lineno"> 247 </span>                constructedLinks.add(
+<span class="lineno"> 248 </span>                    item.map {
+<span class="lineno"> 249 </span><span class="error">                        NavigationLinkWrapper(index = constructedLinks.size, value = it, reset = { item.value = null }, content)</span>
+<span class="lineno"> 250 </span>                    },
+<span class="lineno"> 251 </span>                )
+<span class="lineno"> 252 </span>            }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/BaseSessionListViewModel.kt:23:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">  20 </span>        private set
+<span class="lineno">  21 </span>    val observeDays by observe(::days)
+<span class="lineno">  22 </span>
+<span class="lineno">  23 </span><span class="error">    var selectedDay: SessionDayViewModel? by managed(days?.firstOrNull { it.date == sessionDetailScrollStateStorage.selectedDay })</span>
+<span class="lineno">  24 </span>    val observeSelectedDay by observe(::selectedDay)
+<span class="lineno">  25 </span>
+<span class="lineno">  26 </span>    var presentedSessionDetail: SessionDetailViewModel? by managed(null)
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionBlockViewModel.kt:28:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">  25 </span>    )
+<span class="lineno">  26 </span>    val observeSessions by observe(::sessions)
+<span class="lineno">  27 </span>
+<span class="lineno">  28 </span><span class="error">    class Factory(private val sessionListItemFactory: SessionListItemViewModel.Factory, private val dateFormatter: DateFormatter) {</span>
+<span class="lineno">  29 </span>        fun create(startsAt: LocalDateTime, items: List&lt;ScheduleItem&gt;, onScheduleItemSelected: (ScheduleItem) -&gt; Unit) =
+<span class="lineno">  30 </span>            SessionBlockViewModel(sessionListItemFactory, dateFormatter, startsAt, items, onScheduleItemSelected)
+<span class="lineno">  31 </span>    }
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDayViewModel.kt:55:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">  52 </span>        private val sessionDetailScrollStateStorage: SessionDetailScrollStateStorage,
+<span class="lineno">  53 </span>    ) {
+<span class="lineno">  54 </span>
+<span class="lineno">  55 </span><span class="error">        fun create(date: LocalDate, attendingOnly: Boolean, items: List&lt;ScheduleItem&gt;, onScheduleItemSelected: (ScheduleItem) -&gt; Unit) =</span>
+<span class="lineno">  56 </span>            SessionDayViewModel(
+<span class="lineno">  57 </span>                sessionBlockFactory,
+<span class="lineno">  58 </span>                dateFormatter,
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailViewModel.kt:40:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">  37 </span>    initialItem: ScheduleItem,
+<span class="lineno">  38 </span>) : BaseViewModel() {
+<span class="lineno">  39 </span>
+<span class="lineno">  40 </span><span class="error">    private val item by collected(initialItem, sessionGateway.observeScheduleItem(initialItem.session.id), identityEqualityPolicy())</span>
+<span class="lineno">  41 </span>    private val observeItem by observe(::item)
+<span class="lineno">  42 </span>
+<span class="lineno">  43 </span>    private val time: Instant by collected(
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailViewModel.kt:82:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">  79 </span>    val observeState by observe(::state)
+<span class="lineno">  80 </span>    val abstract by observeItem.map { it.session.description }
+<span class="lineno">  81 </span>    val observeAbstract by observe(::abstract)
+<span class="lineno">  82 </span><span class="error">    val abstractLinks: List&lt;WebLink&gt; by observeItem.map { it.session.description?.let(parseUrlViewService::parse) ?: emptyList() }</span>
+<span class="lineno">  83 </span>    val observeAbstractLinks by observe(::abstractLinks)
+<span class="lineno">  84 </span>
+<span class="lineno">  85 </span>    val speakers: List&lt;SpeakerListItemViewModel&gt; by managedList(
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailViewModel.kt:145:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno"> 142 </span>
+<span class="lineno"> 143 </span>    private fun parseUrl(text: String): List&lt;WebLink&gt; {
+<span class="lineno"> 144 </span>        val urlRegex =
+<span class="lineno"> 145 </span><span class="error">            &quot;https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&amp;//=]*)&quot;.toRegex()</span>
+<span class="lineno"> 146 </span>        return urlRegex.findAll(text).map { WebLink(it.range, it.value) }.toList()
+<span class="lineno"> 147 </span>    }
+<span class="lineno"> 148 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionListItemViewModel.kt:9:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">   6 </span>import kotlinx.coroutines.flow.flow
+<span class="lineno">   7 </span>import org.brightify.hyperdrive.multiplatformx.BaseViewModel
+<span class="lineno">   8 </span>
+<span class="lineno">   9 </span><span class="error">class SessionListItemViewModel(dateTimeService: DateTimeService, item: ScheduleItem, val selected: () -&gt; Unit) : BaseViewModel() {</span>
+<span class="lineno">  10 </span>    val title: String = item.session.title
+<span class="lineno">  11 </span>    val isServiceSession: Boolean = item.session.isServiceSession
+<span class="lineno">  12 </span>    val isAttending: Boolean = item.session.rsvp.isAttending
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/settings/AboutItemViewModel.kt:6:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">   3 </span>import co.touchlab.droidcon.dto.WebLink
+<span class="lineno">   4 </span>import org.brightify.hyperdrive.multiplatformx.BaseViewModel
+<span class="lineno">   5 </span>
+<span class="lineno">   6 </span><span class="error">class AboutItemViewModel(val title: String, val detail: String, val webLinks: List&lt;WebLink&gt;, val icon: String) : BaseViewModel()</span>
+<span class="lineno">   7 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/settings/AboutViewModel.kt:8:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">   5 </span>import co.touchlab.droidcon.service.ParseUrlViewService
+<span class="lineno">   6 </span>import org.brightify.hyperdrive.multiplatformx.BaseViewModel
+<span class="lineno">   7 </span>
+<span class="lineno">   8 </span><span class="error">class AboutViewModel(private val aboutRepository: AboutRepository, private val parseUrlViewService: ParseUrlViewService) : BaseViewModel() {</span>
+<span class="lineno">   9 </span>
+<span class="lineno">  10 </span>    var items: List&lt;AboutItem&gt; by published(emptyList())
+<span class="lineno">  11 </span>        private set
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorListViewModel.kt:24:1</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
+        <pre><code><span class="lineno">  21 </span>                            sponsorGroup,
+<span class="lineno">  22 </span>                            onSponsorSelected = { sponsor -&gt;
+<span class="lineno">  23 </span>                                if (sponsor.hasDetail) {
+<span class="lineno">  24 </span><span class="error">                                    presentedSponsorDetail = sponsorDetailFactory.create(sponsor, sponsorGroup.group.name)</span>
+<span class="lineno">  25 </span>                                } else {
+<span class="lineno">  26 </span>                                    presentedUrl = sponsor.url
+<span class="lineno">  27 </span>                                }
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <details id="UnusedPrivateMember" open="open">
+    <summary class="rule-container"><span class="rule">UnusedPrivateMember: 1 </span><span class="description">Private function is unused and should be removed.</span></summary>
+<a href="https://detekt.dev/docs/rules/style#unusedprivatemember">Documentation</a>
+    <ul>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailViewModel.kt:143:17</span><span class="message">Private function `parseUrl` is unused.</span>
+        <pre><code><span class="lineno"> 140 </span>        )
+<span class="lineno"> 141 </span>    }
+<span class="lineno"> 142 </span>
+<span class="lineno"> 143 </span>    private fun <span class="error">parseUrl</span>(text: String): List&lt;WebLink&gt; {
+<span class="lineno"> 144 </span>        val urlRegex =
+<span class="lineno"> 145 </span>            &quot;https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&amp;//=]*)&quot;.toRegex()
+<span class="lineno"> 146 </span>        return urlRegex.findAll(text).map { WebLink(it.range, it.value) }.toList()
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <details id="UnusedPrivateProperty" open="open">
+    <summary class="rule-container"><span class="rule">UnusedPrivateProperty: 2 </span><span class="description">Property is unused and should be removed.</span></summary>
+<a href="https://detekt.dev/docs/rules/style#unusedprivateproperty">Documentation</a>
+    <ul>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/NavigationController.kt:32:13</span><span class="message">Private property `LocalNavigationViewDimensions` is unused.</span>
+        <pre><code><span class="lineno">  29 </span>    NavigationController.root
+<span class="lineno">  30 </span>}
+<span class="lineno">  31 </span>
+<span class="lineno">  32 </span>private val <span class="error">LocalNavigationViewDimensions</span> = staticCompositionLocalOf&lt;NavigationViewDimensions&gt; {
+<span class="lineno">  33 </span>    error(&quot;NavigationView hasn't been used.&quot;)
+<span class="lineno">  34 </span>}
+<span class="lineno">  35 </span>
+</code></pre>
+      </li>
+      <li><span class="location">/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/WaitForLoadedContextModel.kt:20:17</span><span class="message">Private property `settingsGateway` is unused.</span>
+        <pre><code><span class="lineno">  17 </span>    private val conferenceConfigProvider: ConferenceConfigProvider,
+<span class="lineno">  18 </span>    applicationViewModelFactory: ApplicationViewModel.Factory,
+<span class="lineno">  19 </span>    private val syncService: SyncService,
+<span class="lineno">  20 </span>    private val <span class="error">settingsGateway</span>: SettingsGateway,
+<span class="lineno">  21 </span>) : BaseViewModel() {
+<span class="lineno">  22 </span>    sealed interface State {
+<span class="lineno">  23 </span>        data object Loading : State
+</code></pre>
+      </li>
+    </ul>
+  </details>
+</div>
+
+
+generated with <a href="https://detekt.dev/">detekt version 1.23.7</a> on 2026-05-22 20:19:27 UTC.
+
+</body>
+</html>

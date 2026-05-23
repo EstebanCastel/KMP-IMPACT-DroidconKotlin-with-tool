@@ -1,0 +1,255 @@
+{
+  "dependency_group": "org.jetbrains.kotlinx",
+  "version_before": "0.6.2",
+  "version_after": "0.8.0",
+  "risk_level": "high",
+  "recommendation": "Hold merge until impacted files are reviewed and targeted regression checks pass.",
+  "report_url": "",
+  "total_impacted_files": 121,
+  "total_impacted_screens": 24,
+  "direct_impacts": 62,
+  "transitive_impacts": 59,
+  "expect_actual_impacts": 2,
+  "expect_actual_pairs_total": 7,
+  "total_project_files": 169,
+  "dynamic_status": "skipped",
+  "dynamic_summary": "skipped",
+  "dynamic_diffs": 0,
+  "before_screens": 0,
+  "after_screens": 0,
+  "dynamic_nodes_before": 0,
+  "dynamic_nodes_after": 0,
+  "dynamic_structures_before": 0,
+  "dynamic_structures_after": 0,
+  "screen_mappings": 24,
+  "trace_entries": 121,
+  "seed_files": [
+    "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/MainActivity.kt",
+    "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/MainApp.kt",
+    "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/service/impl/DefaultFirebaseMessagingService.kt",
+    "/tmp/output/phase1/before/ios/src/iosMain/kotlin/co/touchlab/droidcon/ios/util/NotificationLocalizedStringFactory.kt",
+    "/tmp/output/phase1/before/ios/src/iosMain/kotlin/co/touchlab/droidcon/ios/util/formatter/IOSDateFormatter.kt",
+    "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/service/AndroidNotificationService.kt",
+    "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/service/NotificationRescheduler.kt",
+    "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/util/formatter/AndroidDateFormatter.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/Koin.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/gateway/SettingsGateway.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/gateway/impl/DefaultSettingsGateway.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/repository/SettingsRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/repository/impl/DefaultSettingsRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/entity/Conference.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/gateway/SessionGateway.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/gateway/SponsorGateway.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/gateway/impl/DefaultSessionGateway.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/gateway/impl/DefaultSponsorGateway.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/ConferenceRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/Repository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/SessionRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/BaseRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightConferenceRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightProfileRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightRoomRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSessionRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSponsorGroupRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSponsorRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/ConferenceConfigProvider.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/DateTimeService.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultApiDataSource.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultConferenceConfigProvider.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultDateTimeService.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultFeedbackService.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultServerApi.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultSyncService.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/AboutDto.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/ConferencesDto.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/ScheduleDto.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/SpeakersDto.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/SponsorSessionsDto.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/dto/SponsorsDto.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/json/AboutJsonResourceDataSource.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/json/JsonResourceReader.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/util/formatter/DateFormatter.kt",
+    "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/Koin.ios.kt",
+    "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/MainScope.kt",
+    "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/service/IOSNotificationService.kt",
+    "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/util/BundleResourceReader.kt",
+    "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/util/WrapMultiThreadCallback.kt",
+    "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionListView.kt",
+    "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/util/LocalDateTime+startOfMinute.kt",
+    "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt",
+    "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/WaitForLoadedContextModel.kt",
+    "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionBlockViewModel.kt",
+    "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDayViewModel.kt",
+    "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailScrollStateStorage.kt",
+    "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionDetailViewModel.kt",
+    "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/session/SessionListItemViewModel.kt",
+    "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/sponsor/SponsorListViewModel.kt",
+    "/tmp/output/phase1/before/shared-ui/src/iosMain/kotlin/co/touchlab/droidcon/ui/util/ToSkiaImage.kt"
+  ],
+  "impacted_screens": [
+    "About",
+    "Agenda",
+    "Application",
+    "BaseSessionList",
+    "BottomNavigation",
+    "FeedbackDialog",
+    "FirstRunConferenceSelector",
+    "Main",
+    "MainCompose",
+    "MainView",
+    "Schedule",
+    "SessionBlock",
+    "SessionDay",
+    "SessionDetail",
+    "SessionList",
+    "SessionListItem",
+    "Settings",
+    "SpeakerDetail",
+    "SpeakerListItem",
+    "SponsorDetail",
+    "SponsorGroup",
+    "SponsorGroupItem",
+    "SponsorList",
+    "Sponsors"
+  ],
+  "top_impacted_files": [
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/service/impl/DefaultSyncService.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 440,
+      "mcc": 39,
+      "declarations": [
+        "co.touchlab.droidcon.domain.service.impl.DefaultSyncService"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/service/AndroidNotificationService.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "androidMain",
+      "rloc": 229,
+      "mcc": 20,
+      "declarations": [
+        "co.touchlab.droidcon.service.AndroidNotificationService"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/viewmodel/ApplicationViewModel.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 198,
+      "mcc": 15,
+      "declarations": [
+        "co.touchlab.droidcon.viewmodel.ApplicationViewModel"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/service/IOSNotificationService.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "ios",
+      "rloc": 162,
+      "mcc": 15,
+      "declarations": [
+        "co.touchlab.droidcon.service.IOSNotificationService"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/android/src/main/java/co/touchlab/droidcon/android/MainActivity.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "main",
+      "rloc": 131,
+      "mcc": 12,
+      "declarations": [
+        "co.touchlab.droidcon.android.MainActivity"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/Koin.ios.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "ios",
+      "rloc": 77,
+      "mcc": 11,
+      "declarations": [
+        "co.touchlab.droidcon.get",
+        "co.touchlab.droidcon.get",
+        "co.touchlab.droidcon.get",
+        "co.touchlab.droidcon.get",
+        "co.touchlab.droidcon.get",
+        "co.touchlab.droidcon.getAny"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/application/service/impl/DefaultNotificationSchedulingService.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 124,
+      "mcc": 8,
+      "declarations": [
+        "co.touchlab.droidcon.application.service.impl.DefaultNotificationSchedulingService"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/BaseRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 42,
+      "mcc": 8,
+      "declarations": [
+        "co.touchlab.droidcon.domain.repository.impl.BaseRepository"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared-ui/src/commonMain/kotlin/co.touchlab.droidcon/ui/session/SessionListView.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 211,
+      "mcc": 7,
+      "declarations": [
+        "co.touchlab.droidcon.ui.session.SessionListView",
+        "co.touchlab.droidcon.ui.session.TabIndicator",
+        "co.touchlab.droidcon.ui.session.EmptyView"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/Koin.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 265,
+      "mcc": 5,
+      "declarations": [
+        "co.touchlab.droidcon.initKoin",
+        "co.touchlab.droidcon.getWith"
+      ]
+    }
+  ],
+  "compat_warnings": [],
+  "stack_detected": {
+    "kotlin": "2.2.21",
+    "agp": "8.12.0",
+    "compose-compiler": "1.5.15"
+  },
+  "version_key": "coroutines",
+  "compilation_after": "success",
+  "compile_errors": 0,
+  "has_detekt": false,
+  "has_kover": true,
+  "tools_used": {
+    "tree_sitter": true,
+    "ksp": false,
+    "detekt": false,
+    "kover": true,
+    "droidbot": false,
+    "codecharta": true
+  }
+}

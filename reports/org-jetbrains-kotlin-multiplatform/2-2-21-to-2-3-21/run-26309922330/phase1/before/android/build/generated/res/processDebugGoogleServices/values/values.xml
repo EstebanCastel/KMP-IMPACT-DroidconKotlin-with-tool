@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">123455771229-sc9bpuefbjceq7i1qabk7gssstefrdlv.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">606665771234</string>
+    <string name="google_api_key" translatable="false">AIzaSyCNzhU2a9gMc_JHurHbywOrRI9Vj4VQZZZ</string>
+    <string name="google_app_id" translatable="false">1:606665771229:android:c1f0f09aa42abc12</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCNzhU2a9gMc_JHurHbywOrRI9Vj4VQZZZ</string>
+    <string name="google_storage_bucket" translatable="false">mock-firebase-project.appspot.com</string>
+    <string name="project_id" translatable="false">mock-firebase-project</string>
+</resources>

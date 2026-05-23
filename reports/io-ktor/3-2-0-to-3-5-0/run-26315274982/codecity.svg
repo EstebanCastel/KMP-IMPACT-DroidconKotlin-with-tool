@@ -1,0 +1,93 @@
+<svg viewBox='0 0 880 540' xmlns='http://www.w3.org/2000/svg' style='width:100%;font-family:Inter,system-ui,sans-serif;background:#ffffff;'>
+<text x='440' y='22' text-anchor='middle' fill='#1e293b' font-size='13' font-weight='700'>Code city — area = RLOC, colour = impact level</text>
+<rect x='2' y='36.0' width='876' height='349.4' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1'/>
+<text x='14' y='52.0' fill='#475569' font-size='11' font-weight='700' text-transform='uppercase'>commonMain (31 files)</text>
+<rect x='8.0' y='60.0' width='151.7' height='167.2' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='83.9' y='146.6' text-anchor='middle' fill='white' font-size='10' font-weight='600'>SessionDetailView…</text>
+<rect x='8.0' y='227.2' width='151.7' height='150.2' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<text x='83.9' y='305.3' text-anchor='middle' fill='white' font-size='10' font-weight='600'>Koin.kt</text>
+<rect x='159.7' y='60.0' width='128.7' height='163.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='224.1' y='144.5' text-anchor='middle' fill='white' font-size='10' font-weight='600'>NavigationControl…</text>
+<rect x='159.7' y='223.0' width='128.7' height='154.3' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='224.1' y='303.2' text-anchor='middle' fill='white' font-size='10' font-weight='600'>SponsorDetailView…</text>
+<rect x='288.4' y='60.0' width='110.8' height='163.7' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='343.8' y='144.9' text-anchor='middle' fill='white' font-size='10' font-weight='600'>SessionListView.kt</text>
+<rect x='288.4' y='223.7' width='110.8' height='153.6' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='343.8' y='303.5' text-anchor='middle' fill='white' font-size='10' font-weight='600'>ApplicationViewMo…</text>
+<rect x='399.2' y='60.0' width='144.9' height='113.9' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='471.7' y='119.9' text-anchor='middle' fill='white' font-size='10' font-weight='600'>SpeakerDetailView…</text>
+<rect x='399.2' y='173.9' width='144.9' height='105.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='471.7' y='229.4' text-anchor='middle' fill='white' font-size='10' font-weight='600'>SponsorsView.kt</text>
+<rect x='399.2' y='278.9' width='144.9' height='98.5' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='471.7' y='331.1' text-anchor='middle' fill='white' font-size='10' font-weight='600'>SessionDetailView…</text>
+<rect x='544.2' y='60.0' width='97.8' height='109.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='593.1' y='117.5' text-anchor='middle' fill='white' font-size='10' font-weight='600'>DefaultNotificati…</text>
+<rect x='544.2' y='169.0' width='97.8' height='106.4' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='593.1' y='225.2' text-anchor='middle' fill='white' font-size='10' font-weight='600'>ConferenceSelecto…</text>
+<rect x='544.2' y='275.4' width='97.8' height='102.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='593.1' y='329.4' text-anchor='middle' fill='white' font-size='10' font-weight='600'>FeedbackDialog.kt</text>
+<rect x='642.0' y='60.0' width='81.2' height='108.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='682.6' y='117.0' text-anchor='middle' fill='white' font-size='10' font-weight='600'>UiModule.kt</text>
+<rect x='723.2' y='60.0' width='75.6' height='108.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='761.0' y='117.0' text-anchor='middle' fill='white' font-size='10' font-weight='600'>SettingsView.kt</text>
+<rect x='798.8' y='60.0' width='73.2' height='108.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='835.4' y='117.0' text-anchor='middle' fill='white' font-size='10' font-weight='600'>SessionBlockView.…</text>
+<rect x='642.0' y='168.0' width='70.6' height='110.7' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='677.3' y='226.4' text-anchor='middle' fill='white' font-size='10' font-weight='600'>MainComposeView.kt</text>
+<rect x='642.0' y='278.8' width='70.6' height='98.6' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='677.3' y='331.1' text-anchor='middle' fill='white' font-size='10' font-weight='600'>BottomNavigationV…</text>
+<rect x='712.6' y='168.0' width='84.4' height='72.3' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<text x='754.9' y='207.2' text-anchor='middle' fill='white' font-size='10' font-weight='600'>DefaultApiDataSou…</text>
+<rect x='797.1' y='168.0' width='74.9' height='72.3' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='834.5' y='207.2' text-anchor='middle' fill='white' font-size='10' font-weight='600'>AboutView.kt</text>
+<rect x='712.6' y='240.3' width='63.4' height='82.8' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='744.3' y='284.7' text-anchor='middle' fill='white' font-size='10' font-weight='600'>SessionDayViewMod…</text>
+<rect x='712.6' y='323.1' width='63.4' height='54.3' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<text x='744.3' y='353.2' text-anchor='middle' fill='white' font-size='10' font-weight='600'>DefaultServerApi.…</text>
+<rect x='776.0' y='240.3' width='55.9' height='60.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='831.9' y='240.3' width='40.1' height='60.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='776.0' y='300.3' width='43.5' height='41.5' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='776.0' y='341.8' width='43.5' height='35.6' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<rect x='819.5' y='300.3' width='29.7' height='37.7' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='849.2' y='300.3' width='22.8' height='37.7' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='819.5' y='338.0' width='21.9' height='39.3' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='841.4' y='338.0' width='15.3' height='28.1' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='856.7' y='338.0' width='15.3' height='28.1' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='841.4' y='366.1' width='30.6' height='11.2' fill='#7c3aed' stroke='white' stroke-width='1.5'/>
+<rect x='2' y='385.4' width='876' height='60.0' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1'/>
+<text x='14' y='401.4' fill='#475569' font-size='11' font-weight='700' text-transform='uppercase'>iosMain (10 files)</text>
+<rect x='8.0' y='409.4' width='299.1' height='28.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='157.5' y='426.4' text-anchor='middle' fill='white' font-size='10' font-weight='600'>IOSNotificationSe…</text>
+<rect x='307.1' y='409.4' width='142.2' height='28.0' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<text x='378.2' y='426.4' text-anchor='middle' fill='white' font-size='10' font-weight='600'>Koin.ios.kt</text>
+<rect x='449.2' y='409.4' width='118.2' height='28.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='508.3' y='426.4' text-anchor='middle' fill='white' font-size='10' font-weight='600'>NavigationBackPre…</text>
+<rect x='567.4' y='409.4' width='81.2' height='28.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='608.0' y='426.4' text-anchor='middle' fill='white' font-size='10' font-weight='600'>BundleResourceRea…</text>
+<rect x='648.6' y='409.4' width='72.0' height='28.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='684.6' y='426.4' text-anchor='middle' fill='white' font-size='10' font-weight='600'>DependencyInjecti…</text>
+<rect x='720.6' y='409.4' width='62.8' height='28.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='752.0' y='426.4' text-anchor='middle' fill='white' font-size='10' font-weight='600'>NotificationLocal…</text>
+<rect x='783.4' y='409.4' width='40.6' height='28.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='824.0' y='409.4' width='22.2' height='28.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='846.2' y='409.4' width='25.8' height='16.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='846.2' y='425.4' width='25.8' height='12.0' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='2' y='445.4' width='876' height='58.6' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1'/>
+<text x='14' y='461.4' fill='#475569' font-size='11' font-weight='700' text-transform='uppercase'>androidMain (8 files)</text>
+<rect x='8.0' y='469.4' width='570.2' height='26.6' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='293.1' y='485.7' text-anchor='middle' fill='white' font-size='10' font-weight='600'>AndroidNotificati…</text>
+<rect x='578.2' y='469.4' width='119.5' height='26.6' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<text x='637.9' y='485.7' text-anchor='middle' fill='white' font-size='10' font-weight='600'>Koin.android.kt</text>
+<rect x='697.7' y='469.4' width='59.8' height='26.6' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='757.5' y='469.4' width='32.4' height='26.6' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='789.8' y='469.4' width='29.9' height='26.6' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='819.7' y='469.4' width='22.4' height='26.6' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='842.1' y='469.4' width='14.9' height='26.6' fill='#7c3aed' stroke='white' stroke-width='1.5'/>
+<rect x='857.1' y='469.4' width='14.9' height='26.6' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='24' y='514' width='14' height='14' fill='#dc2626' rx='2'/>
+<text x='46' y='526' fill='#475569' font-size='12' font-weight='600'>Direct</text>
+<rect x='224' y='514' width='14' height='14' fill='#f59e0b' rx='2'/>
+<text x='246' y='526' fill='#475569' font-size='12' font-weight='600'>Transitive</text>
+<rect x='424' y='514' width='14' height='14' fill='#7c3aed' rx='2'/>
+<text x='446' y='526' fill='#475569' font-size='12' font-weight='600'>Expect/Actual</text>
+</svg>

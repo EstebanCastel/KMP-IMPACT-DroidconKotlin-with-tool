@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="4.3">
+<file name="/tmp/output/phase1/before/shared-ui/build/generated/compose/resourceGenerator/kotlin/iosSimulatorArm64MainResourceCollectors/droidcon/shared_ui/generated/resources/ActualResourceCollectors.kt">
+	<error line="3" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+</checkstyle>

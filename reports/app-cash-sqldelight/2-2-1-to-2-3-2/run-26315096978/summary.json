@@ -1,0 +1,177 @@
+{
+  "dependency_group": "app.cash.sqldelight",
+  "version_before": "2.2.1",
+  "version_after": "2.3.2",
+  "risk_level": "high",
+  "recommendation": "Hold merge until impacted files are reviewed and targeted regression checks pass.",
+  "report_url": "",
+  "total_impacted_files": 15,
+  "total_impacted_screens": 0,
+  "direct_impacts": 13,
+  "transitive_impacts": 2,
+  "expect_actual_impacts": 0,
+  "expect_actual_pairs_total": 7,
+  "total_project_files": 169,
+  "dynamic_status": "skipped",
+  "dynamic_summary": "skipped",
+  "dynamic_diffs": 0,
+  "before_screens": 0,
+  "after_screens": 0,
+  "dynamic_nodes_before": 0,
+  "dynamic_nodes_after": 0,
+  "dynamic_structures_before": 0,
+  "dynamic_structures_after": 0,
+  "screen_mappings": 0,
+  "trace_entries": 15,
+  "seed_files": [
+    "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/Koin.android.kt",
+    "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightDriverFactory.android.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/Koin.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightConferenceRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightDriverFactory.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightProfileRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightRoomRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSessionRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSponsorGroupRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSponsorRepository.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/adapter/InstantSqlDelightAdapter.kt",
+    "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/Koin.ios.kt",
+    "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightDriverFactory.ios.kt"
+  ],
+  "impacted_screens": [],
+  "top_impacted_files": [
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/iosMain/kotlin/co/touchlab/droidcon/Koin.ios.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "ios",
+      "rloc": 77,
+      "mcc": 11,
+      "declarations": [
+        "co.touchlab.droidcon.get",
+        "co.touchlab.droidcon.get",
+        "co.touchlab.droidcon.get",
+        "co.touchlab.droidcon.get",
+        "co.touchlab.droidcon.get",
+        "co.touchlab.droidcon.getAny"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/Koin.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 265,
+      "mcc": 5,
+      "declarations": [
+        "co.touchlab.droidcon.initKoin",
+        "co.touchlab.droidcon.getWith"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSessionRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 96,
+      "mcc": 5,
+      "declarations": [
+        "co.touchlab.droidcon.domain.repository.impl.SqlDelightSessionRepository"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightConferenceRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 90,
+      "mcc": 3,
+      "declarations": [
+        "co.touchlab.droidcon.domain.repository.impl.SqlDelightConferenceRepository"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/Koin.android.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "androidMain",
+      "rloc": 48,
+      "mcc": 3,
+      "declarations": []
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightProfileRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 104,
+      "mcc": 1,
+      "declarations": [
+        "co.touchlab.droidcon.domain.repository.impl.SqlDelightProfileRepository"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSponsorRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 57,
+      "mcc": 1,
+      "declarations": [
+        "co.touchlab.droidcon.domain.repository.impl.SqlDelightSponsorRepository"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightSponsorGroupRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 43,
+      "mcc": 1,
+      "declarations": [
+        "co.touchlab.droidcon.domain.repository.impl.SqlDelightSponsorGroupRepository"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightRoomRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 33,
+      "mcc": 1,
+      "declarations": [
+        "co.touchlab.droidcon.domain.repository.impl.SqlDelightRoomRepository"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/androidMain/kotlin/co/touchlab/droidcon/domain/repository/impl/SqlDelightDriverFactory.android.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "androidMain",
+      "rloc": 8,
+      "mcc": 1,
+      "declarations": [
+        "co.touchlab.droidcon.domain.repository.impl.SqlDelightDriverFactory"
+      ]
+    }
+  ],
+  "compat_warnings": [],
+  "stack_detected": {
+    "kotlin": "2.2.21",
+    "agp": "8.12.0",
+    "compose-compiler": "1.5.15"
+  },
+  "version_key": "sqlDelight",
+  "compilation_after": "failure",
+  "compile_errors": 1,
+  "has_detekt": true,
+  "has_kover": true,
+  "tools_used": {
+    "tree_sitter": true,
+    "ksp": false,
+    "detekt": true,
+    "kover": true,
+    "droidbot": false,
+    "codecharta": true
+  }
+}

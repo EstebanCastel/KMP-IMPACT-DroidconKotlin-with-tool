@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="background">#ffffffff</color>
+    <color name="ic_launcher_background">#ffffffff</color>
+    <string name="app_name">Droidcon</string>
+    <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
+    <string name="com.google.firebase.crashlytics.version_control_info">"generate_error_reason: NO_SUPPORTED_VCS_FOUND\n"</string>
+    <string name="default_web_client_id" translatable="false">123455771229-sc9bpuefbjceq7i1qabk7gssstefrdlv.apps.googleusercontent.com</string>
+    <string name="droidcon_title">Droidcon</string>
+    <string name="gcm_defaultSenderId" translatable="false">606665771234</string>
+    <string name="google_api_key" translatable="false">AIzaSyCNzhU2a9gMc_JHurHbywOrRI9Vj4VQZZZ</string>
+    <string name="google_app_id" translatable="false">1:606665771229:android:c1f0f09aa42abc12</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCNzhU2a9gMc_JHurHbywOrRI9Vj4VQZZZ</string>
+    <string name="google_storage_bucket" translatable="false">mock-firebase-project.appspot.com</string>
+    <string name="notification_feedback_body">Your Feedback is Requested.</string>
+    <string name="notification_feedback_title">Feedback Time!</string>
+    <string name="notification_reminder_body">%s is starting soon.</string>
+    <string name="notification_reminder_title_base">Upcoming event%s</string>
+    <string name="notification_reminder_title_in_room">" in %s"</string>
+    <string name="project_id" translatable="false">mock-firebase-project</string>
+    <style name="Theme.Droidcon" parent="Theme.Material.DayNight.NoActionBar"/>
+    <style name="Theme.Droidcon.Starting" parent="Theme.SplashScreen">
+        
+        <item name="windowSplashScreenBackground">@color/background</item>
+
+        
+        <item name="windowSplashScreenAnimatedIcon">@android:color/transparent</item>
+
+        
+        <item name="postSplashScreenTheme">@style/Theme.Droidcon</item>
+    </style>
+    <style name="Theme.Material.DayNight.NoActionBar" parent="@android:style/Theme.Material.Light.NoActionBar"/>
+</resources>
